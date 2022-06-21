@@ -1,13 +1,13 @@
 import { TransactionResponse } from '@ethersproject/providers'
-import { abi as MERKLE_DISTRIBUTOR_ABI } from '@uniswap/merkle-distributor/build/MerkleDistributor.json'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { abi as MERKLE_DISTRIBUTOR_ABI } from '@ariswap/merkle-distributor/build/MerkleDistributor.json'
+import { CurrencyAmount, Token } from '@ariswap/sdk-core'
 import { MERKLE_DISTRIBUTOR_ADDRESS } from 'constants/addresses'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import { useSingleCallResult } from 'lib/hooks/multicall'
 import { useEffect, useState } from 'react'
 
-import { UNI } from '../../constants/tokens'
+import { ARI } from '../../constants/tokens'
 import { useContract } from '../../hooks/useContract'
 import { isAddress } from '../../utils'
 import { calculateGasMargin } from '../../utils/calculateGasMargin'
@@ -36,7 +36,7 @@ function fetchClaimMapping(): Promise<ClaimAddressMapping> {
   return (
     FETCH_CLAIM_MAPPING_PROMISE ??
     (FETCH_CLAIM_MAPPING_PROMISE = fetch(
-      `https://raw.githubusercontent.com/Uniswap/mrkl-drop-data-chunks/final/chunks/mapping.json`
+      `https://raw.githubusercontent.com/Ariswap/mrkl-drop-data-chunks/final/chunks/mapping.json`
     )
       .then((res) => res.json())
       .catch((error) => {
@@ -51,7 +51,7 @@ function fetchClaimFile(key: string): Promise<{ [address: string]: UserClaimData
   return (
     FETCH_CLAIM_FILE_PROMISES[key] ??
     (FETCH_CLAIM_FILE_PROMISES[key] = fetch(
-      `https://raw.githubusercontent.com/Uniswap/mrkl-drop-data-chunks/final/chunks/${key}.json`
+      `https://raw.githubusercontent.com/Ariswap/mrkl-drop-data-chunks/final/chunks/${key}.json`
     )
       .then((res) => res.json())
       .catch((error) => {
@@ -129,7 +129,7 @@ export function useUserClaimData(account: string | null | undefined): UserClaimD
   return account && chainId === 1 ? claimInfo[account] : null
 }
 
-// check if user is in blob and has not yet claimed UNI
+// check if user is in blob and has not yet claimed ARI
 export function useUserHasAvailableClaim(account: string | null | undefined): boolean {
   const userClaimData = useUserClaimData(account)
   const distributorContract = useMerkleDistributorContract()
@@ -143,7 +143,7 @@ export function useUserUnclaimedAmount(account: string | null | undefined): Curr
   const userClaimData = useUserClaimData(account)
   const canClaim = useUserHasAvailableClaim(account)
 
-  const uni = chainId ? UNI[chainId] : undefined
+  const uni = chainId ? ARI[chainId] : undefined
   if (!uni) return undefined
   if (!canClaim || !userClaimData) {
     return CurrencyAmount.fromRawAmount(uni, JSBI.BigInt(0))

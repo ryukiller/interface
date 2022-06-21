@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@ariswap/sdk-core'
 import useTheme from 'hooks/useTheme'
 import { darken } from 'polished'
 import { ReactNode } from 'react'
@@ -50,7 +50,7 @@ const StyledNavLink = styled(NavLink).attrs({
   }
 `
 
-const StyledHistoryLink = styled(HistoryLink)<{ flex: string | undefined }>`
+const StyledHistoryLink = styled(HistoryLink) <{ flex: string | undefined }>`
   flex: ${({ flex }) => flex ?? 'none'};
 
   ${({ theme }) => theme.mediaWidth.upToMedium`

@@ -6,7 +6,7 @@ import { X } from 'react-feather'
 import styled from 'styled-components/macro'
 import { formatCurrencyAmount } from 'utils/formatCurrencyAmount'
 
-import { UNI } from '../../constants/tokens'
+import { ARI } from '../../constants/tokens'
 import useENS from '../../hooks/useENS'
 import { useDelegateCallback } from '../../state/governance/hooks'
 import { useTokenBalance } from '../../state/wallet/hooks'
@@ -57,7 +57,7 @@ export default function DelegateModal({ isOpen, onDismiss, title }: VoteModalPro
   const { address: parsedAddress } = useENS(activeDelegate)
 
   // get the number of votes available to delegate
-  const uniBalance = useTokenBalance(account ?? undefined, chainId ? UNI[chainId] : undefined)
+  const uniBalance = useTokenBalance(account ?? undefined, chainId ? ARI[chainId] : undefined)
 
   const delegateCallback = useDelegateCallback()
 
@@ -99,7 +99,7 @@ export default function DelegateModal({ isOpen, onDismiss, title }: VoteModalPro
               <StyledClosed stroke="black" onClick={wrappedOnDismiss} />
             </RowBetween>
             <ThemedText.Body>
-              <Trans>Earned UNI tokens represent voting shares in Uniswap governance.</Trans>
+              <Trans>Earned ARI tokens represent voting shares in Ariswap governance.</Trans>
             </ThemedText.Body>
             <ThemedText.Body>
               <Trans>You can either vote on each proposal yourself or delegate your votes to a third party.</Trans>

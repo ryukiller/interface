@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, Token } from '@ariswap/sdk-core'
 import { sendEvent } from 'components/analytics'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useCallback, useEffect } from 'react'
@@ -99,26 +99,26 @@ export default function ClaimPopup() {
           <AutoColumn style={{ padding: '2rem 0', zIndex: 10 }} justify="center">
             <UniToken width="48px" src={tokenLogo} />{' '}
             <ThemedText.White style={{ marginTop: '1rem' }} fontSize={36} fontWeight={600}>
-              {unclaimedAmount?.toFixed(0, { groupSeparator: ',' } ?? '-')} UNI
+              {unclaimedAmount?.toFixed(0, { groupSeparator: ',' } ?? '-')} ARI
             </ThemedText.White>
             <ThemedText.White style={{ paddingTop: '1.25rem', textAlign: 'center' }} fontWeight={600} color="white">
               <span role="img" aria-label="party">
                 🎉
               </span>{' '}
-              <Trans>UNI has arrived</Trans>{' '}
+              <Trans>ARI has arrived</Trans>{' '}
               <span role="img" aria-label="party">
                 🎉
               </span>
             </ThemedText.White>
             <ThemedText.SubHeader style={{ paddingTop: '0.5rem', textAlign: 'center' }} color="white">
               <Trans>
-                Thanks for being part of the Uniswap community <Heart size={12} />
+                Thanks for being part of the Ariswap community <Heart size={12} />
               </Trans>
             </ThemedText.SubHeader>
           </AutoColumn>
           <AutoColumn style={{ zIndex: 10 }} justify="center">
             <ButtonPrimary padding="8px" $borderRadius="8px" width={'fit-content'} onClick={handleToggleSelfClaimModal}>
-              <Trans>Claim your UNI tokens</Trans>
+              <Trans>Claim your ARI tokens</Trans>
             </ButtonPrimary>
           </AutoColumn>
         </StyledClaimPopup>

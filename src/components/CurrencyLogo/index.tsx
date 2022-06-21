@@ -1,11 +1,11 @@
-import { Currency } from '@uniswap/sdk-core'
+import { Currency } from '@ariswap/sdk-core'
 import useCurrencyLogoURIs from 'lib/hooks/useCurrencyLogoURIs'
 import React from 'react'
 import styled from 'styled-components/macro'
 
 import Logo from '../Logo'
 
-const StyledLogo = styled(Logo)<{ size: string }>`
+const StyledLogo = styled(Logo) <{ size: string }>`
   width: ${({ size }) => size};
   height: ${({ size }) => size};
   background: radial-gradient(white 50%, #ffffff00 calc(75% + 1px), #ffffff00 100%);

@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Percent, Token } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
+import { CurrencyAmount, Percent, Token } from '@ariswap/sdk-core'
+import { Pair } from '@ariswap/v2-sdk'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import { transparentize } from 'polished'
@@ -30,7 +30,7 @@ export const FixedHeightRow = styled(RowBetween)`
   height: 24px;
 `
 
-const StyledPositionCard = styled(LightCard)<{ bgColor: any }>`
+const StyledPositionCard = styled(LightCard) <{ bgColor: any }>`
   border: none;
   background: ${({ theme, bgColor }) =>
     `radial-gradient(91.85% 100% at 1.84% 0%, ${transparentize(0.8, bgColor)} 0%, ${theme.bg3} 100%) `};
@@ -58,21 +58,21 @@ export function MinimalPositionCard({ pair, showUnwrapped = false, border }: Pos
 
   const poolTokenPercentage =
     !!userPoolBalance &&
-    !!totalPoolTokens &&
-    JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
+      !!totalPoolTokens &&
+      JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
       ? new Percent(userPoolBalance.quotient, totalPoolTokens.quotient)
       : undefined
 
   const [token0Deposited, token1Deposited] =
     !!pair &&
-    !!totalPoolTokens &&
-    !!userPoolBalance &&
-    // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
-    JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
+      !!totalPoolTokens &&
+      !!userPoolBalance &&
+      // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
+      JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
       ? [
-          pair.getLiquidityValue(pair.token0, totalPoolTokens, userPoolBalance, false),
-          pair.getLiquidityValue(pair.token1, totalPoolTokens, userPoolBalance, false),
-        ]
+        pair.getLiquidityValue(pair.token0, totalPoolTokens, userPoolBalance, false),
+        pair.getLiquidityValue(pair.token1, totalPoolTokens, userPoolBalance, false),
+      ]
       : [undefined, undefined]
 
   return (
@@ -173,21 +173,21 @@ export default function FullPositionCard({ pair, border, stakedBalance }: Positi
 
   const poolTokenPercentage =
     !!userPoolBalance &&
-    !!totalPoolTokens &&
-    JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
+      !!totalPoolTokens &&
+      JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
       ? new Percent(userPoolBalance.quotient, totalPoolTokens.quotient)
       : undefined
 
   const [token0Deposited, token1Deposited] =
     !!pair &&
-    !!totalPoolTokens &&
-    !!userPoolBalance &&
-    // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
-    JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
+      !!totalPoolTokens &&
+      !!userPoolBalance &&
+      // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
+      JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
       ? [
-          pair.getLiquidityValue(pair.token0, totalPoolTokens, userPoolBalance, false),
-          pair.getLiquidityValue(pair.token1, totalPoolTokens, userPoolBalance, false),
-        ]
+        pair.getLiquidityValue(pair.token0, totalPoolTokens, userPoolBalance, false),
+        pair.getLiquidityValue(pair.token1, totalPoolTokens, userPoolBalance, false),
+      ]
       : [undefined, undefined]
 
   const backgroundColor = useColor(pair?.token0)
@@ -300,7 +300,7 @@ export default function FullPositionCard({ pair, border, stakedBalance }: Positi
             <ButtonSecondary padding="8px" $borderRadius="8px">
               <ExternalLink
                 style={{ width: '100%', textAlign: 'center' }}
-                href={`https://v2.info.uniswap.org/account/${account}`}
+                href={`https://v2.info.Ariswap.org/account/${account}`}
               >
                 <Trans>
                   View accrued fees and analytics<span style={{ fontSize: '11px' }}>↗</span>

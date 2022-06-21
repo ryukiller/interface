@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@uniswap/sdk-core'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { Currency } from '@ariswap/sdk-core'
+import { FeeAmount } from '@ariswap/v3-sdk'
 import { sendEvent } from 'components/analytics'
 import { ButtonGray } from 'components/Button'
 import Card from 'components/Card'
@@ -33,7 +33,7 @@ const pulse = (color: string) => keyframes`
     box-shadow: 0 0 0 0 ${color};
   }
 `
-const FocusedOutlineCard = styled(Card)<{ pulsing: boolean }>`
+const FocusedOutlineCard = styled(Card) <{ pulsing: boolean }>`
   border: 1px solid ${({ theme }) => theme.bg2};
   animation: ${({ pulsing, theme }) => pulsing && pulse(theme.primary1)} 0.6s linear;
   align-self: center;

@@ -1,8 +1,8 @@
 import { Trans } from '@lingui/macro'
-import { Trade } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount, Token, TradeType } from '@uniswap/sdk-core'
-import { Trade as V2Trade } from '@uniswap/v2-sdk'
-import { Trade as V3Trade } from '@uniswap/v3-sdk'
+import { Trade } from '@ariswap/router-sdk'
+import { Currency, CurrencyAmount, Token, TradeType } from '@ariswap/sdk-core'
+import { Trade as V2Trade } from '@ariswap/v2-sdk'
+import { Trade as V3Trade } from '@ariswap/v3-sdk'
 import { sendEvent } from 'components/analytics'
 import { NetworkAlert } from 'components/NetworkAlert/NetworkAlert'
 import SwapDetailsDropdown from 'components/swap/SwapDetailsDropdown'
@@ -133,13 +133,13 @@ export default function Swap({ history }: RouteComponentProps) {
     () =>
       showWrap
         ? {
-            [Field.INPUT]: parsedAmount,
-            [Field.OUTPUT]: parsedAmount,
-          }
+          [Field.INPUT]: parsedAmount,
+          [Field.OUTPUT]: parsedAmount,
+        }
         : {
-            [Field.INPUT]: independentField === Field.INPUT ? parsedAmount : trade?.inputAmount,
-            [Field.OUTPUT]: independentField === Field.OUTPUT ? parsedAmount : trade?.outputAmount,
-          },
+          [Field.INPUT]: independentField === Field.INPUT ? parsedAmount : trade?.inputAmount,
+          [Field.OUTPUT]: independentField === Field.OUTPUT ? parsedAmount : trade?.outputAmount,
+        },
     [independentField, parsedAmount, showWrap, trade]
   )
 
@@ -214,8 +214,8 @@ export default function Swap({ history }: RouteComponentProps) {
     approvalOptimizedTrade instanceof V2Trade
       ? 'V2SwapRouter'
       : approvalOptimizedTrade instanceof V3Trade
-      ? 'V3SwapRouter'
-      : 'SwapRouter'
+        ? 'V3SwapRouter'
+        : 'SwapRouter'
 
   // check whether the user has approved the router on the input token
   const [approvalState, approveCallback] = useApproveCallbackFromTrade(approvalOptimizedTrade, allowedSlippage)
@@ -299,8 +299,8 @@ export default function Swap({ history }: RouteComponentProps) {
             recipient === null
               ? 'Swap w/o Send'
               : (recipientAddress ?? recipient) === account
-              ? 'Swap w/o Send + recipient'
-              : 'Swap w/ Send',
+                ? 'Swap w/o Send + recipient'
+                : 'Swap w/ Send',
           label: [
             approvalOptimizedTradeString,
             approvalOptimizedTrade?.inputAmount?.currency?.symbol,
@@ -542,7 +542,7 @@ export default function Swap({ history }: RouteComponentProps) {
                           {approvalState === ApprovalState.APPROVED || signatureState === UseERC20PermitState.SIGNED ? (
                             <Trans>You can now trade {currencies[Field.INPUT]?.symbol}</Trans>
                           ) : (
-                            <Trans>Allow the Uniswap Protocol to use your {currencies[Field.INPUT]?.symbol}</Trans>
+                            <Trans>Allow the Ariswap Protocol to use your {currencies[Field.INPUT]?.symbol}</Trans>
                           )}
                         </span>
                         {approvalState === ApprovalState.PENDING ? (
@@ -554,7 +554,7 @@ export default function Swap({ history }: RouteComponentProps) {
                           <MouseoverTooltip
                             text={
                               <Trans>
-                                You must give the Uniswap smart contracts permission to use your{' '}
+                                You must give the Ariswap smart contracts permission to use your{' '}
                                 {currencies[Field.INPUT]?.symbol}. You only have to do this once per token.
                               </Trans>
                             }

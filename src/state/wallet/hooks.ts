@@ -1,10 +1,10 @@
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, Token } from '@ariswap/sdk-core'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import { useTokenBalance, useTokenBalancesWithLoadingIndicator } from 'lib/hooks/useCurrencyBalance'
 import { useMemo } from 'react'
 
-import { UNI } from '../../constants/tokens'
+import { ARI } from '../../constants/tokens'
 import { useAllTokens } from '../../hooks/Tokens'
 import { useUserUnclaimedAmount } from '../claim/hooks'
 import { useTotalUniEarned } from '../stake/hooks'
@@ -27,11 +27,11 @@ export function useAllTokenBalances(): [{ [tokenAddress: string]: CurrencyAmount
   return [balances ?? {}, balancesIsLoading]
 }
 
-// get the total owned, unclaimed, and unharvested UNI for account
+// get the total owned, unclaimed, and unharvested ARI for account
 export function useAggregateUniBalance(): CurrencyAmount<Token> | undefined {
   const { account, chainId } = useActiveWeb3React()
 
-  const uni = chainId ? UNI[chainId] : undefined
+  const uni = chainId ? ARI[chainId] : undefined
 
   const uniBalance: CurrencyAmount<Token> | undefined = useTokenBalance(account ?? undefined, uni)
   const uniUnclaimed: CurrencyAmount<Token> | undefined = useUserUnclaimedAmount(account)

@@ -1,8 +1,8 @@
 import { Trans } from '@lingui/macro'
-import { Protocol } from '@uniswap/router-sdk'
-import { Currency, Percent, TradeType } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { Protocol } from '@ariswap/router-sdk'
+import { Currency, Percent, TradeType } from '@ariswap/sdk-core'
+import { Pair } from '@ariswap/v2-sdk'
+import { FeeAmount } from '@ariswap/v3-sdk'
 import AnimatedDropdown from 'components/AnimatedDropdown'
 import { AutoColumn } from 'components/Column'
 import { LoadingRows } from 'components/Loader/styled'
@@ -20,14 +20,14 @@ import { Separator, ThemedText } from 'theme'
 
 import { AutoRouterLabel, AutoRouterLogo } from './RouterLabel'
 
-const Wrapper = styled(AutoColumn)<{ darkMode?: boolean; fixedOpen?: boolean }>`
+const Wrapper = styled(AutoColumn) <{ darkMode?: boolean; fixedOpen?: boolean }>`
   padding: ${({ fixedOpen }) => (fixedOpen ? '12px' : '12px 8px 12px 12px')};
   border-radius: 16px;
   border: 1px solid ${({ theme, fixedOpen }) => (fixedOpen ? 'transparent' : theme.bg2)};
   cursor: pointer;
 `
 
-const OpenCloseIcon = styled(Plus)<{ open?: boolean }>`
+const OpenCloseIcon = styled(Plus) <{ open?: boolean }>`
   margin-left: 8px;
   height: 20px;
   stroke-width: 2px;

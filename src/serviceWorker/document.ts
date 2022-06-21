@@ -22,9 +22,9 @@ export function matchDocument({ request, url }: RouteMatchCallbackOptions) {
     return false
   }
 
-  // If this isn't app.uniswap.org (or a local build), skip.
+  // If this isn't app.Ariswap.org (or a local build), skip.
   // IPFS gateways may not have domain separation, so they cannot use document caching.
-  if (url.hostname !== 'app.uniswap.org' && !isLocalhost()) {
+  if (url.hostname !== 'app.Ariswap.org' && !isLocalhost()) {
     return false
   }
 

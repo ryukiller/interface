@@ -1,9 +1,9 @@
-import { Protocol } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
-import { routeAmountsToString, SwapRoute } from '@uniswap/smart-order-router'
+import { Protocol } from '@ariswap/router-sdk'
+import { Currency, CurrencyAmount } from '@ariswap/sdk-core'
+import { routeAmountsToString, SwapRoute } from '@ariswap/smart-order-router'
 import { GetQuoteResult, V2PoolInRoute, V3PoolInRoute } from 'state/routing/types'
 
-// from routing-api (https://github.com/Uniswap/routing-api/blob/main/lib/handlers/quote/quote.ts#L243-L311)
+// from routing-api (https://github.com/Ariswap/routing-api/blob/main/lib/handlers/quote/quote.ts#L243-L311)
 export function transformSwapRouteToGetQuoteResult(
   type: 'exactIn' | 'exactOut',
   amount: CurrencyAmount<Currency>,

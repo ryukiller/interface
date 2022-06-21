@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Percent, Token } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
+import { Currency, CurrencyAmount, Percent, Token } from '@ariswap/sdk-core'
+import { Pair } from '@ariswap/v2-sdk'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
@@ -52,23 +52,23 @@ export function useDerivedBurnInfo(
   const totalSupply = useTotalSupply(pair?.liquidityToken)
   const liquidityValueA =
     pair &&
-    totalSupply &&
-    userLiquidity &&
-    tokenA &&
-    // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
-    JSBI.greaterThanOrEqual(totalSupply.quotient, userLiquidity.quotient)
+      totalSupply &&
+      userLiquidity &&
+      tokenA &&
+      // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
+      JSBI.greaterThanOrEqual(totalSupply.quotient, userLiquidity.quotient)
       ? CurrencyAmount.fromRawAmount(tokenA, pair.getLiquidityValue(tokenA, totalSupply, userLiquidity, false).quotient)
       : undefined
   const liquidityValueB =
     pair &&
-    totalSupply &&
-    userLiquidity &&
-    tokenB &&
-    // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
-    JSBI.greaterThanOrEqual(totalSupply.quotient, userLiquidity.quotient)
+      totalSupply &&
+      userLiquidity &&
+      tokenB &&
+      // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
+      JSBI.greaterThanOrEqual(totalSupply.quotient, userLiquidity.quotient)
       ? CurrencyAmount.fromRawAmount(tokenB, pair.getLiquidityValue(tokenB, totalSupply, userLiquidity, false).quotient)
       : undefined
-  const liquidityValues: { [Field.CURRENCY_A]?: CurrencyAmount<Token>; [Field.CURRENCY_B]?: CurrencyAmount<Token> } = {
+  const liquidityValues: { [Field.CURRENCY_A]?: CurrencyAmount<Token>;[Field.CURRENCY_B]?: CurrencyAmount<Token> } = {
     [Field.CURRENCY_A]: liquidityValueA,
     [Field.CURRENCY_B]: liquidityValueB,
   }
@@ -108,9 +108,9 @@ export function useDerivedBurnInfo(
     [Field.LIQUIDITY]:
       userLiquidity && percentToRemove && percentToRemove.greaterThan('0')
         ? CurrencyAmount.fromRawAmount(
-            userLiquidity.currency,
-            percentToRemove.multiply(userLiquidity.quotient).quotient
-          )
+          userLiquidity.currency,
+          percentToRemove.multiply(userLiquidity.quotient).quotient
+        )
         : undefined,
     [Field.CURRENCY_A]:
       tokenA && percentToRemove && percentToRemove.greaterThan('0') && liquidityValueA

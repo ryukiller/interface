@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { TokenList } from '@uniswap/token-lists'
+import { TokenList } from '@ariswap/token-lists'
 import { sendEvent } from 'components/analytics'
 import { ButtonPrimary } from 'components/Button'
 import Card from 'components/Card'

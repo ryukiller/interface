@@ -1,8 +1,8 @@
 import { BigNumber } from '@ethersproject/bignumber'
-import { SwapRouter, Trade } from '@uniswap/router-sdk'
-import { Currency, Percent, TradeType } from '@uniswap/sdk-core'
-import { Router as V2SwapRouter, Trade as V2Trade } from '@uniswap/v2-sdk'
-import { FeeOptions, SwapRouter as V3SwapRouter, Trade as V3Trade } from '@uniswap/v3-sdk'
+import { SwapRouter, Trade } from '@ariswap/router-sdk'
+import { Currency, Percent, TradeType } from '@ariswap/sdk-core'
+import { Router as V2SwapRouter, Trade as V2Trade } from '@ariswap/v2-sdk'
+import { FeeOptions, SwapRouter as V3SwapRouter, Trade as V3Trade } from '@ariswap/v3-sdk'
 import { SWAP_ROUTER_ADDRESSES, V3_ROUTER_ADDRESS } from 'constants/addresses'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useMemo } from 'react'
@@ -104,23 +104,23 @@ export function useSwapCallArguments(
         slippageTolerance: allowedSlippage,
         ...(signatureData
           ? {
-              inputTokenPermit:
-                'allowed' in signatureData
-                  ? {
-                      expiry: signatureData.deadline,
-                      nonce: signatureData.nonce,
-                      s: signatureData.s,
-                      r: signatureData.r,
-                      v: signatureData.v as any,
-                    }
-                  : {
-                      deadline: signatureData.deadline,
-                      amount: signatureData.amount,
-                      s: signatureData.s,
-                      r: signatureData.r,
-                      v: signatureData.v as any,
-                    },
-            }
+            inputTokenPermit:
+              'allowed' in signatureData
+                ? {
+                  expiry: signatureData.deadline,
+                  nonce: signatureData.nonce,
+                  s: signatureData.s,
+                  r: signatureData.r,
+                  v: signatureData.v as any,
+                }
+                : {
+                  deadline: signatureData.deadline,
+                  amount: signatureData.amount,
+                  s: signatureData.s,
+                  r: signatureData.r,
+                  v: signatureData.v as any,
+                },
+          }
           : {}),
       }
 
@@ -134,13 +134,13 @@ export function useSwapCallArguments(
       const { value, calldata } =
         trade instanceof V3Trade
           ? V3SwapRouter.swapCallParameters(trade, {
-              ...sharedSwapOptions,
-              deadline: deadline.toString(),
-            })
+            ...sharedSwapOptions,
+            deadline: deadline.toString(),
+          })
           : SwapRouter.swapCallParameters(trade, {
-              ...sharedSwapOptions,
-              deadlineOrPreviousBlockhash: deadline.toString(),
-            })
+            ...sharedSwapOptions,
+            deadlineOrPreviousBlockhash: deadline.toString(),
+          })
 
       if (argentWalletContract && trade.inputAmount.currency.isToken) {
         return [

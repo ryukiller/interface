@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Token } from '@uniswap/sdk-core'
-import { TokenList } from '@uniswap/token-lists'
+import { Token } from '@ariswap/sdk-core'
+import { TokenList } from '@ariswap/token-lists'
 import Card from 'components/Card'
 import { AutoColumn } from 'components/Column'
 import CurrencyLogo from 'components/CurrencyLogo'
@@ -13,7 +13,7 @@ import styled, { useTheme } from 'styled-components/macro'
 import { ExternalLink, ThemedText } from 'theme'
 import { ExplorerDataType, getExplorerLink } from 'utils/getExplorerLink'
 
-const WarningWrapper = styled(Card)<{ highWarning: boolean }>`
+const WarningWrapper = styled(Card) <{ highWarning: boolean }>`
   background-color: ${({ theme, highWarning }) =>
     highWarning ? transparentize(0.8, theme.red1) : transparentize(0.8, theme.yellow2)};
   width: fit-content;

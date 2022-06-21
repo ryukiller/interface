@@ -1,7 +1,7 @@
 import { defaultAbiCoder } from '@ethersproject/abi'
 import { getAddress, isAddress } from '@ethersproject/address'
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Token } from '@ariswap/sdk-core'
 import { ButtonError } from 'components/Button'
 import { BlueCard } from 'components/Card'
 import { AutoColumn } from 'components/Column'
@@ -24,7 +24,7 @@ import { ExternalLink, ThemedText } from 'theme'
 
 import { CreateProposalTabs } from '../../components/NavigationTabs'
 import { LATEST_GOVERNOR_INDEX } from '../../constants/governance'
-import { UNI } from '../../constants/tokens'
+import { ARI } from '../../constants/tokens'
 import AppBody from '../AppBody'
 import { ProposalActionDetail } from './ProposalActionDetail'
 import { ProposalAction, ProposalActionSelector, ProposalActionSelectorModal } from './ProposalActionSelector'
@@ -46,9 +46,9 @@ const CreateProposalButton = ({
 }) => {
   const formattedProposalThreshold = proposalThreshold
     ? JSBI.divide(
-        proposalThreshold.quotient,
-        JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(proposalThreshold.currency.decimals))
-      ).toLocaleString()
+      proposalThreshold.quotient,
+      JSBI.exponentiate(JSBI.BigInt(10), JSBI.BigInt(proposalThreshold.currency.decimals))
+    ).toLocaleString()
     : undefined
 
   return (
@@ -98,7 +98,7 @@ export default function CreateProposal() {
   const [attempting, setAttempting] = useState(false)
   const [proposalAction, setProposalAction] = useState(ProposalAction.TRANSFER_TOKEN)
   const [toAddressValue, setToAddressValue] = useState('')
-  const [currencyValue, setCurrencyValue] = useState<Currency>(UNI[chainId ?? 1])
+  const [currencyValue, setCurrencyValue] = useState<Currency>(ARI[chainId ?? 1])
   const [amountValue, setAmountValue] = useState('')
   const [titleValue, setTitleValue] = useState('')
   const [bodyValue, setBodyValue] = useState('')
@@ -162,11 +162,11 @@ export default function CreateProposal() {
     () =>
       Boolean(
         !proposalAction ||
-          !isAddress(toAddressValue) ||
-          !currencyValue?.isToken ||
-          amountValue === '' ||
-          titleValue === '' ||
-          bodyValue === ''
+        !isAddress(toAddressValue) ||
+        !currencyValue?.isToken ||
+        amountValue === '' ||
+        titleValue === '' ||
+        bodyValue === ''
       ),
     [proposalAction, toAddressValue, currencyValue, amountValue, titleValue, bodyValue]
   )
@@ -235,7 +235,7 @@ ${bodyValue}
                 <strong>Tip:</strong> Select an action and describe your proposal for the community. The proposal cannot
                 be modified after submission, so please verify all information before submitting. The voting period will
                 begin immediately and last for 7 days. To propose a custom action,{' '}
-                <ExternalLink href="https://uniswap.org/docs/v2/governance/governance-reference/#propose">
+                <ExternalLink href="https://Ariswap.org/docs/v2/governance/governance-reference/#propose">
                   read the docs
                 </ExternalLink>
                 .

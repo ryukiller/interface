@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Percent, Price, Token } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
+import { Currency, CurrencyAmount, Percent, Price, Token } from '@ariswap/sdk-core'
+import { Pair } from '@ariswap/v2-sdk'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
@@ -85,9 +85,9 @@ export function useDerivedMintInfo(
     Boolean(totalSupply && JSBI.equal(totalSupply.quotient, ZERO)) ||
     Boolean(
       pairState === PairState.EXISTS &&
-        pair &&
-        JSBI.equal(pair.reserve0.quotient, ZERO) &&
-        JSBI.equal(pair.reserve1.quotient, ZERO)
+      pair &&
+      JSBI.equal(pair.reserve0.quotient, ZERO) &&
+      JSBI.equal(pair.reserve1.quotient, ZERO)
     )
 
   // balances

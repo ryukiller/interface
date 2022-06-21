@@ -1,8 +1,8 @@
 import { Contract } from '@ethersproject/contracts'
 import { TransactionResponse } from '@ethersproject/providers'
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Fraction, Percent, Price, Token } from '@uniswap/sdk-core'
-import { FeeAmount, Pool, Position, priceToClosestTick, TickMath } from '@uniswap/v3-sdk'
+import { CurrencyAmount, Fraction, Percent, Price, Token } from '@ariswap/sdk-core'
+import { FeeAmount, Pool, Position, priceToClosestTick, TickMath } from '@ariswap/v3-sdk'
 import { sendEvent } from 'components/analytics'
 import Badge, { BadgeVariant } from 'components/Badge'
 import { ButtonConfirmed } from 'components/Button'
@@ -129,7 +129,7 @@ function V2PairMigration({
   const v2FactoryAddress = chainId ? V2_FACTORY_ADDRESSES[chainId] : undefined
 
   const pairFactory = useSingleCallResult(pair, 'factory')
-  const isNotUniswap = pairFactory.result?.[0] && pairFactory.result[0] !== v2FactoryAddress
+  const isNotAriswap = pairFactory.result?.[0] && pairFactory.result[0] !== v2FactoryAddress
 
   const deadline = useTransactionDeadline() // custom from users settings
   const blockTimestamp = useCurrentBlockTimestamp()
@@ -206,13 +206,13 @@ function V2PairMigration({
   const position =
     typeof tickLower === 'number' && typeof tickUpper === 'number' && !invalidRange
       ? Position.fromAmounts({
-          pool: pool ?? new Pool(token0, token1, feeAmount, sqrtPrice, 0, tick, []),
-          tickLower,
-          tickUpper,
-          amount0: token0Value.quotient,
-          amount1: token1Value.quotient,
-          useFullPrecision: true, // we want full precision for the theoretical position
-        })
+        pool: pool ?? new Pool(token0, token1, feeAmount, sqrtPrice, 0, tick, []),
+        tickLower,
+        tickUpper,
+        amount0: token0Value.quotient,
+        amount1: token1Value.quotient,
+        useFullPrecision: true, // we want full precision for the theoretical position
+      })
       : undefined
 
   const { amount0: v3Amount0Min, amount1: v3Amount1Min } = useMemo(
@@ -243,7 +243,7 @@ function V2PairMigration({
   const isArgentWallet = useIsArgentWallet()
 
   const approve = useCallback(async () => {
-    if (isNotUniswap || isArgentWallet) {
+    if (isNotAriswap || isArgentWallet) {
       // sushi has to be manually approved
       await approveManually()
     } else if (gatherPermitSignature) {
@@ -258,7 +258,7 @@ function V2PairMigration({
     } else {
       await approveManually()
     }
-  }, [isNotUniswap, isArgentWallet, gatherPermitSignature, approveManually])
+  }, [isNotAriswap, isArgentWallet, gatherPermitSignature, approveManually])
 
   const addTransaction = useTransactionAdder()
   const isMigrationPending = useIsTransactionPending(pendingMigrationHash ?? undefined)
@@ -338,7 +338,7 @@ function V2PairMigration({
           .then((response: TransactionResponse) => {
             sendEvent({
               category: 'Migrate',
-              action: `${isNotUniswap ? 'SushiSwap' : 'V2'}->V3`,
+              action: `${isNotAriswap ? 'SushiSwap' : 'V2'}->V3`,
               label: `${currency0.symbol}/${currency1.symbol}`,
             })
 
@@ -346,7 +346,7 @@ function V2PairMigration({
               type: TransactionType.MIGRATE_LIQUIDITY_V3,
               baseCurrencyId: currencyId(currency0),
               quoteCurrencyId: currencyId(currency1),
-              isFork: isNotUniswap,
+              isFork: isNotAriswap,
             })
             setPendingMigrationHash(response.hash)
           })
@@ -356,7 +356,7 @@ function V2PairMigration({
       })
   }, [
     chainId,
-    isNotUniswap,
+    isNotAriswap,
     migrator,
     noLiquidity,
     blockTimestamp,
@@ -384,13 +384,13 @@ function V2PairMigration({
     <AutoColumn gap="20px">
       <ThemedText.Body my={9} style={{ fontWeight: 400 }}>
         <Trans>
-          This tool will safely migrate your {isNotUniswap ? 'SushiSwap' : 'V2'} liquidity to V3. The process is
+          This tool will safely migrate your {isNotAriswap ? 'SushiSwap' : 'V2'} liquidity to V3. The process is
           completely trustless thanks to the{' '}
         </Trans>
         {chainId && migrator && (
           <ExternalLink href={getExplorerLink(chainId, migrator.address, ExplorerDataType.ADDRESS)}>
             <ThemedText.Blue display="inline">
-              <Trans>Uniswap migration contract↗</Trans>
+              <Trans>Ariswap migration contract↗</Trans>
             </ThemedText.Blue>
           </ExternalLink>
         )}
@@ -408,7 +408,7 @@ function V2PairMigration({
                 </Trans>
               </ThemedText.MediumHeader>
             </RowFixed>
-            <Badge variant={BadgeVariant.WARNING}>{isNotUniswap ? 'Sushi' : 'V2'}</Badge>
+            <Badge variant={BadgeVariant.WARNING}>{isNotAriswap ? 'Sushi' : 'V2'}</Badge>
           </RowBetween>
           <LiquidityInfo token0Amount={token0Value} token1Amount={token1Value} />
         </AutoColumn>
@@ -442,8 +442,8 @@ function V2PairMigration({
                 textAlign="center"
               >
                 <Trans>
-                  You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the
-                  current {isNotUniswap ? 'SushiSwap' : 'V2'} price.
+                  You are the first liquidity provider for this Ariswap V3 pool. Your liquidity will migrate at the
+                  current {isNotAriswap ? 'SushiSwap' : 'V2'} price.
                 </Trans>
               </ThemedText.Body>
 
@@ -461,7 +461,7 @@ function V2PairMigration({
                   <RowBetween>
                     <ThemedText.Body fontWeight={500} fontSize={14}>
                       <Trans>
-                        {isNotUniswap ? 'SushiSwap' : 'V2'} {invertPrice ? currency1.symbol : currency0.symbol} Price:
+                        {isNotAriswap ? 'SushiSwap' : 'V2'} {invertPrice ? currency1.symbol : currency0.symbol} Price:
                       </Trans>{' '}
                       {invertPrice
                         ? `${v2SpotPrice?.invert()?.toSignificant(6)} ${currency0.symbol}`
@@ -479,7 +479,7 @@ function V2PairMigration({
                 <RowBetween>
                   <ThemedText.Body fontSize={14}>
                     <Trans>
-                      {isNotUniswap ? 'SushiSwap' : 'V2'} {invertPrice ? currency1.symbol : currency0.symbol} Price:
+                      {isNotAriswap ? 'SushiSwap' : 'V2'} {invertPrice ? currency1.symbol : currency0.symbol} Price:
                     </Trans>
                   </ThemedText.Body>
                   <ThemedText.Black fontSize={14}>
@@ -511,7 +511,7 @@ function V2PairMigration({
               </AutoColumn>
               <ThemedText.Body fontSize={14} style={{ marginTop: 8, fontWeight: 400 }}>
                 <Trans>
-                  You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <br />
+                  You should only deposit liquidity into Ariswap V3 at a price you believe is correct. <br />
                   If the price seems incorrect, you can either make a swap to move the price or wait for someone else to
                   do so.
                 </Trans>

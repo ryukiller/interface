@@ -47,7 +47,7 @@ type ErrorBoundaryState = {
   error: Error | null
 }
 
-const IS_UNISWAP = window.location.hostname === 'app.uniswap.org'
+const IS_Ariswap = window.location.hostname === 'app.Ariswap.org'
 
 async function updateServiceWorker(): Promise<ServiceWorkerRegistration> {
   const ready = await navigator.serviceWorker.ready
@@ -110,12 +110,12 @@ export default class ErrorBoundary extends React.Component<unknown, ErrorBoundar
                   <ThemedText.Main fontSize={10}>{error.stack}</ThemedText.Main>
                 </code>
               </CodeBlockWrapper>
-              {IS_UNISWAP ? (
+              {IS_Ariswap ? (
                 <AutoRow>
                   <LinkWrapper>
                     <ExternalLink
                       id="create-github-issue-link"
-                      href={`https://github.com/Uniswap/uniswap-interface/issues/new?assignees=&labels=bug&body=${encodedBody}&title=${encodeURIComponent(
+                      href={`https://github.com/Ariswap/Ariswap-interface/issues/new?assignees=&labels=bug&body=${encodedBody}&title=${encodeURIComponent(
                         `Crash report: \`${error.name}${error.message && `: ${error.message}`}\``
                       )}`}
                       target="_blank"
@@ -171,42 +171,38 @@ function issueBody(error: Error): string {
   
 ${window.location.href}
 
-${
-  relevantState
-    ? `## \`${relevantState}\` state
+${relevantState
+      ? `## \`${relevantState}\` state
     
 \`\`\`json
 ${JSON.stringify(store.getState()[relevantState], null, 2)}
 \`\`\`
 `
-    : ''
-}
-${
-  error.name &&
-  `## Error
+      : ''
+    }
+${error.name &&
+    `## Error
 
 \`\`\`
 ${error.name}${error.message && `: ${error.message}`}
 \`\`\`
 `
-}
-${
-  error.stack &&
-  `## Stacktrace
+    }
+${error.stack &&
+    `## Stacktrace
 
 \`\`\`
 ${error.stack}
 \`\`\`
 `
-}
-${
-  deviceData &&
-  `## Device data
+    }
+${deviceData &&
+    `## Device data
 
 \`\`\`json
 ${JSON.stringify(deviceData, null, 2)}
 \`\`\`
 `
-}
+    }
 `
 }

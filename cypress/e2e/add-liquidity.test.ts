@@ -4,7 +4,7 @@ import { aliasQuery, hasQuery } from '../utils/graphql-test-utils'
 
 describe('Add Liquidity', () => {
   beforeEach(() => {
-    cy.intercept('POST', '/subgraphs/name/uniswap/uniswap-v3', (req) => {
+    cy.intercept('POST', '/subgraphs/name/Ariswap/Ariswap-v3', (req) => {
       aliasQuery(req, 'feeTierDistribution')
     })
   })
@@ -36,7 +36,7 @@ describe('Add Liquidity', () => {
 
   it('loads fee tier distribution', () => {
     cy.fixture('feeTierDistribution.json').then((feeTierDistribution) => {
-      cy.intercept('POST', '/subgraphs/name/uniswap/uniswap-v3', (req: CyHttpMessages.IncomingHttpRequest) => {
+      cy.intercept('POST', '/subgraphs/name/Ariswap/Ariswap-v3', (req: CyHttpMessages.IncomingHttpRequest) => {
         if (hasQuery(req, 'feeTierDistribution')) {
           req.alias = 'feeTierDistributionQuery'
 

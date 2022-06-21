@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-restricted-imports
 import { t, Trans } from '@lingui/macro'
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@ariswap/sdk-core'
 import { sendEvent } from 'components/analytics'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { AUTO_ROUTER_SUPPORTED_CHAINS } from 'lib/hooks/routing/clientSideSmartOrderRouter'
@@ -205,7 +205,7 @@ export default function SettingsTab({ placeholderSlippage }: { placeholderSlippa
                   <ThemedText.Black fontWeight={400} fontSize={14} color={theme.text2}>
                     <Trans>Auto Router API</Trans>
                   </ThemedText.Black>
-                  <QuestionHelper text={<Trans>Use the Uniswap Labs API to get faster quotes.</Trans>} />
+                  <QuestionHelper text={<Trans>Use the Ariswap Labs API to get faster quotes.</Trans>} />
                 </RowFixed>
                 <Toggle
                   id="toggle-optimized-router-button"
@@ -237,13 +237,13 @@ export default function SettingsTab({ placeholderSlippage }: { placeholderSlippa
                 toggle={
                   expertMode
                     ? () => {
-                        toggleExpertMode()
-                        setShowConfirmation(false)
-                      }
+                      toggleExpertMode()
+                      setShowConfirmation(false)
+                    }
                     : () => {
-                        toggle()
-                        setShowConfirmation(true)
-                      }
+                      toggle()
+                      setShowConfirmation(true)
+                    }
                 }
               />
             </RowBetween>

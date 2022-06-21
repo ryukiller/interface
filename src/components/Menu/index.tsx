@@ -67,7 +67,7 @@ const StyledMenuButton = styled.button`
   }
 `
 
-const UNIbutton = styled(ButtonPrimary)`
+const ARIbutton = styled(ButtonPrimary)`
   background-color: ${({ theme }) => theme.bg3};
   background: radial-gradient(174.47% 188.91% at 1.84% 0%, #ff007a 0%, #2172e5 100%), #edeef2;
   border: none;
@@ -215,7 +215,7 @@ export default function Menu() {
   useOnClickOutside(node, open ? toggleMenu : undefined)
   const togglePrivacyPolicy = useToggleModal(ApplicationModal.PRIVACY_POLICY)
   const openClaimModal = useToggleModal(ApplicationModal.ADDRESS_CLAIM)
-  const showUNIClaimOption = Boolean(!!account && !!chainId && !L2_CHAIN_IDS.includes(chainId))
+  const showARIClaimOption = Boolean(!!account && !!chainId && !L2_CHAIN_IDS.includes(chainId))
 
   const [darkMode, toggleDarkMode] = useDarkModeManager()
 
@@ -242,19 +242,19 @@ export default function Menu() {
               default:
                 return (
                   <MenuFlyout>
-                    <MenuItem href="https://uniswap.org/">
+                    <MenuItem href="https://Ariswap.org/">
                       <div>
                         <Trans>About</Trans>
                       </div>
                       <Info opacity={0.6} size={16} />
                     </MenuItem>
-                    <MenuItem href="https://help.uniswap.org/">
+                    <MenuItem href="https://help.Ariswap.org/">
                       <div>
                         <Trans>Help Center</Trans>
                       </div>
                       <HelpCircle opacity={0.6} size={16} />
                     </MenuItem>
-                    <MenuItem href="https://uniswap.canny.io/feature-requests">
+                    <MenuItem href="https://Ariswap.canny.io/feature-requests">
                       <div>
                         <Trans>Request Features</Trans>
                       </div>
@@ -276,7 +276,7 @@ export default function Menu() {
                       <div>{darkMode ? <Trans>Light Theme</Trans> : <Trans>Dark Theme</Trans>}</div>
                       {darkMode ? <Moon opacity={0.6} size={16} /> : <Sun opacity={0.6} size={16} />}
                     </ToggleMenuItem>
-                    <MenuItem href="https://docs.uniswap.org/">
+                    <MenuItem href="https://docs.Ariswap.org/">
                       <div>
                         <Trans>Docs</Trans>
                       </div>
@@ -288,16 +288,16 @@ export default function Menu() {
                       </div>
                       <FileText opacity={0.6} size={16} />
                     </ToggleMenuItem>
-                    {showUNIClaimOption && (
-                      <UNIbutton
+                    {showARIClaimOption && (
+                      <ARIbutton
                         onClick={openClaimModal}
                         padding="8px 16px"
                         width="100%"
                         $borderRadius="12px"
                         mt="0.5rem"
                       >
-                        <Trans>Claim UNI</Trans>
-                      </UNIbutton>
+                        <Trans>Claim ARI</Trans>
+                      </ARIbutton>
                     )}
                   </MenuFlyout>
                 )

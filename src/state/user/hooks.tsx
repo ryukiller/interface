@@ -1,5 +1,5 @@
-import { Percent, Token } from '@uniswap/sdk-core'
-import { computePairAddress, Pair } from '@uniswap/v2-sdk'
+import { Percent, Token } from '@ariswap/sdk-core'
+import { computePairAddress, Pair } from '@ariswap/v2-sdk'
 import { L2_CHAIN_IDS } from 'constants/chains'
 import { SupportedLocale } from 'constants/locales'
 import { L2_DEADLINE_FROM_NOW } from 'constants/misc'
@@ -302,8 +302,8 @@ export function toV2LiquidityToken([tokenA, tokenB]: [Token, Token]): Token {
     tokenA.chainId,
     computePairAddress({ factoryAddress: V2_FACTORY_ADDRESSES[tokenA.chainId], tokenA, tokenB }),
     18,
-    'UNI-V2',
-    'Uniswap V2'
+    'ARI-V2',
+    'Ariswap V2'
   )
 }
 
@@ -322,22 +322,22 @@ export function useTrackedTokenPairs(): [Token, Token][] {
     () =>
       chainId
         ? Object.keys(tokens).flatMap((tokenAddress) => {
-            const token = tokens[tokenAddress]
-            // for each token on the current chain,
-            return (
-              // loop though all bases on the current chain
-              (BASES_TO_TRACK_LIQUIDITY_FOR[chainId] ?? [])
-                // to construct pairs of the given token with each base
-                .map((base) => {
-                  if (base.address === token.address) {
-                    return null
-                  } else {
-                    return [base, token]
-                  }
-                })
-                .filter((p): p is [Token, Token] => p !== null)
-            )
-          })
+          const token = tokens[tokenAddress]
+          // for each token on the current chain,
+          return (
+            // loop though all bases on the current chain
+            (BASES_TO_TRACK_LIQUIDITY_FOR[chainId] ?? [])
+              // to construct pairs of the given token with each base
+              .map((base) => {
+                if (base.address === token.address) {
+                  return null
+                } else {
+                  return [base, token]
+                }
+              })
+              .filter((p): p is [Token, Token] => p !== null)
+          )
+        })
         : [],
     [tokens, chainId]
   )

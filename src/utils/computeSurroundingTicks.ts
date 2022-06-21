@@ -1,5 +1,5 @@
-import { Token } from '@uniswap/sdk-core'
-import { tickToPrice } from '@uniswap/v3-sdk'
+import { Token } from '@ariswap/sdk-core'
+import { tickToPrice } from '@ariswap/v3-sdk'
 import { TickData, TickProcessed } from 'hooks/usePoolTickData'
 import JSBI from 'jsbi'
 

@@ -416,13 +416,13 @@ describe('list reducer', () => {
       beforeEach(() => {
         store = createStore(reducer, {
           byUrl: {
-            'https://unpkg.com/@uniswap/default-token-list@latest/uniswap-default.tokenlist.json': {
+            'https://unpkg.com/@ariswap/default-token-list@latest/Ariswap-default.tokenlist.json': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
               pendingUpdate: null,
             },
-            'https://unpkg.com/@uniswap/default-token-list@latest': {
+            'https://unpkg.com/@ariswap/default-token-list@latest': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
@@ -436,9 +436,9 @@ describe('list reducer', () => {
 
       it('clears the current lists', () => {
         expect(
-          store.getState().byUrl['https://unpkg.com/@uniswap/default-token-list@latest/uniswap-default.tokenlist.json']
+          store.getState().byUrl['https://unpkg.com/@ariswap/default-token-list@latest/Ariswap-default.tokenlist.json']
         ).toBeUndefined()
-        expect(store.getState().byUrl['https://unpkg.com/@uniswap/default-token-list@latest']).toBeUndefined()
+        expect(store.getState().byUrl['https://unpkg.com/@ariswap/default-token-list@latest']).toBeUndefined()
       })
 
       it('puts in all the new lists', () => {
@@ -466,13 +466,13 @@ describe('list reducer', () => {
       beforeEach(() => {
         store = createStore(reducer, {
           byUrl: {
-            'https://unpkg.com/@uniswap/default-token-list@latest/uniswap-default.tokenlist.json': {
+            'https://unpkg.com/@ariswap/default-token-list@latest/Ariswap-default.tokenlist.json': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
               pendingUpdate: null,
             },
-            'https://unpkg.com/@uniswap/default-token-list@latest': {
+            'https://unpkg.com/@ariswap/default-token-list@latest': {
               error: null,
               current: STUB_TOKEN_LIST,
               loadingRequestId: null,
@@ -480,14 +480,14 @@ describe('list reducer', () => {
             },
           },
           activeListUrls: undefined,
-          lastInitializedDefaultListOfLists: ['https://unpkg.com/@uniswap/default-token-list@latest'],
+          lastInitializedDefaultListOfLists: ['https://unpkg.com/@ariswap/default-token-list@latest'],
         })
         store.dispatch(updateVersion())
       })
 
       it('does not remove lists not in last initialized list of lists', () => {
         expect(
-          store.getState().byUrl['https://unpkg.com/@uniswap/default-token-list@latest/uniswap-default.tokenlist.json']
+          store.getState().byUrl['https://unpkg.com/@ariswap/default-token-list@latest/Ariswap-default.tokenlist.json']
         ).toEqual({
           error: null,
           current: STUB_TOKEN_LIST,
@@ -496,15 +496,15 @@ describe('list reducer', () => {
         })
       })
       it('removes lists in the last initialized list of lists', () => {
-        expect(store.getState().byUrl['https://unpkg.com/@uniswap/default-token-list@latest']).toBeUndefined()
+        expect(store.getState().byUrl['https://unpkg.com/@ariswap/default-token-list@latest']).toBeUndefined()
       })
 
       it('each of those initialized lists is empty', () => {
         const byUrl = store.getState().byUrl
-        // note we don't expect the uniswap default list to be prepopulated
+        // note we don't expect the Ariswap default list to be prepopulated
         // this is ok.
         Object.keys(byUrl).forEach((url) => {
-          if (url !== 'https://unpkg.com/@uniswap/default-token-list@latest/uniswap-default.tokenlist.json') {
+          if (url !== 'https://unpkg.com/@ariswap/default-token-list@latest/Ariswap-default.tokenlist.json') {
             expect(byUrl[url]).toEqual({
               error: null,
               current: null,

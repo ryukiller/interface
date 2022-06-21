@@ -1,17 +1,17 @@
 import { Interface } from '@ethersproject/abi'
-import { BigintIsh, Currency, Token } from '@uniswap/sdk-core'
-import { abi as IUniswapV3PoolStateABI } from '@uniswap/v3-core/artifacts/contracts/interfaces/pool/IUniswapV3PoolState.sol/IUniswapV3PoolState.json'
-import { computePoolAddress } from '@uniswap/v3-sdk'
-import { FeeAmount, Pool } from '@uniswap/v3-sdk'
+import { BigintIsh, Currency, Token } from '@ariswap/sdk-core'
+import { abi as IAriswapV3PoolStateABI } from '@ariswap/v3-core/artifacts/contracts/interfaces/pool/IAriswapV3PoolState.sol/IAriswapV3PoolState.json'
+import { computePoolAddress } from '@ariswap/v3-sdk'
+import { FeeAmount, Pool } from '@ariswap/v3-sdk'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import { useMultipleContractSingleData } from 'lib/hooks/multicall'
 import { useMemo } from 'react'
 
 import { V3_CORE_FACTORY_ADDRESSES } from '../constants/addresses'
-import { IUniswapV3PoolStateInterface } from '../types/v3/IUniswapV3PoolState'
+import { IAriswapV3PoolStateInterface } from '../types/v3/IAriswapV3PoolState'
 
-const POOL_STATE_INTERFACE = new Interface(IUniswapV3PoolStateABI) as IUniswapV3PoolStateInterface
+const POOL_STATE_INTERFACE = new Interface(IAriswapV3PoolStateABI) as IAriswapV3PoolStateInterface
 
 // Classes are expensive to instantiate, so this caches the recently instantiated pools.
 // This avoids re-instantiating pools as the other pools in the same request are loaded.

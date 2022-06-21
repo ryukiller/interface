@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Token } from '@uniswap/sdk-core'
-import { TokenList } from '@uniswap/token-lists'
+import { Token } from '@ariswap/sdk-core'
+import { TokenList } from '@ariswap/token-lists'
 import { RowBetween } from 'components/Row'
 import { useState } from 'react'
 import { ArrowLeft } from 'react-feather'

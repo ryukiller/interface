@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: uniswap-interface\n"
+"Project-Id-Version: Ariswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2022-06-06 00:15\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=1; plural=0;\n"
-"X-Crowdin-Project: uniswap-interface\n"
+"X-Crowdin-Project: Ariswap-interface\n"
 "X-Crowdin-Project-ID: 458284\n"
 "X-Crowdin-Language: zh-CN\n"
 "X-Crowdin-File: en-US.po\n"
@@ -56,8 +56,8 @@ msgstr "- 删除接收人"
 #: src/components/earn/PoolCard.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
-msgid "0 UNI / week"
-msgstr "0 UNI 代币 / 每周"
+msgid "0 ARI / week"
+msgstr "0 ARI 代币 / 每周"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "25%"
@@ -113,8 +113,8 @@ msgid "<0>🎉 </0>Welcome to team Unicorn :) <1>🎉</1>"
 msgstr "<0>🎉 </0>欢迎加入Unicorn（独角兽）团队 :) <1>🎉</1>"
 
 #: src/pages/Vote/Landing.tsx
-msgid "A minimum threshold of 0.25% of the total UNI supply is required to submit proposals"
-msgstr "提交提案所需的最低门槛为 UNI 总供应量的 0.25%"
+msgid "A minimum threshold of 0.25% of the total ARI supply is required to submit proposals"
+msgstr "提交提案所需的最低门槛为 ARI 总供应量的 0.25%"
 
 #: src/components/Menu/index.tsx
 msgid "About"
@@ -139,8 +139,8 @@ msgid "Add"
 msgstr "添加"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Add <0/> and <1/> to Uniswap V2"
-msgstr "将 <0/> 和 <1/> 添加到 Uniswap V2"
+msgid "Add <0/> and <1/> to Ariswap V2"
+msgstr "将 <0/> 和 <1/> 添加到 Ariswap V2"
 
 #: src/components/vote/DelegateModal.tsx
 msgid "Add Delegate +"
@@ -196,8 +196,8 @@ msgid "Allow high price impact trades and skip the confirm screen. Use at your o
 msgstr "允许高度影响价格的交易，并跳过确认步骤。须自行承担使用风险。"
 
 #: src/pages/Swap/index.tsx
-msgid "Allow the Uniswap Protocol to use your {0}"
-msgstr "允许 Uniswap 调用您的 {0}"
+msgid "Allow the Ariswap Protocol to use your {0}"
+msgstr "允许 Ariswap 调用您的 {0}"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -208,8 +208,8 @@ msgid "Amount"
 msgstr "数额"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "尝试执行此兑换时发生错误。您可能需要增加滑点限制。如果还是不行，则可能是您正在交易的代币与Uniswap不兼容。注：Uniswap V3不兼容转账时带扣除费用（fee-on-transfer）的代币和弹性供应（rebase）代币。"
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "尝试执行此兑换时发生错误。您可能需要增加滑点限制。如果还是不行，则可能是您正在交易的代币与Ariswap不兼容。注：Ariswap V3不兼容转账时带扣除费用（fee-on-transfer）的代币和弹性供应（rebase）代币。"
 
 #: src/components/earn/StakingModal.tsx
 #: src/pages/RemoveLiquidity/index.tsx
@@ -261,8 +261,8 @@ msgid "Are you sure?"
 msgstr "您确定吗？"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
-msgstr "作为Uniswap社区的成员，您可以认领 UNI 代币，用于投票和治理。<0/><1/><2>阅读更多关于 UNI 代币信息</2>"
+msgid "As a member of the Ariswap community you may claim ARI to be used for voting and governance.<0/><1/><2>Read more about ARI</2>"
+msgstr "作为Ariswap社区的成员，您可以认领 ARI 代币，用于投票和治理。<0/><1/><2>阅读更多关于 ARI 代币信息</2>"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "At least {0} {1} and {2} {3} will be refunded to your wallet due to selected price range."
@@ -329,8 +329,8 @@ msgid "By adding this list you are implicitly trusting that the data is correct.
 msgstr "添加此代币列表代表您信任其数据是正确的。任何人都可以创建代币列表，包括创建假冒实际列表的造假版本，以及自我声称代表了某项目的代币列表。"
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Uniswap <1>Protocol Disclaimer</1>."
-msgstr "连接钱包即表示您同意 Uniswap Labs 的 <0>服务条款</0> 并确认您已阅读并理解 Uniswap <1>协议免责声明</1>。"
+msgid "By connecting a wallet, you agree to Ariswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Ariswap <1>Protocol Disclaimer</1>."
+msgstr "连接钱包即表示您同意 Ariswap Labs 的 <0>服务条款</0> 并确认您已阅读并理解 Ariswap <1>协议免责声明</1>。"
 
 #: src/pages/Vote/styled.tsx
 msgid "Canceled"
@@ -367,24 +367,24 @@ msgstr "为 {0} 领取 <0/>"
 #: src/components/claim/AddressClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
-msgid "Claim UNI"
-msgstr "领取 UNI 代币"
+msgid "Claim ARI"
+msgstr "领取 ARI 代币"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Claim UNI Token"
-msgstr "领取 UNI 代币"
+msgid "Claim ARI Token"
+msgstr "领取 ARI 代币"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Claim UNI reward for {0}"
-msgstr "{0} 领取 UNI 奖励"
+msgid "Claim ARI reward for {0}"
+msgstr "{0} 领取 ARI 奖励"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Claim fees"
 msgstr "领取已累积的手续费"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Claim your UNI tokens"
-msgstr "领取您的 UNI 代币"
+msgid "Claim your ARI tokens"
+msgstr "领取您的 ARI 代币"
 
 #: src/components/claim/AddressClaimModal.tsx
 msgid "Claimed"
@@ -392,8 +392,8 @@ msgstr "已领取"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claimed UNI!"
-msgstr "已领取 UNI 代币！"
+msgid "Claimed ARI!"
+msgstr "已领取 ARI 代币！"
 
 #: src/components/claim/ClaimModal.tsx
 msgid "Claimed!"
@@ -405,13 +405,13 @@ msgid "Claiming"
 msgstr "领取中"
 
 #: src/components/Header/index.tsx
-msgid "Claiming UNI"
-msgstr "正在领取UNI"
+msgid "Claiming ARI"
+msgstr "正在领取ARI"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claiming {0} UNI"
-msgstr "正在领取 {0} UNI 代币"
+msgid "Claiming {0} ARI"
+msgstr "正在领取 {0} ARI 代币"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "Clear All"
@@ -618,8 +618,8 @@ msgid "Deposit Amounts"
 msgstr "充值数额"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "充入 UNI-V2 流动池代币"
+msgid "Deposit ARI-V2 LP Tokens"
+msgstr "充入 ARI-V2 流动池代币"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Deposit liquidity"
@@ -630,16 +630,16 @@ msgid "Deposit tokens to the {label} network."
 msgstr "将代币存入 {label} 网络。"
 
 #: src/pages/Earn/index.tsx
-msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
-msgstr "充入您的流动池代币以领取 UNI（Uniswap 的治理代币）。"
+msgid "Deposit your Liquidity Provider tokens to receive ARI, the Ariswap protocol governance token."
+msgstr "充入您的流动池代币以领取 ARI（Ariswap 的治理代币）。"
 
 #: src/components/earn/UnstakingModal.tsx
 msgid "Deposited liquidity:"
 msgstr "已充入的流动资金："
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "已充入 {0} UNI-V2 流动池代币"
+msgid "Deposited {0} ARI-V2"
+msgstr "已充入 {0} ARI-V2 流动池代币"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Depositing Liquidity"
@@ -678,8 +678,8 @@ msgid "Don’t see one of your v2 positions? <0>Import it.</0>"
 msgstr "看不到您的一些 v2 流动资金吗？<0>将它手动导入。</0>"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned UNI tokens represent voting shares in Uniswap governance."
-msgstr "已赚取的 UNI 代币代表了 Uniswap 治理中的投票份额。"
+msgid "Earned ARI tokens represent voting shares in Ariswap governance."
+msgstr "已赚取的 ARI 代币代表了 Ariswap 治理中的投票份额。"
 
 #: src/components/FeeSelector/index.tsx
 msgid "Edit"
@@ -702,8 +702,8 @@ msgid "Enter a valid slippage percentage"
 msgstr "输入有效的兑换率滑点百分比"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Enter an address to trigger a UNI claim. If the address has any claimable UNI it will be sent to them on submission."
-msgstr "输入地址来查看领取 UNI 代币的资质。如果地址有任何可领取的 UNI，代币将在提交领取申请后自动发送。"
+msgid "Enter an address to trigger a ARI claim. If the address has any claimable ARI it will be sent to them on submission."
+msgstr "输入地址来查看领取 ARI 代币的资质。如果地址有任何可领取的 ARI，代币将在提交领取申请后自动发送。"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -784,12 +784,12 @@ msgid "Expired"
 msgstr "已过期"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore Uniswap Analytics."
-msgstr "查看 Uniswap 分析。"
+msgid "Explore Ariswap Analytics."
+msgstr "查看 Ariswap 分析。"
 
 #: src/components/Popups/FailedNetworkSwitchPopup.tsx
-msgid "Failed to switch networks from the Uniswap Interface. In order to use Uniswap on {0}, you must change the network in your wallet."
-msgstr "无法从 Uniswap 界面切换网络。为了在 {0} 上使用 Uniswap，您必须更改钱包中的网络。"
+msgid "Failed to switch networks from the Ariswap Interface. In order to use Ariswap on {0}, you must change the network in your wallet."
+msgstr "无法从 Ariswap 界面切换网络。为了在 {0} 上使用 Ariswap，您必须更改钱包中的网络。"
 
 #: src/components/PositionPreview/index.tsx
 msgid "Fee Tier"
@@ -808,8 +808,8 @@ msgid "For"
 msgstr "赞成"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "对于下面显示的每个流动池，单击“迁移”以从 Uniswap V2 赎回您的流动资金，并将其注入到 Uniswap V3。"
+msgid "For each pool shown below, click migrate to remove your liquidity from Ariswap V2 and deposit it into Ariswap V3."
+msgstr "对于下面显示的每个流动池，单击“迁移”以从 Ariswap V2 赎回您的流动资金，并将其注入到 Ariswap V3。"
 
 #: src/pages/Swap/index.tsx
 msgid "From"
@@ -1072,8 +1072,8 @@ msgid "Migrate V2 Liquidity"
 msgstr "迁移V2 流动资金"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "将您的流动资金从 Uniswap V2 迁移到 Uniswap V3。"
+msgid "Migrate your liquidity tokens from Ariswap V2 to Ariswap V3."
+msgstr "将您的流动资金从 Ariswap V2 迁移到 Ariswap V3。"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1170,8 +1170,8 @@ msgid "Once you are happy with the rate click supply to review."
 msgstr "对费率感到满意的话，请点击“供应”键，到审查步骤。"
 
 #: src/pages/Vote/VotePage.tsx
-msgid "Only UNI votes that were self delegated or delegated to another address before block {0} are eligible for voting."
-msgstr "只有在 {0} 区块编号之前已自行委托或委托给另一个区块链地址的 UNI 代币才有资格投票。"
+msgid "Only ARI votes that were self delegated or delegated to another address before block {0} are eligible for voting."
+msgstr "只有在 {0} 区块编号之前已自行委托或委托给另一个区块链地址的 ARI 代币才有资格投票。"
 
 #: src/components/Web3ReactManager/index.tsx
 msgid "Oops! An unknown error occurred. Please refresh the page, or visit from another browser or device."
@@ -1356,12 +1356,12 @@ msgid "Rates"
 msgstr "费率"
 
 #: src/pages/Earn/index.tsx
-msgid "Read more about UNI"
-msgstr "阅读更多关于 UNI 代币的信息"
+msgid "Read more about ARI"
+msgstr "阅读更多关于 ARI 代币的信息"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Read more about Uniswap governance"
-msgstr "阅读有关Uniswap治理的更多信息"
+msgid "Read more about Ariswap governance"
+msgstr "阅读有关Ariswap治理的更多信息"
 
 #: src/pages/Pool/v2.tsx
 msgid "Read more about providing liquidity"
@@ -1512,8 +1512,8 @@ msgid "Something went wrong"
 msgstr "出错了"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "第 1 步：获取 UNI-V2 流动池代币"
+msgid "Step 1. Get ARI-V2 Liquidity tokens"
+msgstr "第 1 步：获取 ARI-V2 流动池代币"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Submit new proposal"
@@ -1575,8 +1575,8 @@ msgid "Swapping {0} {1} for {2} {3}"
 msgstr "将 {0} {1} 兑换为 {2} {3}"
 
 #: src/components/Popups/SurveyPopup.tsx
-msgid "Take a 10 minute survey to help us improve your experience in the Uniswap app."
-msgstr "参加 10 分钟调查，以帮助我们改善您在 Uniswap 中的体验。"
+msgid "Take a 10 minute survey to help us improve your experience in the Ariswap app."
+msgstr "参加 10 分钟调查，以帮助我们改善您在 Ariswap 中的体验。"
 
 #: src/components/WalletModal/index.tsx
 msgid "Tally"
@@ -1587,16 +1587,16 @@ msgid "Tell us what you think ↗"
 msgstr "告诉我们您的想法↗"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Uniswap community <0/>"
-msgstr "感谢您加入 Uniswap 社区 <0/>"
+msgid "Thanks for being part of the Ariswap community <0/>"
+msgstr "感谢您加入 Ariswap 社区 <0/>"
 
 #: src/components/FeeSelector/index.tsx
 msgid "The % you will earn in fees."
 msgstr "您将赚取的手续费百分比。"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
-msgstr "兑换交易不满足 Uniswap 不变量 X × Y = K 的要求。这通常意味着您要兑换的代币之一在代币转账过程中带有一些自定义代币合约特性。"
+msgid "The Ariswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgstr "兑换交易不满足 Ariswap 不变量 X × Y = K 的要求。这通常意味着您要兑换的代币之一在代币转账过程中带有一些自定义代币合约特性。"
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "The amount you expect to receive at the current market price. You may receive less or more if the market price changes while your transaction is pending."
@@ -1611,8 +1611,8 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "该应用程序获取链上数据并使用 Infura API 构建合约调用。"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Uniswap Labs server."
-msgstr "该应用程序从 Uniswap Labs 服务器获取最佳交易路径。"
+msgid "The app fetches the optimal trade route from a Ariswap Labs server."
+msgstr "该应用程序从 Ariswap Labs 服务器获取最佳交易路径。"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "The app logs anonymized usage statistics in order to improve over time."
@@ -1667,8 +1667,8 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "输出代币无法进行转账。输出代币可能有些问题。"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "无法对输出代币进行转账。输出代币可能有些问题。注：转账时额外抽取费用（fee-on-transfer）的代币和弹性供应（rebase）代币都与Uniswap V3不兼容。"
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "无法对输出代币进行转账。输出代币可能有些问题。注：转账时额外抽取费用（fee-on-transfer）的代币和弹性供应（rebase）代币都与Ariswap V3不兼容。"
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1691,8 +1691,8 @@ msgid "There is no liquidity data."
 msgstr "没有流动性数据。"
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Uniswap Labs interface because it is associated with one or more"
-msgstr "此地址在 Uniswap Labs 界面上被阻止，因为它与一个或多个相关联"
+msgid "This address is blocked on the Ariswap Labs interface because it is associated with one or more"
+msgstr "此地址在 Ariswap Labs 界面上被阻止，因为它与一个或多个相关联"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "This app uses the following third-party APIs:"
@@ -1711,16 +1711,16 @@ msgid "This token doesn't appear on the active token list(s). Make sure this is 
 msgstr "此代币未出现在激活的代币列表中。请确保这是您想要交易的代币。"
 
 #: src/components/SearchModal/BlockedToken.tsx
-msgid "This token is not supported in the Uniswap Labs app"
-msgstr "Uniswap Labs 应用程序不支持此代币"
+msgid "This token is not supported in the Ariswap Labs app"
+msgstr "Ariswap Labs 应用程序不支持此代币"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "This tool will safely migrate your {0} liquidity to V3. The process is completely trustless thanks to the"
 msgstr "该工具将安全地将您的 {0} 流动资金迁移到 V3。该过程完全不依赖任何信任需求"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "由于兑换率变动，此交易将不会成功。尝试增加您的滑点容差。注：转账时额外抽取费用（fee-on-transfer）的代币和弹性供应（rebase）代币都与Uniswap V3不兼容。"
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "由于兑换率变动，此交易将不会成功。尝试增加您的滑点容差。注：转账时额外抽取费用（fee-on-transfer）的代币和弹性供应（rebase）代币都与Ariswap V3不兼容。"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1809,29 +1809,29 @@ msgid "Turn On Expert Mode"
 msgstr "开启专家模式"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "UNI has arrived"
-msgstr "UNI 代币已到账"
+msgid "ARI has arrived"
+msgstr "ARI 代币已到账"
 
 #: src/pages/Vote/Landing.tsx
-msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "UNI代币代表了Uniswap治理中的投票份额。您可以自行为提案进行投票，或将您的投票权委托给第三方。"
+msgid "ARI tokens represent voting shares in Ariswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgstr "ARI代币代表了Ariswap治理中的投票份额。您可以自行为提案进行投票，或将您的投票权委托给第三方。"
 
 #: src/pages/RemoveLiquidity/index.tsx
-msgid "UNI {0}/{1} Burned"
-msgstr "UNI {0}/{1} 被摧毁"
+msgid "ARI {0}/{1} Burned"
+msgstr "ARI {0}/{1} 被摧毁"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "需要 UNI-V2 流动池代币。一旦您已注入流动资金到 {0}-{1} 池，您就可以在此页面上抵押您的流动池代币。"
+msgid "ARI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "需要 ARI-V2 流动池代币。一旦您已注入流动资金到 {0}-{1} 池，您就可以在此页面上抵押您的流动池代币。"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "ARI-V2 {0}-{1}"
+msgstr "ARI-V2 {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Unclaimed UNI"
-msgstr "未被领取的 UNI 代币"
+msgid "Unclaimed ARI"
+msgstr "未被领取的 ARI 代币"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Unclaimed fees"
@@ -1850,36 +1850,36 @@ msgid "Unexpected issue with estimating the gas. Please try again."
 msgstr "估计 gas 时遇到问题。请再试一次。"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Uniswap Governance"
-msgstr "Uniswap治理"
+msgid "Ariswap Governance"
+msgstr "Ariswap治理"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Uniswap Labs' Terms of Service"
-msgstr "Uniswap Labs 的服务条款"
+msgid "Ariswap Labs' Terms of Service"
+msgstr "Ariswap Labs 的服务条款"
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Uniswap available in: <0>{0}</0>"
-msgstr "Uniswap可用：<0>{0}</0>"
+msgid "Ariswap available in: <0>{0}</0>"
+msgstr "Ariswap可用：<0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
-msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
-msgstr "Uniswap 治理仅在 Layer 1 可用。将您的网络切换到以太坊主网以查看提案和投票。"
+msgid "Ariswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+msgstr "Ariswap 治理仅在 Layer 1 可用。将您的网络切换到以太坊主网以查看提案和投票。"
 
 #: src/pages/Earn/index.tsx
-msgid "Uniswap liquidity mining"
-msgstr "Uniswap 流动性挖矿："
+msgid "Ariswap liquidity mining"
+msgstr "Ariswap 流动性挖矿："
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "Uniswap migration contract↗"
-msgstr "Uniswap 迁移合约↗"
+msgid "Ariswap migration contract↗"
+msgstr "Ariswap 迁移合约↗"
 
 #: src/components/SearchModal/TokenImportCard.tsx
 msgid "Unknown Source"
 msgstr "未知来源"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "未知错误{0}。可以尝试增加滑点容差。注：转账时额外抽取费用（fee-on-transfer）的代币和弹性供应（rebase）代币都与Uniswap V3不兼容。"
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "未知错误{0}。可以尝试增加滑点容差。注：转账时额外抽取费用（fee-on-transfer）的代币和弹性供应（rebase）代币都与Ariswap V3不兼容。"
 
 #: src/pages/Vote/Landing.tsx
 #: src/pages/Vote/VotePage.tsx
@@ -1925,8 +1925,8 @@ msgid "Update list"
 msgstr "更新代币列表"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Uniswap Labs API to get faster quotes."
-msgstr "使用 Uniswap Labs API 获得更快的报价。"
+msgid "Use the Ariswap Labs API to get faster quotes."
+msgstr "使用 Ariswap Labs API 获得更快的报价。"
 
 #: src/components/claim/ClaimModal.tsx
 msgid "User"
@@ -2055,12 +2055,12 @@ msgid "When you claim without withdrawing your liquidity remains in the mining p
 msgstr "当您领取奖励但没赎回流动资金时，流动资金仍然留在矿池内。"
 
 #: src/pages/Earn/Manage.tsx
-msgid "When you withdraw, the contract will automagically claim UNI on your behalf!"
-msgstr "当您赎回流动资金时，智能合约将自动为您领取 UNI 代币！"
+msgid "When you withdraw, the contract will automagically claim ARI on your behalf!"
+msgstr "当您赎回流动资金时，智能合约将自动为您领取 ARI 代币！"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "When you withdraw, your UNI is claimed and your liquidity is removed from the mining pool."
-msgstr "当您赎回流动资金时，您的 UNI 代币将被领取，流动资金也将从矿池中移除。"
+msgid "When you withdraw, your ARI is claimed and your liquidity is removed from the mining pool."
+msgstr "当您赎回流动资金时，您的 ARI 代币将被领取，流动资金也将从矿池中移除。"
 
 #: src/components/earn/UnstakingModal.tsx
 #: src/pages/Earn/Manage.tsx
@@ -2076,12 +2076,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "赎回注入的流动资金"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "赎回 {0} UNI-V2 流动池代币"
+msgid "Withdrawing {0} ARI-V2"
+msgstr "赎回 {0} ARI-V2 流动池代币"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "已赎回 UNI-V2！"
+msgid "Withdrew ARI-V2!"
+msgstr "已赎回 ARI-V2！"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2105,8 +2105,8 @@ msgid "You are creating a pool"
 msgstr "您正在创建一个流动池"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
-msgstr "您是此 Uniswap V3 流动池的第一个流动资金提供者。您的流动资金将以当前的 {0} 兑换率迁移。"
+msgid "You are the first liquidity provider for this Ariswap V3 pool. Your liquidity will migrate at the current {0} price."
+msgstr "您是此 Ariswap V3 流动池的第一个流动资金提供者。您的流动资金将以当前的 {0} 兑换率迁移。"
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "You are the first liquidity provider."
@@ -2145,16 +2145,16 @@ msgid "You must connect an account."
 msgstr "您必须连接帐户。"
 
 #: src/pages/Swap/index.tsx
-msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
-msgstr "您必须授予 Uniswap 智能合约使用您的 {0} 的权限。每个代币只需要授权一次。"
+msgid "You must give the Ariswap smart contracts permission to use your {0}. You only have to do this once per token."
+msgstr "您必须授予 Ariswap 智能合约使用您的 {0} 的权限。每个代币只需要授权一次。"
 
 #: src/pages/CreateProposal/index.tsx
 msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "您必须有 {formattedProposalThreshold} 票才能提交提案"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "请确保以您认为是正确的兑换率来将流动资金注入到 Uniswap V3。 <0/>如果兑换率看起来不正确，您可以进行兑换交易以移动兑换率，或者等待别人进行此操作。"
+msgid "You should only deposit liquidity into Ariswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr "请确保以您认为是正确的兑换率来将流动资金注入到 Ariswap V3。 <0/>如果兑换率看起来不正确，您可以进行兑换交易以移动兑换率，或者等待别人进行此操作。"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."
@@ -2249,8 +2249,8 @@ msgid "Your transactions will appear here..."
 msgstr "您的交易将出现在这里..."
 
 #: src/pages/Earn/Manage.tsx
-msgid "Your unclaimed UNI"
-msgstr "您未领取的 UNI 代币"
+msgid "Your unclaimed ARI"
+msgstr "您未领取的 ARI 代币"
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "after slippage"
@@ -2343,24 +2343,24 @@ msgstr "{0} 待处理"
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
-msgid "{0} UNI"
-msgstr "{0} UNI 代币"
+msgid "{0} ARI"
+msgstr "{0} ARI 代币"
 
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/StakingModal.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI / week"
-msgstr "{0} UNI 代币 / 每周"
+msgid "{0} ARI / week"
+msgstr "{0} ARI 代币 / 每周"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2 流动池代币"
+msgid "{0} ARI-V2"
+msgstr "{0} ARI-V2 流动池代币"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} UNI-V2 流动池代币可用"
+msgid "{0} ARI-V2 LP tokens available"
+msgstr "{0} ARI-V2 流动池代币可用"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"
@@ -2432,12 +2432,12 @@ msgid "{0}/{1} LP Tokens"
 msgstr "{0}/{1} 流动池代币"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "{SOCKS_AMOUNT} UNI"
-msgstr "{SOCKS_AMOUNT} UNI 代币"
+msgid "{SOCKS_AMOUNT} ARI"
+msgstr "{SOCKS_AMOUNT} ARI 代币"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "{USER_AMOUNT} UNI"
-msgstr "{USER_AMOUNT} UNI 代币"
+msgid "{USER_AMOUNT} ARI"
+msgstr "{USER_AMOUNT} ARI 代币"
 
 #: src/components/SearchModal/ManageLists.tsx
 msgid "{activeTokensOnThisChain} tokens"

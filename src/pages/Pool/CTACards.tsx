@@ -97,7 +97,7 @@ export default function CTACards() {
   const { infoLink } = CHAIN_INFO[chainId ? chainId : SupportedChainId.MAINNET]
   return (
     <CTASection>
-      <CTA1 href={'https://help.uniswap.org/en/articles/5391541-providing-liquidity-on-uniswap-v3'}>
+      <CTA1 href={'https://help.Ariswap.org/en/articles/5391541-providing-liquidity-on-Ariswap-v3'}>
         <ResponsiveColumn>
           <HeaderText>
             <Trans>Learn about providing liquidity</Trans> ↗
@@ -113,7 +113,7 @@ export default function CTACards() {
             <Trans>Top pools</Trans> ↗
           </HeaderText>
           <ThemedText.Body fontWeight={400} style={{ alignSelf: 'flex-start' }}>
-            <Trans>Explore Uniswap Analytics.</Trans>
+            <Trans>Explore Ariswap Analytics.</Trans>
           </ThemedText.Body>
         </ResponsiveColumn>
       </CTA2>

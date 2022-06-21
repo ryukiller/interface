@@ -6,9 +6,9 @@ import { TransactionResponse } from '@ethersproject/providers'
 import { toUtf8String, Utf8ErrorFuncs, Utf8ErrorReason } from '@ethersproject/strings'
 // eslint-disable-next-line no-restricted-imports
 import { t } from '@lingui/macro'
-import { abi as GOVERNANCE_ABI } from '@uniswap/governance/build/GovernorAlpha.json'
-import { abi as UNI_ABI } from '@uniswap/governance/build/Uni.json'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { abi as GOVERNANCE_ABI } from '@ariswap/governance/build/GovernorAlpha.json'
+import { abi as ARI_ABI } from '@ariswap/governance/build/Uni.json'
+import { CurrencyAmount, Token } from '@ariswap/sdk-core'
 import GOVERNOR_BRAVO_ABI from 'abis/governor-bravo.json'
 import {
   GOVERNANCE_ALPHA_V0_ADDRESSES,
@@ -17,7 +17,7 @@ import {
 } from 'constants/addresses'
 import { LATEST_GOVERNOR_INDEX } from 'constants/governance'
 import { POLYGON_PROPOSAL_TITLE } from 'constants/proposals/polygon_proposal_title'
-import { UNISWAP_GRANTS_PROPOSAL_DESCRIPTION } from 'constants/proposals/uniswap_grants_proposal_description'
+import { Ariswap_GRANTS_PROPOSAL_DESCRIPTION } from 'constants/proposals/Ariswap_grants_proposal_description'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useContract } from 'hooks/useContract'
 import { useSingleCallResult, useSingleContractMultipleData } from 'lib/hooks/multicall'
@@ -30,9 +30,9 @@ import {
   MOONBEAN_START_BLOCK,
   ONE_BIP_START_BLOCK,
   POLYGON_START_BLOCK,
-  UNISWAP_GRANTS_START_BLOCK,
+  Ariswap_GRANTS_START_BLOCK,
 } from '../../constants/proposals'
-import { UNI } from '../../constants/tokens'
+import { ARI } from '../../constants/tokens'
 import { useLogs } from '../logs/hooks'
 import { useTransactionAdder } from '../transactions/hooks'
 import { TransactionType } from '../transactions/types'
@@ -54,8 +54,8 @@ const useLatestGovernanceContract = useGovernanceBravoContract
 
 export function useUniContract() {
   const { chainId } = useActiveWeb3React()
-  const uniAddress = useMemo(() => (chainId ? UNI[chainId]?.address : undefined), [chainId])
-  return useContract(uniAddress, UNI_ABI, true)
+  const uniAddress = useMemo(() => (chainId ? ARI[chainId]?.address : undefined), [chainId])
+  return useContract(uniAddress, ARI_ABI, true)
 }
 
 interface ProposalDetail {
@@ -260,7 +260,7 @@ export function useAllProposalData(): { data: ProposalData[]; loading: boolean }
   const formattedLogsV1 = useFormattedProposalCreatedLogs(gov1, gov1ProposalIndexes, 12686656, 13059343)
   const formattedLogsV2 = useFormattedProposalCreatedLogs(gov2, gov2ProposalIndexes, 13538153)
 
-  const uni = useMemo(() => (chainId ? UNI[chainId] : undefined), [chainId])
+  const uni = useMemo(() => (chainId ? ARI[chainId] : undefined), [chainId])
 
   // early return until events are fetched
   return useMemo(() => {
@@ -284,8 +284,8 @@ export function useAllProposalData(): { data: ProposalData[]; loading: boolean }
         const startBlock = parseInt(proposal?.result?.startBlock?.toString())
 
         let description = formattedLogs[i]?.description ?? ''
-        if (startBlock === UNISWAP_GRANTS_START_BLOCK) {
-          description = UNISWAP_GRANTS_PROPOSAL_DESCRIPTION
+        if (startBlock === Ariswap_GRANTS_START_BLOCK) {
+          description = Ariswap_GRANTS_PROPOSAL_DESCRIPTION
         }
 
         let title = description?.split(/#+\s|\n/g)[1]
@@ -336,7 +336,7 @@ export function useQuorum(governorIndex: number): CurrencyAmount<Token> | undefi
   const latestGovernanceContract = useLatestGovernanceContract()
   const quorumVotes = useSingleCallResult(latestGovernanceContract, 'quorumVotes')?.result?.[0]
   const { chainId } = useActiveWeb3React()
-  const uni = useMemo(() => (chainId ? UNI[chainId] : undefined), [chainId])
+  const uni = useMemo(() => (chainId ? ARI[chainId] : undefined), [chainId])
 
   if (
     !latestGovernanceContract ||
@@ -366,7 +366,7 @@ export function useUserVotes(): { loading: boolean; votes: CurrencyAmount<Token>
   // check for available votes
   const { result, loading } = useSingleCallResult(uniContract, 'getCurrentVotes', [account ?? undefined])
   return useMemo(() => {
-    const uni = chainId ? UNI[chainId] : undefined
+    const uni = chainId ? ARI[chainId] : undefined
     return { loading, votes: uni && result ? CurrencyAmount.fromRawAmount(uni, result?.[0]) : undefined }
   }, [chainId, loading, result])
 }
@@ -377,7 +377,7 @@ export function useUserVotesAsOfBlock(block: number | undefined): CurrencyAmount
   const uniContract = useUniContract()
 
   // check for available votes
-  const uni = useMemo(() => (chainId ? UNI[chainId] : undefined), [chainId])
+  const uni = useMemo(() => (chainId ? ARI[chainId] : undefined), [chainId])
   const votes = useSingleCallResult(uniContract, 'getPriorVotes', [account ?? undefined, block ?? undefined])
     ?.result?.[0]
   return votes && uni ? CurrencyAmount.fromRawAmount(uni, votes) : undefined
@@ -393,7 +393,7 @@ export function useDelegateCallback(): (delegatee: string | undefined) => undefi
     (delegatee: string | undefined) => {
       if (!provider || !chainId || !account || !delegatee || !isAddress(delegatee ?? '')) return undefined
       const args = [delegatee]
-      if (!uniContract) throw new Error('No UNI Contract!')
+      if (!uniContract) throw new Error('No ARI Contract!')
       return uniContract.estimateGas.delegate(...args, {}).then((estimatedGasLimit) => {
         return uniContract
           .delegate(...args, { value: null, gasLimit: calculateGasMargin(estimatedGasLimit) })
@@ -538,7 +538,7 @@ export function useProposalThreshold(): CurrencyAmount<Token> | undefined {
 
   const latestGovernanceContract = useLatestGovernanceContract()
   const res = useSingleCallResult(latestGovernanceContract, 'proposalThreshold')
-  const uni = useMemo(() => (chainId ? UNI[chainId] : undefined), [chainId])
+  const uni = useMemo(() => (chainId ? ARI[chainId] : undefined), [chainId])
 
   if (res?.result?.[0] && uni) {
     return CurrencyAmount.fromRawAmount(uni, res.result[0])

@@ -1,7 +1,7 @@
-import { Trade } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount, Token, TradeType } from '@uniswap/sdk-core'
-import { Route as V2Route } from '@uniswap/v2-sdk'
-import { Route as V3Route } from '@uniswap/v3-sdk'
+import { Trade } from '@ariswap/router-sdk'
+import { Currency, CurrencyAmount, Token, TradeType } from '@ariswap/sdk-core'
+import { Route as V2Route } from '@ariswap/v2-sdk'
+import { Route as V3Route } from '@ariswap/v3-sdk'
 
 export enum TradeState {
   LOADING,
@@ -11,7 +11,7 @@ export enum TradeState {
   SYNCING,
 }
 
-// from https://github.com/Uniswap/routing-api/blob/main/lib/handlers/schema.ts
+// from https://github.com/Ariswap/routing-api/blob/main/lib/handlers/schema.ts
 
 export type TokenInRoute = Pick<Token, 'address' | 'chainId' | 'symbol' | 'decimals'>
 

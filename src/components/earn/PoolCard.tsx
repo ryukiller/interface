@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, Token } from '@ariswap/sdk-core'
 import JSBI from 'jsbi'
 import styled from 'styled-components/macro'
 
@@ -31,7 +31,7 @@ const StatContainer = styled.div`
 `};
 `
 
-const Wrapper = styled(AutoColumn)<{ showBackground: boolean; bgColor: any }>`
+const Wrapper = styled(AutoColumn) <{ showBackground: boolean; bgColor: any }>`
   border-radius: 12px;
   width: 100%;
   overflow: hidden;
@@ -148,10 +148,10 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
               stakingInfo.active ? (
                 <Trans>
                   {stakingInfo.totalRewardRate?.multiply(BIG_INT_SECONDS_IN_WEEK)?.toFixed(0, { groupSeparator: ',' })}{' '}
-                  UNI / week
+                  ARI / week
                 </Trans>
               ) : (
-                <Trans>0 UNI / week</Trans>
+                <Trans>0 ARI / week</Trans>
               )
             ) : (
               '-'
@@ -180,10 +180,10 @@ export default function PoolCard({ stakingInfo }: { stakingInfo: StakingInfo }) 
                     {stakingInfo.rewardRate
                       ?.multiply(BIG_INT_SECONDS_IN_WEEK)
                       ?.toSignificant(4, { groupSeparator: ',' })}{' '}
-                    UNI / week
+                    ARI / week
                   </Trans>
                 ) : (
-                  <Trans>0 UNI / week</Trans>
+                  <Trans>0 ARI / week</Trans>
                 )
               ) : (
                 '-'

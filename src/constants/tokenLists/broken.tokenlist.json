@@ -8,10 +8,13 @@
   },
   "tags": {},
   "logoURI": "ipfs://QmNa8mQkrNKp1WEEeGjFezDmDeodkWRevGFN8JCV7b4Xir",
-  "keywords": ["uniswap", "broken"],
+  "keywords": [
+    "Ariswap",
+    "broken"
+  ],
   "tokens": [
     {
-      "name": "UNI HODL",
+      "name": "ARI HODL",
       "address": "0x4bf5dc91E2555449293D7824028Eb8Fe5879B689",
       "symbol": "UniH",
       "decimals": 18,

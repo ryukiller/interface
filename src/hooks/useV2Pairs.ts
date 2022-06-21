@@ -1,13 +1,13 @@
 import { Interface } from '@ethersproject/abi'
-import { Currency, CurrencyAmount } from '@uniswap/sdk-core'
-import { abi as IUniswapV2PairABI } from '@uniswap/v2-core/build/IUniswapV2Pair.json'
-import { computePairAddress, Pair } from '@uniswap/v2-sdk'
+import { Currency, CurrencyAmount } from '@ariswap/sdk-core'
+import { abi as IAriswapV2PairABI } from '@ariswap/v2-core/build/IAriswapV2Pair.json'
+import { computePairAddress, Pair } from '@ariswap/v2-sdk'
 import { useMultipleContractSingleData } from 'lib/hooks/multicall'
 import { useMemo } from 'react'
 
 import { V2_FACTORY_ADDRESSES } from '../constants/addresses'
 
-const PAIR_INTERFACE = new Interface(IUniswapV2PairABI)
+const PAIR_INTERFACE = new Interface(IAriswapV2PairABI)
 
 export enum PairState {
   LOADING,

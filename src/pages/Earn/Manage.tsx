@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, Token } from '@ariswap/sdk-core'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import { useCallback, useState } from 'react'
@@ -34,7 +34,7 @@ const PageWrapper = styled(AutoColumn)`
   width: 100%;
 `
 
-const PositionInfo = styled(AutoColumn)<{ dim: any }>`
+const PositionInfo = styled(AutoColumn) <{ dim: any }>`
   position: relative;
   max-width: 640px;
   width: 100%;
@@ -47,7 +47,7 @@ const BottomSection = styled(AutoColumn)`
   position: relative;
 `
 
-const StyledDataCard = styled(DataCard)<{ bgColor?: any; showBackground?: any }>`
+const StyledDataCard = styled(DataCard) <{ bgColor?: any; showBackground?: any }>`
   background: radial-gradient(76.02% 75.41% at 1.84% 0%, #1e1a31 0%, #3d51a5 100%);
   z-index: 2;
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
@@ -55,7 +55,7 @@ const StyledDataCard = styled(DataCard)<{ bgColor?: any; showBackground?: any }>
     `radial-gradient(91.85% 100% at 1.84% 0%, ${bgColor} 0%,  ${showBackground ? theme.black : theme.bg5} 100%) `};
 `
 
-const StyledBottomCard = styled(DataCard)<{ dim: any }>`
+const StyledBottomCard = styled(DataCard) <{ dim: any }>`
   background: ${({ theme }) => theme.bg3};
   opacity: ${({ dim }) => (dim ? 0.4 : 1)};
   margin-top: -40px;
@@ -185,10 +185,10 @@ export default function Manage({
               {stakingInfo?.active ? (
                 <Trans>
                   {stakingInfo.totalRewardRate?.multiply(BIG_INT_SECONDS_IN_WEEK)?.toFixed(0, { groupSeparator: ',' })}{' '}
-                  UNI / week
+                  ARI / week
                 </Trans>
               ) : (
-                <Trans>0 UNI / week</Trans>
+                <Trans>0 ARI / week</Trans>
               )}
             </ThemedText.Body>
           </AutoColumn>
@@ -203,13 +203,13 @@ export default function Manage({
             <AutoColumn gap="md">
               <RowBetween>
                 <ThemedText.White fontWeight={600}>
-                  <Trans>Step 1. Get UNI-V2 Liquidity tokens</Trans>
+                  <Trans>Step 1. Get ARI-V2 Liquidity tokens</Trans>
                 </ThemedText.White>
               </RowBetween>
               <RowBetween style={{ marginBottom: '1rem' }}>
                 <ThemedText.White fontSize={14}>
                   <Trans>
-                    UNI-V2 LP tokens are required. Once you&apos;ve added liquidity to the {currencyA?.symbol}-
+                    ARI-V2 LP tokens are required. Once you&apos;ve added liquidity to the {currencyA?.symbol}-
                     {currencyB?.symbol} pool you can stake your liquidity tokens on this page.
                   </Trans>
                 </ThemedText.White>
@@ -271,7 +271,7 @@ export default function Manage({
                   </ThemedText.White>
                   <ThemedText.White>
                     <Trans>
-                      UNI-V2 {currencyA?.symbol}-{currencyB?.symbol}
+                      ARI-V2 {currencyA?.symbol}-{currencyB?.symbol}
                     </Trans>
                   </ThemedText.White>
                 </RowBetween>
@@ -285,7 +285,7 @@ export default function Manage({
               <RowBetween>
                 <div>
                   <ThemedText.Black>
-                    <Trans>Your unclaimed UNI</Trans>
+                    <Trans>Your unclaimed ARI</Trans>
                   </ThemedText.Black>
                 </div>
                 {stakingInfo?.earnedAmount && JSBI.notEqual(BIG_INT_ZERO, stakingInfo?.earnedAmount?.quotient) && (
@@ -319,10 +319,10 @@ export default function Manage({
                   {stakingInfo?.active ? (
                     <Trans>
                       {stakingInfo.rewardRate?.multiply(BIG_INT_SECONDS_IN_WEEK)?.toFixed(0, { groupSeparator: ',' })}{' '}
-                      UNI / week
+                      ARI / week
                     </Trans>
                   ) : (
-                    <Trans>0 UNI / week</Trans>
+                    <Trans>0 ARI / week</Trans>
                   )}
                 </ThemedText.Black>
               </RowBetween>
@@ -333,7 +333,7 @@ export default function Manage({
           <span role="img" aria-label="wizard-icon" style={{ marginRight: '8px' }}>
             ⭐️
           </span>
-          <Trans>When you withdraw, the contract will automagically claim UNI on your behalf!</Trans>
+          <Trans>When you withdraw, the contract will automagically claim ARI on your behalf!</Trans>
         </ThemedText.Main>
 
         {!showAddLiquidityButton && (
@@ -343,7 +343,7 @@ export default function Manage({
                 {stakingInfo?.stakedAmount?.greaterThan(JSBI.BigInt(0)) ? (
                   <Trans>Deposit</Trans>
                 ) : (
-                  <Trans>Deposit UNI-V2 LP Tokens</Trans>
+                  <Trans>Deposit ARI-V2 LP Tokens</Trans>
                 )}
               </ButtonPrimary>
             )}
@@ -364,7 +364,7 @@ export default function Manage({
         )}
         {!userLiquidityUnstaked ? null : userLiquidityUnstaked.equalTo('0') ? null : !stakingInfo?.active ? null : (
           <ThemedText.Main>
-            <Trans>{userLiquidityUnstaked.toSignificant(6)} UNI-V2 LP tokens available</Trans>
+            <Trans>{userLiquidityUnstaked.toSignificant(6)} ARI-V2 LP tokens available</Trans>
           </ThemedText.Main>
         )}
       </PositionInfo>

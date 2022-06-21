@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency, Price, Token } from '@uniswap/sdk-core'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { Currency, Price, Token } from '@ariswap/sdk-core'
+import { FeeAmount } from '@ariswap/v3-sdk'
 import { sendEvent } from 'components/analytics'
 import { AutoColumn, ColumnCenter } from 'components/Column'
 import Loader from 'components/Loader'

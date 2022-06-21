@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: uniswap-interface\n"
+"Project-Id-Version: Ariswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2022-06-06 00:15\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: uniswap-interface\n"
+"X-Crowdin-Project: Ariswap-interface\n"
 "X-Crowdin-Project-ID: 458284\n"
 "X-Crowdin-Language: hu\n"
 "X-Crowdin-File: en-US.po\n"
@@ -56,8 +56,8 @@ msgstr "- Távolítsa el a címzettet"
 #: src/components/earn/PoolCard.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
-msgid "0 UNI / week"
-msgstr "0 UNI / hét"
+msgid "0 ARI / week"
+msgstr "0 ARI / hét"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "25%"
@@ -113,8 +113,8 @@ msgid "<0>🎉 </0>Welcome to team Unicorn :) <1>🎉</1>"
 msgstr "<0> 🎉</0> Üdvözöljük az Unicorn csapatában :) <1> 🎉</1>"
 
 #: src/pages/Vote/Landing.tsx
-msgid "A minimum threshold of 0.25% of the total UNI supply is required to submit proposals"
-msgstr "A pályázatok benyújtásához az UNI teljes kínálatának minimum 0,25% -a szükséges"
+msgid "A minimum threshold of 0.25% of the total ARI supply is required to submit proposals"
+msgstr "A pályázatok benyújtásához az ARI teljes kínálatának minimum 0,25% -a szükséges"
 
 #: src/components/Menu/index.tsx
 msgid "About"
@@ -139,8 +139,8 @@ msgid "Add"
 msgstr "Hozzáadás"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Add <0/> and <1/> to Uniswap V2"
-msgstr "A <0/> és <1/> hozzáadása a Uniswap V2 -hez"
+msgid "Add <0/> and <1/> to Ariswap V2"
+msgstr "A <0/> és <1/> hozzáadása a Ariswap V2 -hez"
 
 #: src/components/vote/DelegateModal.tsx
 msgid "Add Delegate +"
@@ -196,8 +196,8 @@ msgid "Allow high price impact trades and skip the confirm screen. Use at your o
 msgstr "Engedélyezze a magas árfolyamú kereskedéseket, és hagyja ki a megerősítő képernyőt. Használat csak saját felelősségre."
 
 #: src/pages/Swap/index.tsx
-msgid "Allow the Uniswap Protocol to use your {0}"
-msgstr "Engedélyezze az Uniswap protokollnak a(z) {0} használatát"
+msgid "Allow the Ariswap Protocol to use your {0}"
+msgstr "Engedélyezze az Ariswap protokollnak a(z) {0} használatát"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -208,8 +208,8 @@ msgid "Amount"
 msgstr "Összeg"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Hiba történt a csere végrehajtása során. Lehet, hogy növelnie kell a csúszási toleranciát. Ha ez nem működik, akkor összeférhetetlenség állhat fenn az Ön által forgalmazott tokennel. Megjegyzés: az átviteli és újrabázis tokenek díja nem kompatibilis az Uniswap V3 verzióval."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "Hiba történt a csere végrehajtása során. Lehet, hogy növelnie kell a csúszási toleranciát. Ha ez nem működik, akkor összeférhetetlenség állhat fenn az Ön által forgalmazott tokennel. Megjegyzés: az átviteli és újrabázis tokenek díja nem kompatibilis az Ariswap V3 verzióval."
 
 #: src/components/earn/StakingModal.tsx
 #: src/pages/RemoveLiquidity/index.tsx
@@ -261,8 +261,8 @@ msgid "Are you sure?"
 msgstr "Biztos ebben?"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
-msgstr "Az Uniswap közösség tagjaként igényelheti az UNI-t, hogy szavazásra és kormányzásra használhassa.<0/><1/><2>Bővebben az UNI-ról</2>"
+msgid "As a member of the Ariswap community you may claim ARI to be used for voting and governance.<0/><1/><2>Read more about ARI</2>"
+msgstr "Az Ariswap közösség tagjaként igényelheti az ARI-t, hogy szavazásra és kormányzásra használhassa.<0/><1/><2>Bővebben az ARI-ról</2>"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "At least {0} {1} and {2} {3} will be refunded to your wallet due to selected price range."
@@ -329,8 +329,8 @@ msgid "By adding this list you are implicitly trusting that the data is correct.
 msgstr "A lista hozzáadásával hallgatólagosan megbízik az adatok helyességében. Bárki létrehozhat egy listát, beleértve a meglévő listák hamisított változatait is és olyan listákat is, amelyek azt állítják, hogy olyan projekteket képviselnek, amelyeknek nincs."
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Uniswap <1>Protocol Disclaimer</1>."
-msgstr "A pénztárca csatlakoztatásával Ön elfogadja az Uniswap Labs <0>szolgáltatási feltételeit</0> és elismeri, hogy elolvasta és megértette az Uniswap <1>Protokoll Jogi nyilatkozatát</1>."
+msgid "By connecting a wallet, you agree to Ariswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Ariswap <1>Protocol Disclaimer</1>."
+msgstr "A pénztárca csatlakoztatásával Ön elfogadja az Ariswap Labs <0>szolgáltatási feltételeit</0> és elismeri, hogy elolvasta és megértette az Ariswap <1>Protokoll Jogi nyilatkozatát</1>."
 
 #: src/pages/Vote/styled.tsx
 msgid "Canceled"
@@ -367,24 +367,24 @@ msgstr "<0/>. Igénypont {0}"
 #: src/components/claim/AddressClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
-msgid "Claim UNI"
-msgstr "UNI igénylése"
+msgid "Claim ARI"
+msgstr "ARI igénylése"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Claim UNI Token"
-msgstr "UNI token igénylése"
+msgid "Claim ARI Token"
+msgstr "ARI token igénylése"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Claim UNI reward for {0}"
-msgstr "Kérjen UNI jutalmat {0}"
+msgid "Claim ARI reward for {0}"
+msgstr "Kérjen ARI jutalmat {0}"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Claim fees"
 msgstr "Követelési díjak"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Claim your UNI tokens"
-msgstr "Saját UNI tokenek igénylése"
+msgid "Claim your ARI tokens"
+msgstr "Saját ARI tokenek igénylése"
 
 #: src/components/claim/AddressClaimModal.tsx
 msgid "Claimed"
@@ -392,8 +392,8 @@ msgstr "Igényelt"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claimed UNI!"
-msgstr "Igényelt UNI!"
+msgid "Claimed ARI!"
+msgstr "Igényelt ARI!"
 
 #: src/components/claim/ClaimModal.tsx
 msgid "Claimed!"
@@ -405,13 +405,13 @@ msgid "Claiming"
 msgstr "Igénylés"
 
 #: src/components/Header/index.tsx
-msgid "Claiming UNI"
-msgstr "Az UNI igénylése"
+msgid "Claiming ARI"
+msgstr "Az ARI igénylése"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claiming {0} UNI"
-msgstr "{0} UNI igénylése"
+msgid "Claiming {0} ARI"
+msgstr "{0} ARI igénylése"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "Clear All"
@@ -618,8 +618,8 @@ msgid "Deposit Amounts"
 msgstr "Letéti összegek"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "UNI-V2 LP tokenek letétbe helyezése"
+msgid "Deposit ARI-V2 LP Tokens"
+msgstr "ARI-V2 LP tokenek letétbe helyezése"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Deposit liquidity"
@@ -630,16 +630,16 @@ msgid "Deposit tokens to the {label} network."
 msgstr "Befizetési tokenek a {label} hálózatba."
 
 #: src/pages/Earn/index.tsx
-msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
-msgstr "Helyezze letétbe a likviditásszolgáltatói tokeneket, hogy megkapja az UNI-t, az Uniswap protokoll irányítási tokent."
+msgid "Deposit your Liquidity Provider tokens to receive ARI, the Ariswap protocol governance token."
+msgstr "Helyezze letétbe a likviditásszolgáltatói tokeneket, hogy megkapja az ARI-t, az Ariswap protokoll irányítási tokent."
 
 #: src/components/earn/UnstakingModal.tsx
 msgid "Deposited liquidity:"
 msgstr "Letétbe helyezett likviditás:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "Letétbe helyezett {0} UNI-V2"
+msgid "Deposited {0} ARI-V2"
+msgstr "Letétbe helyezett {0} ARI-V2"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Depositing Liquidity"
@@ -678,8 +678,8 @@ msgid "Don’t see one of your v2 positions? <0>Import it.</0>"
 msgstr "Nem látja az egyik v2 pozícióját? <0> Importálja.</0>"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned UNI tokens represent voting shares in Uniswap governance."
-msgstr "A megszerzett UNI-tokenek a szavazati részesedéseket jelentik az Uniswap irányításában."
+msgid "Earned ARI tokens represent voting shares in Ariswap governance."
+msgstr "A megszerzett ARI-tokenek a szavazati részesedéseket jelentik az Ariswap irányításában."
 
 #: src/components/FeeSelector/index.tsx
 msgid "Edit"
@@ -702,8 +702,8 @@ msgid "Enter a valid slippage percentage"
 msgstr "Adjon meg érvényes csúszási százalékot"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Enter an address to trigger a UNI claim. If the address has any claimable UNI it will be sent to them on submission."
-msgstr "Adjon meg egy címet az UNI-követelés kiváltásához. Ha a címnek van igényelhető UNI-ja, akkor azt a címre történő benyújtáskor elküldjük."
+msgid "Enter an address to trigger a ARI claim. If the address has any claimable ARI it will be sent to them on submission."
+msgstr "Adjon meg egy címet az ARI-követelés kiváltásához. Ha a címnek van igényelhető ARI-ja, akkor azt a címre történő benyújtáskor elküldjük."
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -785,12 +785,12 @@ msgid "Expired"
 msgstr "Lejárt"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore Uniswap Analytics."
-msgstr "Fedezze fel az Uniswap Analytics szolgáltatást."
+msgid "Explore Ariswap Analytics."
+msgstr "Fedezze fel az Ariswap Analytics szolgáltatást."
 
 #: src/components/Popups/FailedNetworkSwitchPopup.tsx
-msgid "Failed to switch networks from the Uniswap Interface. In order to use Uniswap on {0}, you must change the network in your wallet."
-msgstr "Nem sikerült hálózatot váltani az Uniswap interfészről. Az Uniswap {0}történő használatához meg kell változtatnia a hálózatot a pénztárcájában."
+msgid "Failed to switch networks from the Ariswap Interface. In order to use Ariswap on {0}, you must change the network in your wallet."
+msgstr "Nem sikerült hálózatot váltani az Ariswap interfészről. Az Ariswap {0}történő használatához meg kell változtatnia a hálózatot a pénztárcájában."
 
 #: src/components/PositionPreview/index.tsx
 msgid "Fee Tier"
@@ -809,8 +809,8 @@ msgid "For"
 msgstr "Számára"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "Az alább látható egyes poolok esetében kattintson a migrálás gombra, hogy eltávolítsa a likviditását az Uniswap V2-ből, és letétbe helyezze az Uniswap V3-ban."
+msgid "For each pool shown below, click migrate to remove your liquidity from Ariswap V2 and deposit it into Ariswap V3."
+msgstr "Az alább látható egyes poolok esetében kattintson a migrálás gombra, hogy eltávolítsa a likviditását az Ariswap V2-ből, és letétbe helyezze az Ariswap V3-ban."
 
 #: src/pages/Swap/index.tsx
 msgid "From"
@@ -1073,8 +1073,8 @@ msgid "Migrate V2 Liquidity"
 msgstr "V2 likviditás migrálása"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "Likviditási tokenek migrálása az Uniswap V2-ről az Uniswap V3-ra."
+msgid "Migrate your liquidity tokens from Ariswap V2 to Ariswap V3."
+msgstr "Likviditási tokenek migrálása az Ariswap V2-ről az Ariswap V3-ra."
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1171,8 +1171,8 @@ msgid "Once you are happy with the rate click supply to review."
 msgstr "Ha elégedett az árfolyammal, kattintson a kínálatra az áttekintéshez."
 
 #: src/pages/Vote/VotePage.tsx
-msgid "Only UNI votes that were self delegated or delegated to another address before block {0} are eligible for voting."
-msgstr "Csak azok az UNI-szavazatok jogosultak szavazni, amelyeket a {0} blokk előtt saját maguk vagy más címre delegáltak."
+msgid "Only ARI votes that were self delegated or delegated to another address before block {0} are eligible for voting."
+msgstr "Csak azok az ARI-szavazatok jogosultak szavazni, amelyeket a {0} blokk előtt saját maguk vagy más címre delegáltak."
 
 #: src/components/Web3ReactManager/index.tsx
 msgid "Oops! An unknown error occurred. Please refresh the page, or visit from another browser or device."
@@ -1357,12 +1357,12 @@ msgid "Rates"
 msgstr "Árfolyamok"
 
 #: src/pages/Earn/index.tsx
-msgid "Read more about UNI"
-msgstr "További információk az UNI-ról"
+msgid "Read more about ARI"
+msgstr "További információk az ARI-ról"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Read more about Uniswap governance"
-msgstr "További információk az Uniswap irányításáról"
+msgid "Read more about Ariswap governance"
+msgstr "További információk az Ariswap irányításáról"
 
 #: src/pages/Pool/v2.tsx
 msgid "Read more about providing liquidity"
@@ -1513,8 +1513,8 @@ msgid "Something went wrong"
 msgstr "Valami elromlott"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "1. lépés: Szerezzen UNI-V2 likviditási tokeneket"
+msgid "Step 1. Get ARI-V2 Liquidity tokens"
+msgstr "1. lépés: Szerezzen ARI-V2 likviditási tokeneket"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Submit new proposal"
@@ -1576,8 +1576,8 @@ msgid "Swapping {0} {1} for {2} {3}"
 msgstr "{0} {1} cseréje a következőre {2} {3}"
 
 #: src/components/Popups/SurveyPopup.tsx
-msgid "Take a 10 minute survey to help us improve your experience in the Uniswap app."
-msgstr "Töltsön ki egy 10 perces kérdőívet, hogy segítsen nekünk javítani az Uniswap alkalmazással kapcsolatos élményét."
+msgid "Take a 10 minute survey to help us improve your experience in the Ariswap app."
+msgstr "Töltsön ki egy 10 perces kérdőívet, hogy segítsen nekünk javítani az Ariswap alkalmazással kapcsolatos élményét."
 
 #: src/components/WalletModal/index.tsx
 msgid "Tally"
@@ -1588,16 +1588,16 @@ msgid "Tell us what you think ↗"
 msgstr "Mondja el, mit gondol ↗"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Uniswap community <0/>"
-msgstr "Köszönjük, hogy az Uniswap közösség tagja <0/>"
+msgid "Thanks for being part of the Ariswap community <0/>"
+msgstr "Köszönjük, hogy az Ariswap közösség tagja <0/>"
 
 #: src/components/FeeSelector/index.tsx
 msgid "The % you will earn in fees."
 msgstr "A díjakban keresett%."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
-msgstr "A Uniswap invariáns x*y=k nem teljesült a swap során. Ez általában azt jelenti, hogy a cserélendő tokenek egyike egyéni viselkedést tartalmaz az átadáskor."
+msgid "The Ariswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgstr "A Ariswap invariáns x*y=k nem teljesült a swap során. Ez általában azt jelenti, hogy a cserélendő tokenek egyike egyéni viselkedést tartalmaz az átadáskor."
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "The amount you expect to receive at the current market price. You may receive less or more if the market price changes while your transaction is pending."
@@ -1612,8 +1612,8 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "Az alkalmazás lekéri a láncon belüli adatokat, és szerződéshívásokat hoz létre egy Infura API-val."
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Uniswap Labs server."
-msgstr "Az alkalmazás lekéri az optimális kereskedelmi útvonalat egy Uniswap Labs szerverről."
+msgid "The app fetches the optimal trade route from a Ariswap Labs server."
+msgstr "Az alkalmazás lekéri az optimális kereskedelmi útvonalat egy Ariswap Labs szerverről."
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "The app logs anonymized usage statistics in order to improve over time."
@@ -1668,8 +1668,8 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "Az output token nem transzferálható. Probléma lehet az output tokennel."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "A kimeneti token nem vihető át. Probléma lehet a kimeneti tokennel. Megjegyzés: az átviteli és újrabázis tokenek díja nem kompatibilis az Uniswap V3 verzióval."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "A kimeneti token nem vihető át. Probléma lehet a kimeneti tokennel. Megjegyzés: az átviteli és újrabázis tokenek díja nem kompatibilis az Ariswap V3 verzióval."
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1692,8 +1692,8 @@ msgid "There is no liquidity data."
 msgstr "Nincs likviditási adat."
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Uniswap Labs interface because it is associated with one or more"
-msgstr "Ez a cím le van tiltva az Uniswap Labs felületén, mert egy vagy több címhez van társítva"
+msgid "This address is blocked on the Ariswap Labs interface because it is associated with one or more"
+msgstr "Ez a cím le van tiltva az Ariswap Labs felületén, mert egy vagy több címhez van társítva"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "This app uses the following third-party APIs:"
@@ -1712,16 +1712,16 @@ msgid "This token doesn't appear on the active token list(s). Make sure this is 
 msgstr "Ez a token nem jelenik meg az aktív tokenek listájában. Győződjön meg arról, hogy ez az a token, amelyet kereskedni szeretne."
 
 #: src/components/SearchModal/BlockedToken.tsx
-msgid "This token is not supported in the Uniswap Labs app"
-msgstr "Ezt a tokent nem támogatja az Uniswap Labs alkalmazás"
+msgid "This token is not supported in the Ariswap Labs app"
+msgstr "Ezt a tokent nem támogatja az Ariswap Labs alkalmazás"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "This tool will safely migrate your {0} liquidity to V3. The process is completely trustless thanks to the"
 msgstr "Ez az eszköz biztonságosan migrálja a {0} likviditását a V3-ba. A folyamat teljesen megbízhatatlan köszönhetően"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Ez a tranzakció az ármozgás miatt nem fog sikerülni. Próbáld meg növelni a csúszástűrést. Megjegyzés: az átviteli és újrabázis tokenek díja nem kompatibilis az Uniswap V3 verzióval."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "Ez a tranzakció az ármozgás miatt nem fog sikerülni. Próbáld meg növelni a csúszástűrést. Megjegyzés: az átviteli és újrabázis tokenek díja nem kompatibilis az Ariswap V3 verzióval."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1810,29 +1810,29 @@ msgid "Turn On Expert Mode"
 msgstr "Kapcsolja be a Szakértő módot"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "UNI has arrived"
-msgstr "Megérkezett az UNI"
+msgid "ARI has arrived"
+msgstr "Megérkezett az ARI"
 
 #: src/pages/Vote/Landing.tsx
-msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "Az UNI tokenek szavazati részvényeket képviselnek az Uniswap irányításában. Az egyes javaslatokról saját maga is szavazhat, vagy szavazatait átruházhatja egy harmadik félre."
+msgid "ARI tokens represent voting shares in Ariswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgstr "Az ARI tokenek szavazati részvényeket képviselnek az Ariswap irányításában. Az egyes javaslatokról saját maga is szavazhat, vagy szavazatait átruházhatja egy harmadik félre."
 
 #: src/pages/RemoveLiquidity/index.tsx
-msgid "UNI {0}/{1} Burned"
-msgstr "UNI {0}/{1} Elégett"
+msgid "ARI {0}/{1} Burned"
+msgstr "ARI {0}/{1} Elégett"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "UNI-V2 LP tokenek szükségesek. Miután hozzáadta a likviditást a {0}-{1} készlethez, ezen az oldalon elhelyezheti likviditási zsetonjait."
+msgid "ARI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "ARI-V2 LP tokenek szükségesek. Miután hozzáadta a likviditást a {0}-{1} készlethez, ezen az oldalon elhelyezheti likviditási zsetonjait."
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "ARI-V2 {0}-{1}"
+msgstr "ARI-V2 {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Unclaimed UNI"
-msgstr "Nem igényelt UNI"
+msgid "Unclaimed ARI"
+msgstr "Nem igényelt ARI"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Unclaimed fees"
@@ -1851,36 +1851,36 @@ msgid "Unexpected issue with estimating the gas. Please try again."
 msgstr "Váratlan probléma a gáz becslésével. Kérlek próbáld újra."
 
 #: src/pages/Vote/Landing.tsx
-msgid "Uniswap Governance"
-msgstr "Uniswap irányítás"
+msgid "Ariswap Governance"
+msgstr "Ariswap irányítás"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Uniswap Labs' Terms of Service"
-msgstr "Az Uniswap Labs szolgáltatási feltételei"
+msgid "Ariswap Labs' Terms of Service"
+msgstr "Az Ariswap Labs szolgáltatási feltételei"
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Uniswap available in: <0>{0}</0>"
-msgstr "Az Uniswap itt érhető el: <0>{0}</0>"
+msgid "Ariswap available in: <0>{0}</0>"
+msgstr "Az Ariswap itt érhető el: <0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
-msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
-msgstr "Az uniswap irányítás csak az 1. rétegben érhető el. A javaslatok és a szavazatok megtekintéséhez kapcsolja hálózatát Ethereum Mainnet-re."
+msgid "Ariswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+msgstr "Az Ariswap irányítás csak az 1. rétegben érhető el. A javaslatok és a szavazatok megtekintéséhez kapcsolja hálózatát Ethereum Mainnet-re."
 
 #: src/pages/Earn/index.tsx
-msgid "Uniswap liquidity mining"
-msgstr "Uniswap likviditásbányászat"
+msgid "Ariswap liquidity mining"
+msgstr "Ariswap likviditásbányászat"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "Uniswap migration contract↗"
-msgstr "Uniswap migrációs szerződés↗"
+msgid "Ariswap migration contract↗"
+msgstr "Ariswap migrációs szerződés↗"
 
 #: src/components/SearchModal/TokenImportCard.tsx
 msgid "Unknown Source"
 msgstr "Ismeretlen forrás"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Ismeretlen hiba{0}. Próbálja meg növelni a csúszástűrést. Megjegyzés: az átutalási és újbóli alapkivonási díjak nem kompatibilisek az Uniswap V3 -mal."
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "Ismeretlen hiba{0}. Próbálja meg növelni a csúszástűrést. Megjegyzés: az átutalási és újbóli alapkivonási díjak nem kompatibilisek az Ariswap V3 -mal."
 
 #: src/pages/Vote/Landing.tsx
 #: src/pages/Vote/VotePage.tsx
@@ -1926,8 +1926,8 @@ msgid "Update list"
 msgstr "Lista frissítése"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Uniswap Labs API to get faster quotes."
-msgstr "A Uniswap Labs API segítségével gyorsabb árajánlatokat kaphat."
+msgid "Use the Ariswap Labs API to get faster quotes."
+msgstr "A Ariswap Labs API segítségével gyorsabb árajánlatokat kaphat."
 
 #: src/components/claim/ClaimModal.tsx
 msgid "User"
@@ -2056,12 +2056,12 @@ msgid "When you claim without withdrawing your liquidity remains in the mining p
 msgstr "Ha visszavonás nélkül igényel, a likviditása a bányászpoolban marad."
 
 #: src/pages/Earn/Manage.tsx
-msgid "When you withdraw, the contract will automagically claim UNI on your behalf!"
-msgstr "Amikor visszavonja, a szerződés automatikusan UNI-t követel az Ön nevében!"
+msgid "When you withdraw, the contract will automagically claim ARI on your behalf!"
+msgstr "Amikor visszavonja, a szerződés automatikusan ARI-t követel az Ön nevében!"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "When you withdraw, your UNI is claimed and your liquidity is removed from the mining pool."
-msgstr "Ha visszavonja, az UNI-ját igényli, és a likviditása kikerül a bányászpoolból."
+msgid "When you withdraw, your ARI is claimed and your liquidity is removed from the mining pool."
+msgstr "Ha visszavonja, az ARI-ját igényli, és a likviditása kikerül a bányászpoolból."
 
 #: src/components/earn/UnstakingModal.tsx
 #: src/pages/Earn/Manage.tsx
@@ -2077,12 +2077,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "A letétbe helyezett likviditás visszavonása"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "{0} UNI-V2 visszavonása"
+msgid "Withdrawing {0} ARI-V2"
+msgstr "{0} ARI-V2 visszavonása"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "Visszavonta az UNI-V2-t!"
+msgid "Withdrew ARI-V2!"
+msgstr "Visszavonta az ARI-V2-t!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2106,8 +2106,8 @@ msgid "You are creating a pool"
 msgstr "Poolt hoz létre"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
-msgstr "Ön az első likviditásszolgáltató ebben az Uniswap V3 poolban. Likviditása a jelenlegi {0} áron migrál."
+msgid "You are the first liquidity provider for this Ariswap V3 pool. Your liquidity will migrate at the current {0} price."
+msgstr "Ön az első likviditásszolgáltató ebben az Ariswap V3 poolban. Likviditása a jelenlegi {0} áron migrál."
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "You are the first liquidity provider."
@@ -2146,16 +2146,16 @@ msgid "You must connect an account."
 msgstr "Csatlakoznia kell egy fiókhoz."
 
 #: src/pages/Swap/index.tsx
-msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
-msgstr "Engedélyt kell adnia az Uniswap intelligens szerződéseknek a(z) {0} használatához. Ezt tokenenként csak egyszer kell megtennie."
+msgid "You must give the Ariswap smart contracts permission to use your {0}. You only have to do this once per token."
+msgstr "Engedélyt kell adnia az Ariswap intelligens szerződéseknek a(z) {0} használatához. Ezt tokenenként csak egyszer kell megtennie."
 
 #: src/pages/CreateProposal/index.tsx
 msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "A javaslat benyújtásához {formattedProposalThreshold} szavazattal kell rendelkeznie"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "Csak olyan áron helyezhet el likviditást az Uniswap V3-ban, amelyet helyesnek tart. <0/>Ha az ár helytelennek tűnik, akkor vagy cserét hajt végre az ár elmozdítása érdekében, vagy megvárhatja, hogy valaki más megtegye ezt."
+msgid "You should only deposit liquidity into Ariswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr "Csak olyan áron helyezhet el likviditást az Ariswap V3-ban, amelyet helyesnek tart. <0/>Ha az ár helytelennek tűnik, akkor vagy cserét hajt végre az ár elmozdítása érdekében, vagy megvárhatja, hogy valaki más megtegye ezt."
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."
@@ -2250,8 +2250,8 @@ msgid "Your transactions will appear here..."
 msgstr "A tranzakciói itt jelennek meg..."
 
 #: src/pages/Earn/Manage.tsx
-msgid "Your unclaimed UNI"
-msgstr "Nem igényelt UNI"
+msgid "Your unclaimed ARI"
+msgstr "Nem igényelt ARI"
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "after slippage"
@@ -2344,24 +2344,24 @@ msgstr "{0} függőben van"
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
-msgid "{0} UNI"
-msgstr "{0} UNI"
+msgid "{0} ARI"
+msgstr "{0} ARI"
 
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/StakingModal.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI / week"
-msgstr "{0} UNI / hét"
+msgid "{0} ARI / week"
+msgstr "{0} ARI / hét"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+msgid "{0} ARI-V2"
+msgstr "{0} ARI-V2"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} UNI-V2 LP token érhető el"
+msgid "{0} ARI-V2 LP tokens available"
+msgstr "{0} ARI-V2 LP token érhető el"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"
@@ -2434,12 +2434,12 @@ msgid "{0}/{1} LP Tokens"
 msgstr "{0}/{1} LP token"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "{SOCKS_AMOUNT} UNI"
-msgstr "{SOCKS_AMOUNT} UNI"
+msgid "{SOCKS_AMOUNT} ARI"
+msgstr "{SOCKS_AMOUNT} ARI"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "{USER_AMOUNT} UNI"
-msgstr "{USER_AMOUNT} UNI"
+msgid "{USER_AMOUNT} ARI"
+msgstr "{USER_AMOUNT} ARI"
 
 #: src/components/SearchModal/ManageLists.tsx
 msgid "{activeTokensOnThisChain} tokens"

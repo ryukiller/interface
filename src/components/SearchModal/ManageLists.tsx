@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-restricted-imports
 import { t, Trans } from '@lingui/macro'
-import { TokenList } from '@uniswap/token-lists'
+import { TokenList } from '@ariswap/token-lists'
 import { sendEvent } from 'components/analytics'
 import Card from 'components/Card'
 import { UNSUPPORTED_LIST_URLS } from 'constants/lists'
@@ -76,12 +76,12 @@ const StyledTitleText = styled.div<{ active: boolean }>`
   color: ${({ theme, active }) => (active ? theme.white : theme.text2)};
 `
 
-const StyledListUrlText = styled(ThemedText.Main)<{ active: boolean }>`
+const StyledListUrlText = styled(ThemedText.Main) <{ active: boolean }>`
   font-size: 12px;
   color: ${({ theme, active }) => (active ? theme.white : theme.text2)};
 `
 
-const RowWrapper = styled(Row)<{ bgColor: string; active: boolean; hasActiveTokens: boolean }>`
+const RowWrapper = styled(Row) <{ bgColor: string; active: boolean; hasActiveTokens: boolean }>`
   background-color: ${({ bgColor, active, theme }) => (active ? bgColor ?? 'transparent' : theme.bg2)};
   opacity: ${({ hasActiveTokens }) => (hasActiveTokens ? 1 : 0.4)};
   transition: 200ms;
@@ -305,8 +305,8 @@ export function ManageLists({
           return listA.name.toLowerCase() < listB.name.toLowerCase()
             ? -1
             : listA.name.toLowerCase() === listB.name.toLowerCase()
-            ? 0
-            : 1
+              ? 0
+              : 1
         }
         if (listA) return -1
         if (listB) return 1

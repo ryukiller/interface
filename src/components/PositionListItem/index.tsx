@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Percent, Price, Token } from '@uniswap/sdk-core'
-import { Position } from '@uniswap/v3-sdk'
+import { Percent, Price, Token } from '@ariswap/sdk-core'
+import { Position } from '@ariswap/v3-sdk'
 import Badge from 'components/Badge'
 import RangeBadge from 'components/Badge/RangeBadge'
 import DoubleCurrencyLogo from 'components/DoubleLogo'

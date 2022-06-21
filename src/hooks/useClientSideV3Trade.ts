@@ -1,5 +1,5 @@
-import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
-import { Route, SwapQuoter } from '@uniswap/v3-sdk'
+import { Currency, CurrencyAmount, TradeType } from '@ariswap/sdk-core'
+import { Route, SwapQuoter } from '@ariswap/v3-sdk'
 import { SupportedChainId } from 'constants/chains'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'

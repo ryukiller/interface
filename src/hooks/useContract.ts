@@ -1,11 +1,11 @@
 import { Contract } from '@ethersproject/contracts'
-import IUniswapV2PairJson from '@uniswap/v2-core/build/IUniswapV2Pair.json'
-import IUniswapV2Router02Json from '@uniswap/v2-periphery/build/IUniswapV2Router02.json'
-import QuoterJson from '@uniswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json'
-import TickLensJson from '@uniswap/v3-periphery/artifacts/contracts/lens/TickLens.sol/TickLens.json'
-import UniswapInterfaceMulticallJson from '@uniswap/v3-periphery/artifacts/contracts/lens/UniswapInterfaceMulticall.sol/UniswapInterfaceMulticall.json'
-import NonfungiblePositionManagerJson from '@uniswap/v3-periphery/artifacts/contracts/NonfungiblePositionManager.sol/NonfungiblePositionManager.json'
-import V3MigratorJson from '@uniswap/v3-periphery/artifacts/contracts/V3Migrator.sol/V3Migrator.json'
+import IAriswapV2PairJson from '@ariswap/v2-core/build/IAriswapV2Pair.json'
+import IAriswapV2Router02Json from '@ariswap/v2-periphery/build/IAriswapV2Router02.json'
+import QuoterJson from '@ariswap/v3-periphery/artifacts/contracts/lens/Quoter.sol/Quoter.json'
+import TickLensJson from '@ariswap/v3-periphery/artifacts/contracts/lens/TickLens.sol/TickLens.json'
+import AriswapInterfaceMulticallJson from '@ariswap/v3-periphery/artifacts/contracts/lens/AriswapInterfaceMulticall.sol/AriswapInterfaceMulticall.json'
+import NonfungiblePositionManagerJson from '@ariswap/v3-periphery/artifacts/contracts/NonfungiblePositionManager.sol/NonfungiblePositionManager.json'
+import V3MigratorJson from '@ariswap/v3-periphery/artifacts/contracts/V3Migrator.sol/V3Migrator.json'
 import ARGENT_WALLET_DETECTOR_ABI from 'abis/argent-wallet-detector.json'
 import EIP_2612 from 'abis/eip_2612.json'
 import ENS_PUBLIC_RESOLVER_ABI from 'abis/ens-public-resolver.json'
@@ -29,16 +29,16 @@ import {
 import { WRAPPED_NATIVE_CURRENCY } from 'constants/tokens'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useMemo } from 'react'
-import { NonfungiblePositionManager, Quoter, TickLens, UniswapInterfaceMulticall } from 'types/v3'
+import { NonfungiblePositionManager, Quoter, TickLens, AriswapInterfaceMulticall } from 'types/v3'
 import { V3Migrator } from 'types/v3/V3Migrator'
 
 import { getContract } from '../utils'
 
-const { abi: IUniswapV2PairABI } = IUniswapV2PairJson
-const { abi: IUniswapV2Router02ABI } = IUniswapV2Router02Json
+const { abi: IAriswapV2PairABI } = IAriswapV2PairJson
+const { abi: IAriswapV2Router02ABI } = IAriswapV2Router02Json
 const { abi: QuoterABI } = QuoterJson
 const { abi: TickLensABI } = TickLensJson
-const { abi: MulticallABI } = UniswapInterfaceMulticallJson
+const { abi: MulticallABI } = AriswapInterfaceMulticallJson
 const { abi: NFTPositionManagerABI } = NonfungiblePositionManagerJson
 const { abi: V2MigratorABI } = V3MigratorJson
 
@@ -111,15 +111,15 @@ export function useEIP2612Contract(tokenAddress?: string): Contract | null {
 }
 
 export function usePairContract(pairAddress?: string, withSignerIfPossible?: boolean): Contract | null {
-  return useContract(pairAddress, IUniswapV2PairABI, withSignerIfPossible)
+  return useContract(pairAddress, IAriswapV2PairABI, withSignerIfPossible)
 }
 
 export function useV2RouterContract(): Contract | null {
-  return useContract(V2_ROUTER_ADDRESS, IUniswapV2Router02ABI, true)
+  return useContract(V2_ROUTER_ADDRESS, IAriswapV2Router02ABI, true)
 }
 
 export function useInterfaceMulticall() {
-  return useContract<UniswapInterfaceMulticall>(MULTICALL_ADDRESS, MulticallABI, false) as UniswapInterfaceMulticall
+  return useContract<AriswapInterfaceMulticall>(MULTICALL_ADDRESS, MulticallABI, false) as AriswapInterfaceMulticall
 }
 
 export function useV3NFTPositionManagerContract(withSignerIfPossible?: boolean): NonfungiblePositionManager | null {

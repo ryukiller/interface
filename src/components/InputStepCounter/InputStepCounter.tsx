@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { FeeAmount } from '@ariswap/v3-sdk'
 import { ButtonGray } from 'components/Button'
 import { OutlineCard } from 'components/Card'
 import { AutoColumn } from 'components/Column'
@@ -35,13 +35,13 @@ const SmallButton = styled(ButtonGray)`
   padding: 4px;
 `
 
-const FocusedOutlineCard = styled(OutlineCard)<{ active?: boolean; pulsing?: boolean }>`
+const FocusedOutlineCard = styled(OutlineCard) <{ active?: boolean; pulsing?: boolean }>`
   border-color: ${({ active, theme }) => active && theme.blue1};
   padding: 12px;
   animation: ${({ pulsing, theme }) => pulsing && pulse(theme.blue1)} 0.8s linear;
 `
 
-const StyledInput = styled(NumericalInput)<{ usePercent?: boolean }>`
+const StyledInput = styled(NumericalInput) <{ usePercent?: boolean }>`
   background-color: transparent;
   text-align: center;
   width: 100%;
@@ -63,7 +63,7 @@ const InputTitle = styled(ThemedText.Small)`
   font-weight: 500;
 `
 
-const ButtonLabel = styled(ThemedText.White)<{ disabled: boolean }>`
+const ButtonLabel = styled(ThemedText.White) <{ disabled: boolean }>`
   color: ${({ theme, disabled }) => (disabled ? theme.text2 : theme.text1)} !important;
 `
 

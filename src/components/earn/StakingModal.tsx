@@ -1,8 +1,8 @@
 import { TransactionResponse } from '@ethersproject/providers'
 import { Trans } from '@lingui/macro'
-import StakingRewardsJson from '@uniswap/liquidity-staker/build/StakingRewards.json'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
+import StakingRewardsJson from '@ariswap/liquidity-staker/build/StakingRewards.json'
+import { CurrencyAmount, Token } from '@ariswap/sdk-core'
+import { Pair } from '@ariswap/v2-sdk'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useV2LiquidityTokenPermit } from 'hooks/useV2LiquidityTokenPermit'
 import { useCallback, useState } from 'react'
@@ -195,7 +195,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
                 {hypotheticalRewardRate
                   .multiply((60 * 60 * 24 * 7).toString())
                   .toSignificant(4, { groupSeparator: ',' })}{' '}
-                UNI / week
+                ARI / week
               </Trans>
             </ThemedText.Black>
           </HypotheticalRewardRate>
@@ -227,7 +227,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
               <Trans>Depositing Liquidity</Trans>
             </ThemedText.LargeHeader>
             <ThemedText.Body fontSize={20}>
-              <Trans>{parsedAmount?.toSignificant(4)} UNI-V2</Trans>
+              <Trans>{parsedAmount?.toSignificant(4)} ARI-V2</Trans>
             </ThemedText.Body>
           </AutoColumn>
         </LoadingView>
@@ -239,7 +239,7 @@ export default function StakingModal({ isOpen, onDismiss, stakingInfo, userLiqui
               <Trans>Transaction Submitted</Trans>
             </ThemedText.LargeHeader>
             <ThemedText.Body fontSize={20}>
-              <Trans>Deposited {parsedAmount?.toSignificant(4)} UNI-V2</Trans>
+              <Trans>Deposited {parsedAmount?.toSignificant(4)} ARI-V2</Trans>
             </ThemedText.Body>
           </AutoColumn>
         </SubmittedView>

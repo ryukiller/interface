@@ -1,7 +1,7 @@
-import { Trade } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { Trade } from '@ariswap/router-sdk'
+import { Currency, CurrencyAmount, Fraction, Percent, TradeType } from '@ariswap/sdk-core'
+import { Pair } from '@ariswap/v2-sdk'
+import { FeeAmount } from '@ariswap/v3-sdk'
 import JSBI from 'jsbi'
 
 import {

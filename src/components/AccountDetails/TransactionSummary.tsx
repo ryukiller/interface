@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Fraction, TradeType } from '@uniswap/sdk-core'
+import { Fraction, TradeType } from '@ariswap/sdk-core'
 import JSBI from 'jsbi'
 
 import { nativeOnChain } from '../../constants/tokens'
@@ -75,11 +75,11 @@ function ClaimSummary({ info: { recipient, uniAmountRaw } }: { info: ClaimTransa
   const { ENSName } = useENSName()
   return typeof uniAmountRaw === 'string' ? (
     <Trans>
-      Claim <FormattedCurrencyAmount rawAmount={uniAmountRaw} symbol={'UNI'} decimals={18} sigFigs={4} /> for{' '}
+      Claim <FormattedCurrencyAmount rawAmount={uniAmountRaw} symbol={'ARI'} decimals={18} sigFigs={4} /> for{' '}
       {ENSName ?? recipient}
     </Trans>
   ) : (
-    <Trans>Claim UNI reward for {ENSName ?? recipient}</Trans>
+    <Trans>Claim ARI reward for {ENSName ?? recipient}</Trans>
   )
 }
 
@@ -264,7 +264,7 @@ function AddLiquidityV2PoolSummary({
     <Trans>
       Add <FormattedCurrencyAmountManaged rawAmount={expectedAmountBaseRaw} currencyId={baseCurrencyId} sigFigs={3} />{' '}
       and <FormattedCurrencyAmountManaged rawAmount={expectedAmountQuoteRaw} currencyId={quoteCurrencyId} sigFigs={3} />{' '}
-      to Uniswap V2
+      to Ariswap V2
     </Trans>
   )
 }

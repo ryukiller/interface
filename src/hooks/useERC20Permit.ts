@@ -1,16 +1,16 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { splitSignature } from '@ethersproject/bytes'
-import { Trade } from '@uniswap/router-sdk'
-import { Currency, CurrencyAmount, Percent, TradeType } from '@uniswap/sdk-core'
-import { Trade as V2Trade } from '@uniswap/v2-sdk'
-import { Trade as V3Trade } from '@uniswap/v3-sdk'
+import { Trade } from '@ariswap/router-sdk'
+import { Currency, CurrencyAmount, Percent, TradeType } from '@ariswap/sdk-core'
+import { Trade as V2Trade } from '@ariswap/v2-sdk'
+import { Trade as V3Trade } from '@ariswap/v3-sdk'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import { useSingleCallResult } from 'lib/hooks/multicall'
 import { useMemo, useState } from 'react'
 
 import { SWAP_ROUTER_ADDRESSES, V3_ROUTER_ADDRESS } from '../constants/addresses'
-import { DAI, UNI, USDC_MAINNET } from '../constants/tokens'
+import { DAI, ARI, USDC_MAINNET } from '../constants/tokens'
 import { useEIP2612Contract } from './useContract'
 import useIsArgentWallet from './useIsArgentWallet'
 
@@ -38,21 +38,21 @@ const PERMITTABLE_TOKENS: {
   1: {
     [USDC_MAINNET.address]: { type: PermitType.AMOUNT, name: 'USD Coin', version: '2' },
     [DAI.address]: { type: PermitType.ALLOWED, name: 'Dai Stablecoin', version: '1' },
-    [UNI[1].address]: { type: PermitType.AMOUNT, name: 'Uniswap' },
+    [ARI[1].address]: { type: PermitType.AMOUNT, name: 'Ariswap' },
   },
   4: {
     '0xc7AD46e0b8a400Bb3C915120d284AafbA8fc4735': { type: PermitType.ALLOWED, name: 'Dai Stablecoin', version: '1' },
-    [UNI[4].address]: { type: PermitType.AMOUNT, name: 'Uniswap' },
+    [ARI[4].address]: { type: PermitType.AMOUNT, name: 'Ariswap' },
   },
   3: {
-    [UNI[3].address]: { type: PermitType.AMOUNT, name: 'Uniswap' },
+    [ARI[3].address]: { type: PermitType.AMOUNT, name: 'Ariswap' },
     '0x07865c6E87B9F70255377e024ace6630C1Eaa37F': { type: PermitType.AMOUNT, name: 'USD Coin', version: '2' },
   },
   5: {
-    [UNI[5].address]: { type: PermitType.AMOUNT, name: 'Uniswap' },
+    [ARI[5].address]: { type: PermitType.AMOUNT, name: 'Ariswap' },
   },
   42: {
-    [UNI[42].address]: { type: PermitType.AMOUNT, name: 'Uniswap' },
+    [ARI[42].address]: { type: PermitType.AMOUNT, name: 'Ariswap' },
   },
 }
 

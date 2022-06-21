@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Token, TradeType } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Token, TradeType } from '@ariswap/sdk-core'
 import { RowBetween } from 'components/Row'
 import { MouseoverTooltipContent } from 'components/Tooltip'
 import { Info } from 'react-feather'
@@ -35,8 +35,8 @@ export default function SwapWarningDropdown({
   // gas cost estimate is more than half of input value
   const showNetworkFeeWarning = Boolean(
     fiatValueInput &&
-      trade?.gasUseEstimateUSD &&
-      parseFloat(trade.gasUseEstimateUSD.toSignificant(6)) > parseFloat(fiatValueInput.toFixed(6)) / 2
+    trade?.gasUseEstimateUSD &&
+    parseFloat(trade.gasUseEstimateUSD.toSignificant(6)) > parseFloat(fiatValueInput.toFixed(6)) / 2
   )
 
   if (!showNetworkFeeWarning) {

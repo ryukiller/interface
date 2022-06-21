@@ -1,6 +1,6 @@
 import { skipToken } from '@reduxjs/toolkit/query/react'
-import { Currency } from '@uniswap/sdk-core'
-import { FeeAmount, nearestUsableTick, Pool, TICK_SPACINGS, tickToPrice } from '@uniswap/v3-sdk'
+import { Currency } from '@ariswap/sdk-core'
+import { FeeAmount, nearestUsableTick, Pool, TICK_SPACINGS, tickToPrice } from '@ariswap/v3-sdk'
 import { SupportedChainId } from 'constants/chains'
 import { ZERO_ADDRESS } from 'constants/misc'
 import JSBI from 'jsbi'

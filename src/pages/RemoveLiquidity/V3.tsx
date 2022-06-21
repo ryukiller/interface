@@ -1,8 +1,8 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Percent } from '@uniswap/sdk-core'
-import { NonfungiblePositionManager } from '@uniswap/v3-sdk'
+import { CurrencyAmount, Percent } from '@ariswap/sdk-core'
+import { NonfungiblePositionManager } from '@ariswap/v3-sdk'
 import { sendEvent } from 'components/analytics'
 import RangeBadge from 'components/Badge/RangeBadge'
 import { ButtonConfirmed, ButtonPrimary } from 'components/Button'
@@ -266,11 +266,11 @@ function Remove({ tokenId }: { tokenId: BigNumber }) {
 
   const showCollectAsWeth = Boolean(
     liquidityValue0?.currency &&
-      liquidityValue1?.currency &&
-      (liquidityValue0.currency.isNative ||
-        liquidityValue1.currency.isNative ||
-        WRAPPED_NATIVE_CURRENCY[liquidityValue0.currency.chainId]?.equals(liquidityValue0.currency.wrapped) ||
-        WRAPPED_NATIVE_CURRENCY[liquidityValue1.currency.chainId]?.equals(liquidityValue1.currency.wrapped))
+    liquidityValue1?.currency &&
+    (liquidityValue0.currency.isNative ||
+      liquidityValue1.currency.isNative ||
+      WRAPPED_NATIVE_CURRENCY[liquidityValue0.currency.chainId]?.equals(liquidityValue0.currency.wrapped) ||
+      WRAPPED_NATIVE_CURRENCY[liquidityValue1.currency.chainId]?.equals(liquidityValue1.currency.wrapped))
   )
   return (
     <AutoColumn>

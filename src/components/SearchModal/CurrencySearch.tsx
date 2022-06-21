@@ -1,6 +1,6 @@
 // eslint-disable-next-line no-restricted-imports
 import { t, Trans } from '@lingui/macro'
-import { Currency, Token } from '@uniswap/sdk-core'
+import { Currency, Token } from '@ariswap/sdk-core'
 import { sendEvent } from 'components/analytics'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import useDebounce from 'hooks/useDebounce'

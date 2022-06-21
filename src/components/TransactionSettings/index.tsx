@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Percent } from '@uniswap/sdk-core'
+import { Percent } from '@ariswap/sdk-core'
 import { L2_CHAIN_IDS } from 'constants/chains'
 import { DEFAULT_DEADLINE_FROM_NOW } from 'constants/misc'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
@@ -41,7 +41,7 @@ const FancyButton = styled.button`
   }
 `
 
-const Option = styled(FancyButton)<{ active: boolean }>`
+const Option = styled(FancyButton) <{ active: boolean }>`
   margin-right: 8px;
   :hover {
     cursor: pointer;
@@ -63,7 +63,7 @@ const Input = styled.input`
   text-align: right;
 `
 
-const OptionCustom = styled(FancyButton)<{ active?: boolean; warning?: boolean }>`
+const OptionCustom = styled(FancyButton) <{ active?: boolean; warning?: boolean }>`
   height: 2rem;
   position: relative;
   padding: 0 0.75rem;
@@ -72,7 +72,7 @@ const OptionCustom = styled(FancyButton)<{ active?: boolean; warning?: boolean }
     active ? `1px solid ${warning ? theme.red1 : theme.primary1}` : warning && `1px solid ${theme.red1}`};
   :hover {
     border: ${({ theme, active, warning }) =>
-      active && `1px solid ${warning ? darken(0.1, theme.red1) : darken(0.1, theme.primary1)}`};
+    active && `1px solid ${warning ? darken(0.1, theme.red1) : darken(0.1, theme.primary1)}`};
   }
 
   input {
@@ -196,8 +196,8 @@ export default function TransactionSettings({ placeholderSlippage }: Transaction
                   slippageInput.length > 0
                     ? slippageInput
                     : userSlippageTolerance === 'auto'
-                    ? ''
-                    : userSlippageTolerance.toFixed(2)
+                      ? ''
+                      : userSlippageTolerance.toFixed(2)
                 }
                 onChange={(e) => parseSlippageInput(e.target.value)}
                 onBlur={() => {
@@ -247,8 +247,8 @@ export default function TransactionSettings({ placeholderSlippage }: Transaction
                   deadlineInput.length > 0
                     ? deadlineInput
                     : deadline === DEFAULT_DEADLINE_FROM_NOW
-                    ? ''
-                    : (deadline / 60).toString()
+                      ? ''
+                      : (deadline / 60).toString()
                 }
                 onChange={(e) => parseCustomDeadline(e.target.value)}
                 onBlur={() => {

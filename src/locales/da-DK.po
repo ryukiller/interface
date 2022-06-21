@@ -1,6 +1,6 @@
 msgid ""
 msgstr ""
-"Project-Id-Version: uniswap-interface\n"
+"Project-Id-Version: Ariswap-interface\n"
 "Report-Msgid-Bugs-To: \n"
 "POT-Creation-Date: \n"
 "PO-Revision-Date: 2022-06-06 00:14\n"
@@ -10,7 +10,7 @@ msgstr ""
 "Content-Type: text/plain; charset=UTF-8\n"
 "Content-Transfer-Encoding: \n"
 "Plural-Forms: nplurals=2; plural=(n != 1);\n"
-"X-Crowdin-Project: uniswap-interface\n"
+"X-Crowdin-Project: Ariswap-interface\n"
 "X-Crowdin-Project-ID: 458284\n"
 "X-Crowdin-Language: da\n"
 "X-Crowdin-File: en-US.po\n"
@@ -56,8 +56,8 @@ msgstr "- Fjern modtager"
 #: src/components/earn/PoolCard.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
-msgid "0 UNI / week"
-msgstr "0 UNI / uge"
+msgid "0 ARI / week"
+msgstr "0 ARI / uge"
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "25%"
@@ -113,8 +113,8 @@ msgid "<0>🎉 </0>Welcome to team Unicorn :) <1>🎉</1>"
 msgstr "<0>🎉 </0>Velkommen til team Unicorn :) <1>🎉</1>"
 
 #: src/pages/Vote/Landing.tsx
-msgid "A minimum threshold of 0.25% of the total UNI supply is required to submit proposals"
-msgstr "En minimumstærskel på 0,25% af den samlede UNI-forsyning kræves for at indsende forslag"
+msgid "A minimum threshold of 0.25% of the total ARI supply is required to submit proposals"
+msgstr "En minimumstærskel på 0,25% af den samlede ARI-forsyning kræves for at indsende forslag"
 
 #: src/components/Menu/index.tsx
 msgid "About"
@@ -139,8 +139,8 @@ msgid "Add"
 msgstr "Tilføj"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Add <0/> and <1/> to Uniswap V2"
-msgstr "Tilføj <0/> og <1/> til Uniswap V2"
+msgid "Add <0/> and <1/> to Ariswap V2"
+msgstr "Tilføj <0/> og <1/> til Ariswap V2"
 
 #: src/components/vote/DelegateModal.tsx
 msgid "Add Delegate +"
@@ -196,8 +196,8 @@ msgid "Allow high price impact trades and skip the confirm screen. Use at your o
 msgstr "Tillad høj pris påvirkning handler og springer over bekræftelsesskærmen. Brug på egen risiko."
 
 #: src/pages/Swap/index.tsx
-msgid "Allow the Uniswap Protocol to use your {0}"
-msgstr "Tillad Uniswap-protokollen at bruge din {0}"
+msgid "Allow the Ariswap Protocol to use your {0}"
+msgstr "Tillad Ariswap-protokollen at bruge din {0}"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "Allowed"
@@ -208,8 +208,8 @@ msgid "Amount"
 msgstr "Beløb"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Der opstod en fejl under forsøg på at udføre denne swap. Det kan være nødvendigt at øge din glidningstolerance. Hvis det ikke virker, kan der være en uforenelighed med det token, du handler. Bemærk: gebyr ved overførsel og rebase-tokens er inkompatibelt med Uniswap V3."
+msgid "An error occurred when trying to execute this swap. You may need to increase your slippage tolerance. If that does not work, there may be an incompatibility with the token you are trading. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "Der opstod en fejl under forsøg på at udføre denne swap. Det kan være nødvendigt at øge din glidningstolerance. Hvis det ikke virker, kan der være en uforenelighed med det token, du handler. Bemærk: gebyr ved overførsel og rebase-tokens er inkompatibelt med Ariswap V3."
 
 #: src/components/earn/StakingModal.tsx
 #: src/pages/RemoveLiquidity/index.tsx
@@ -261,8 +261,8 @@ msgid "Are you sure?"
 msgstr "Er du sikker?"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "As a member of the Uniswap community you may claim UNI to be used for voting and governance.<0/><1/><2>Read more about UNI</2>"
-msgstr "Som medlem af Uniswap-fællesskabet kan du kræve, at UNI skal bruges til afstemning og styring.<0/><1/><2>Læs mere om UNI</2>"
+msgid "As a member of the Ariswap community you may claim ARI to be used for voting and governance.<0/><1/><2>Read more about ARI</2>"
+msgstr "Som medlem af Ariswap-fællesskabet kan du kræve, at ARI skal bruges til afstemning og styring.<0/><1/><2>Læs mere om ARI</2>"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "At least {0} {1} and {2} {3} will be refunded to your wallet due to selected price range."
@@ -329,8 +329,8 @@ msgid "By adding this list you are implicitly trusting that the data is correct.
 msgstr "Ved at tilføje denne liste har du implicit tillid til, at dataene er korrekte. Alle kan oprette en liste, herunder skabe falske versioner af eksisterende lister og lister, der hævder at repræsentere projekter, der ikke har en."
 
 #: src/components/WalletModal/index.tsx
-msgid "By connecting a wallet, you agree to Uniswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Uniswap <1>Protocol Disclaimer</1>."
-msgstr "Ved at tilslutte en tegnebog accepterer du Uniswap Labs' <0>Servicevilkår</0> og anerkender, at du har læst og forstået Uniswap <1>Protocol Disclaimer</1>."
+msgid "By connecting a wallet, you agree to Ariswap Labs’ <0>Terms of Service</0> and acknowledge that you have read and understand the Ariswap <1>Protocol Disclaimer</1>."
+msgstr "Ved at tilslutte en tegnebog accepterer du Ariswap Labs' <0>Servicevilkår</0> og anerkender, at du har læst og forstået Ariswap <1>Protocol Disclaimer</1>."
 
 #: src/pages/Vote/styled.tsx
 msgid "Canceled"
@@ -367,24 +367,24 @@ msgstr "Gør krav på <0/> for {0}"
 #: src/components/claim/AddressClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
-msgid "Claim UNI"
-msgstr "Gør krav på UNI"
+msgid "Claim ARI"
+msgstr "Gør krav på ARI"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Claim UNI Token"
-msgstr "Gør krav på UNI-token"
+msgid "Claim ARI Token"
+msgstr "Gør krav på ARI-token"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
-msgid "Claim UNI reward for {0}"
-msgstr "Gør krav på UNI -belønning for {0}"
+msgid "Claim ARI reward for {0}"
+msgstr "Gør krav på ARI -belønning for {0}"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Claim fees"
 msgstr "Gør krav på gebyrer"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Claim your UNI tokens"
-msgstr "Gør krav på dine UNI-tokens"
+msgid "Claim your ARI tokens"
+msgstr "Gør krav på dine ARI-tokens"
 
 #: src/components/claim/AddressClaimModal.tsx
 msgid "Claimed"
@@ -392,8 +392,8 @@ msgstr "Gjort krav på"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claimed UNI!"
-msgstr "Gjort krav på UNI!"
+msgid "Claimed ARI!"
+msgstr "Gjort krav på ARI!"
 
 #: src/components/claim/ClaimModal.tsx
 msgid "Claimed!"
@@ -405,13 +405,13 @@ msgid "Claiming"
 msgstr "Gør krav"
 
 #: src/components/Header/index.tsx
-msgid "Claiming UNI"
-msgstr "Gør krav på UNI"
+msgid "Claiming ARI"
+msgstr "Gør krav på ARI"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Claiming {0} UNI"
-msgstr "Gør krav på {0} UNI"
+msgid "Claiming {0} ARI"
+msgstr "Gør krav på {0} ARI"
 
 #: src/pages/AddLiquidity/index.tsx
 msgid "Clear All"
@@ -618,8 +618,8 @@ msgid "Deposit Amounts"
 msgstr "Indbetalingsbeløb"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Deposit UNI-V2 LP Tokens"
-msgstr "Indbetal UNI-V2 LP-tokens"
+msgid "Deposit ARI-V2 LP Tokens"
+msgstr "Indbetal ARI-V2 LP-tokens"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Deposit liquidity"
@@ -630,16 +630,16 @@ msgid "Deposit tokens to the {label} network."
 msgstr "Indbetal tokens til {label} netværket."
 
 #: src/pages/Earn/index.tsx
-msgid "Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token."
-msgstr "Indsæt dine likviditetsudbyder-tokens for at modtage UNI, Uniswap-protokolstyringstokenet."
+msgid "Deposit your Liquidity Provider tokens to receive ARI, the Ariswap protocol governance token."
+msgstr "Indsæt dine likviditetsudbyder-tokens for at modtage ARI, Ariswap-protokolstyringstokenet."
 
 #: src/components/earn/UnstakingModal.tsx
 msgid "Deposited liquidity:"
 msgstr "Indbetalt likviditet:"
 
 #: src/components/earn/StakingModal.tsx
-msgid "Deposited {0} UNI-V2"
-msgstr "Indbetalt {0} UNI-V2"
+msgid "Deposited {0} ARI-V2"
+msgstr "Indbetalt {0} ARI-V2"
 
 #: src/components/earn/StakingModal.tsx
 msgid "Depositing Liquidity"
@@ -678,8 +678,8 @@ msgid "Don’t see one of your v2 positions? <0>Import it.</0>"
 msgstr "Kan du ikke se en af dine v2-positioner? <0>Importér den.</0>"
 
 #: src/components/vote/DelegateModal.tsx
-msgid "Earned UNI tokens represent voting shares in Uniswap governance."
-msgstr "Optjente UNI-tokens repræsenterer stemmeaktier i Uniswap governance."
+msgid "Earned ARI tokens represent voting shares in Ariswap governance."
+msgstr "Optjente ARI-tokens repræsenterer stemmeaktier i Ariswap governance."
 
 #: src/components/FeeSelector/index.tsx
 msgid "Edit"
@@ -702,8 +702,8 @@ msgid "Enter a valid slippage percentage"
 msgstr "Indtast en gyldig glideprocent"
 
 #: src/components/claim/AddressClaimModal.tsx
-msgid "Enter an address to trigger a UNI claim. If the address has any claimable UNI it will be sent to them on submission."
-msgstr "Indtast en adresse for at udløse et UNI-krav. Hvis adressen har nogen UNI, der kan gøres krav på, vil den blive sendt til dem ved indsendelse."
+msgid "Enter an address to trigger a ARI claim. If the address has any claimable ARI it will be sent to them on submission."
+msgstr "Indtast en adresse for at udløse et ARI-krav. Hvis adressen har nogen ARI, der kan gøres krav på, vil den blive sendt til dem ved indsendelse."
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
@@ -784,12 +784,12 @@ msgid "Expired"
 msgstr "Udløbet"
 
 #: src/pages/Pool/CTACards.tsx
-msgid "Explore Uniswap Analytics."
-msgstr "Udforsk Uniswap Analytics."
+msgid "Explore Ariswap Analytics."
+msgstr "Udforsk Ariswap Analytics."
 
 #: src/components/Popups/FailedNetworkSwitchPopup.tsx
-msgid "Failed to switch networks from the Uniswap Interface. In order to use Uniswap on {0}, you must change the network in your wallet."
-msgstr "Kunne ikke skifte netværk fra Uniswap-grænsefladen. For at bruge Uniswap på {0}skal du ændre netværket i din tegnebog."
+msgid "Failed to switch networks from the Ariswap Interface. In order to use Ariswap on {0}, you must change the network in your wallet."
+msgstr "Kunne ikke skifte netværk fra Ariswap-grænsefladen. For at bruge Ariswap på {0}skal du ændre netværket i din tegnebog."
 
 #: src/components/PositionPreview/index.tsx
 msgid "Fee Tier"
@@ -808,8 +808,8 @@ msgid "For"
 msgstr "Til"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "For each pool shown below, click migrate to remove your liquidity from Uniswap V2 and deposit it into Uniswap V3."
-msgstr "For hver pulje vist nedenfor skal du klikke på migrer for at fjerne din likviditet fra Uniswap V2 og indsætte den i Uniswap V3."
+msgid "For each pool shown below, click migrate to remove your liquidity from Ariswap V2 and deposit it into Ariswap V3."
+msgstr "For hver pulje vist nedenfor skal du klikke på migrer for at fjerne din likviditet fra Ariswap V2 og indsætte den i Ariswap V3."
 
 #: src/pages/Swap/index.tsx
 msgid "From"
@@ -1072,8 +1072,8 @@ msgid "Migrate V2 Liquidity"
 msgstr "Migrer V2-likviditet"
 
 #: src/pages/MigrateV2/index.tsx
-msgid "Migrate your liquidity tokens from Uniswap V2 to Uniswap V3."
-msgstr "Migrer dine likviditetstokens fra Uniswap V2 til Uniswap V3."
+msgid "Migrate your liquidity tokens from Ariswap V2 to Ariswap V3."
+msgstr "Migrer dine likviditetstokens fra Ariswap V2 til Ariswap V3."
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Migrate {0}/{1} liquidity to V3"
@@ -1170,8 +1170,8 @@ msgid "Once you are happy with the rate click supply to review."
 msgstr "Når du er tilfreds med satsen, skal du klikke på forsyning for at gennemgå."
 
 #: src/pages/Vote/VotePage.tsx
-msgid "Only UNI votes that were self delegated or delegated to another address before block {0} are eligible for voting."
-msgstr "Kun UNI-stemmer, der blev selvdelegeret eller delegeret til en anden adresse før blok {0}, er berettiget til at stemme."
+msgid "Only ARI votes that were self delegated or delegated to another address before block {0} are eligible for voting."
+msgstr "Kun ARI-stemmer, der blev selvdelegeret eller delegeret til en anden adresse før blok {0}, er berettiget til at stemme."
 
 #: src/components/Web3ReactManager/index.tsx
 msgid "Oops! An unknown error occurred. Please refresh the page, or visit from another browser or device."
@@ -1356,12 +1356,12 @@ msgid "Rates"
 msgstr "Satser"
 
 #: src/pages/Earn/index.tsx
-msgid "Read more about UNI"
-msgstr "Læs mere om UNI"
+msgid "Read more about ARI"
+msgstr "Læs mere om ARI"
 
 #: src/pages/Vote/Landing.tsx
-msgid "Read more about Uniswap governance"
-msgstr "Læs mere om Uniswap governance"
+msgid "Read more about Ariswap governance"
+msgstr "Læs mere om Ariswap governance"
 
 #: src/pages/Pool/v2.tsx
 msgid "Read more about providing liquidity"
@@ -1512,8 +1512,8 @@ msgid "Something went wrong"
 msgstr "Noget gik galt"
 
 #: src/pages/Earn/Manage.tsx
-msgid "Step 1. Get UNI-V2 Liquidity tokens"
-msgstr "Trin 1. Få UNI-V2 Likviditetstokens"
+msgid "Step 1. Get ARI-V2 Liquidity tokens"
+msgstr "Trin 1. Få ARI-V2 Likviditetstokens"
 
 #: src/components/AccountDetails/TransactionSummary.tsx
 msgid "Submit new proposal"
@@ -1575,8 +1575,8 @@ msgid "Swapping {0} {1} for {2} {3}"
 msgstr "Byt {0} {1} til {2} {3}"
 
 #: src/components/Popups/SurveyPopup.tsx
-msgid "Take a 10 minute survey to help us improve your experience in the Uniswap app."
-msgstr "Tag en 10 minutters undersøgelse for at hjælpe os med at forbedre din oplevelse i Uniswap-appen."
+msgid "Take a 10 minute survey to help us improve your experience in the Ariswap app."
+msgstr "Tag en 10 minutters undersøgelse for at hjælpe os med at forbedre din oplevelse i Ariswap-appen."
 
 #: src/components/WalletModal/index.tsx
 msgid "Tally"
@@ -1587,16 +1587,16 @@ msgid "Tell us what you think ↗"
 msgstr "Fortæl os, hvad du synes ↗"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "Thanks for being part of the Uniswap community <0/>"
-msgstr "Tak, fordi du er en del af Uniswap-gruppen <0/>"
+msgid "Thanks for being part of the Ariswap community <0/>"
+msgstr "Tak, fordi du er en del af Ariswap-gruppen <0/>"
 
 #: src/components/FeeSelector/index.tsx
 msgid "The % you will earn in fees."
 msgstr "Den%, du tjener i gebyrer."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The Uniswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
-msgstr "Uniswap-invarianten x * y = k var ikke tilfreds med byttet. Dette betyder normalt, at et af de tokens, du bytter, indeholder brugerdefineret adfærd ved overførsel."
+msgid "The Ariswap invariant x*y=k was not satisfied by the swap. This usually means one of the tokens you are swapping incorporates custom behavior on transfer."
+msgstr "Ariswap-invarianten x * y = k var ikke tilfreds med byttet. Dette betyder normalt, at et af de tokens, du bytter, indeholder brugerdefineret adfærd ved overførsel."
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "The amount you expect to receive at the current market price. You may receive less or more if the market price changes while your transaction is pending."
@@ -1611,8 +1611,8 @@ msgid "The app fetches on-chain data and constructs contract calls with an Infur
 msgstr "Appen henter on-chain data og konstruerer kontraktopkald med en Infura API."
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "The app fetches the optimal trade route from a Uniswap Labs server."
-msgstr "Appen henter den optimale handelsrute fra en Uniswap Labs-server."
+msgid "The app fetches the optimal trade route from a Ariswap Labs server."
+msgstr "Appen henter den optimale handelsrute fra en Ariswap Labs-server."
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "The app logs anonymized usage statistics in order to improve over time."
@@ -1667,8 +1667,8 @@ msgid "The output token cannot be transferred. There may be an issue with the ou
 msgstr "Output-token kan ikke overføres. Der kan være et problem med output-token."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Output-token kan ikke overføres. Der kan være et problem med output-token. Bemærk: gebyr ved overførsel og rebase-tokens er inkompatibelt med Uniswap V3."
+msgid "The output token cannot be transferred. There may be an issue with the output token. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "Output-token kan ikke overføres. Der kan være et problem med output-token. Bemærk: gebyr ved overførsel og rebase-tokens er inkompatibelt med Ariswap V3."
 
 #: src/components/Badge/RangeBadge.tsx
 msgid "The price of this pool is outside of your selected range. Your position is not currently earning fees."
@@ -1691,8 +1691,8 @@ msgid "There is no liquidity data."
 msgstr "Der er ingen likviditetsdata."
 
 #: src/components/ConnectedAccountBlocked/index.tsx
-msgid "This address is blocked on the Uniswap Labs interface because it is associated with one or more"
-msgstr "Denne adresse er blokeret på Uniswap Labs-grænsefladen, fordi den er knyttet til en eller flere"
+msgid "This address is blocked on the Ariswap Labs interface because it is associated with one or more"
+msgstr "Denne adresse er blokeret på Ariswap Labs-grænsefladen, fordi den er knyttet til en eller flere"
 
 #: src/components/PrivacyPolicy/index.tsx
 msgid "This app uses the following third-party APIs:"
@@ -1711,16 +1711,16 @@ msgid "This token doesn't appear on the active token list(s). Make sure this is 
 msgstr "Dette token vises ikke på den/de aktive tokenlister. Sørg for, at dette er det token, du vil handle."
 
 #: src/components/SearchModal/BlockedToken.tsx
-msgid "This token is not supported in the Uniswap Labs app"
-msgstr "Dette token understøttes ikke i Uniswap Labs-appen"
+msgid "This token is not supported in the Ariswap Labs app"
+msgstr "Dette token understøttes ikke i Ariswap Labs-appen"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
 msgid "This tool will safely migrate your {0} liquidity to V3. The process is completely trustless thanks to the"
 msgstr "Dette værktøj vil sikkert overføre din {0}-likviditet til V3. Processen er helt troværdig takket være"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Denne transaktion lykkes ikke på grund af prisbevægelse. Prøv at øge din glidningstolerance. Bemærk: gebyr ved overførsel og rebase-tokens er inkompatibelt med Uniswap V3."
+msgid "This transaction will not succeed due to price movement. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "Denne transaktion lykkes ikke på grund af prisbevægelse. Prøv at øge din glidningstolerance. Bemærk: gebyr ved overførsel og rebase-tokens er inkompatibelt med Ariswap V3."
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
 msgid "This transaction will not succeed either due to price movement or fee on transfer. Try increasing your slippage tolerance."
@@ -1809,29 +1809,29 @@ msgid "Turn On Expert Mode"
 msgstr "Slå Eksperttilstand til"
 
 #: src/components/Popups/ClaimPopup.tsx
-msgid "UNI has arrived"
-msgstr "UNI er ankommet"
+msgid "ARI has arrived"
+msgstr "ARI er ankommet"
 
 #: src/pages/Vote/Landing.tsx
-msgid "UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
-msgstr "UNI-tokens repræsenterer stemmeandele i Uniswap governance. Du kan selv stemme om hvert forslag eller uddelegere dine stemmer til en tredjepart."
+msgid "ARI tokens represent voting shares in Ariswap governance. You can vote on each proposal yourself or delegate your votes to a third party."
+msgstr "ARI-tokens repræsenterer stemmeandele i Ariswap governance. Du kan selv stemme om hvert forslag eller uddelegere dine stemmer til en tredjepart."
 
 #: src/pages/RemoveLiquidity/index.tsx
-msgid "UNI {0}/{1} Burned"
-msgstr "UNI {0}/{1} brændt"
+msgid "ARI {0}/{1} Burned"
+msgstr "ARI {0}/{1} brændt"
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
-msgstr "UNI-V2 LP-tokens er påkrævet. Når du har tilføjet likviditet til {0}-{1} puljen, kan du satse dine likviditettokens på denne side."
+msgid "ARI-V2 LP tokens are required. Once you've added liquidity to the {0}-{1} pool you can stake your liquidity tokens on this page."
+msgstr "ARI-V2 LP-tokens er påkrævet. Når du har tilføjet likviditet til {0}-{1} puljen, kan du satse dine likviditettokens på denne side."
 
 #: src/pages/Earn/Manage.tsx
-msgid "UNI-V2 {0}-{1}"
-msgstr "UNI-V2 {0}-{1}"
+msgid "ARI-V2 {0}-{1}"
+msgstr "ARI-V2 {0}-{1}"
 
 #: src/components/earn/ClaimRewardModal.tsx
 #: src/components/earn/UnstakingModal.tsx
-msgid "Unclaimed UNI"
-msgstr "UNI, der ikke er gjort krav på"
+msgid "Unclaimed ARI"
+msgstr "ARI, der ikke er gjort krav på"
 
 #: src/pages/Pool/PositionPage.tsx
 msgid "Unclaimed fees"
@@ -1850,36 +1850,36 @@ msgid "Unexpected issue with estimating the gas. Please try again."
 msgstr "Uventet problem med estimering af gassen. Prøv igen."
 
 #: src/pages/Vote/Landing.tsx
-msgid "Uniswap Governance"
-msgstr "Uniswap Governance"
+msgid "Ariswap Governance"
+msgstr "Ariswap Governance"
 
 #: src/components/PrivacyPolicy/index.tsx
-msgid "Uniswap Labs' Terms of Service"
-msgstr "Uniswap Labs' servicevilkår"
+msgid "Ariswap Labs' Terms of Service"
+msgstr "Ariswap Labs' servicevilkår"
 
 #: src/components/SwitchLocaleLink/index.tsx
-msgid "Uniswap available in: <0>{0}</0>"
-msgstr "Uniswap tilgængelig i: <0>{0}</0>"
+msgid "Ariswap available in: <0>{0}</0>"
+msgstr "Ariswap tilgængelig i: <0>{0}</0>"
 
 #: src/components/vote/ProposalEmptyState.tsx
-msgid "Uniswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
-msgstr "Uniswap-styring er kun tilgængelig i lag 1. Skift dit netværk til Ethereum Mainnet for at se forslag og afstemning."
+msgid "Ariswap governance is only available on Layer 1. Switch your network to Ethereum Mainnet to view Proposals and Vote."
+msgstr "Ariswap-styring er kun tilgængelig i lag 1. Skift dit netværk til Ethereum Mainnet for at se forslag og afstemning."
 
 #: src/pages/Earn/index.tsx
-msgid "Uniswap liquidity mining"
+msgid "Ariswap liquidity mining"
 msgstr "Uiswap likviditetsmining"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "Uniswap migration contract↗"
-msgstr "Uniswap migrationskontrakt↗"
+msgid "Ariswap migration contract↗"
+msgstr "Ariswap migrationskontrakt↗"
 
 #: src/components/SearchModal/TokenImportCard.tsx
 msgid "Unknown Source"
 msgstr "Ukendt kilde"
 
 #: src/utils/swapErrorToUserReadableMessage.tsx
-msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Uniswap V3."
-msgstr "Ukendt fejl{0}. Prøv at øge din glidetolerance. Bemærk: gebyr ved overførsel og rebase -tokens er inkompatibelt med Uniswap V3."
+msgid "Unknown error{0}. Try increasing your slippage tolerance. Note: fee on transfer and rebase tokens are incompatible with Ariswap V3."
+msgstr "Ukendt fejl{0}. Prøv at øge din glidetolerance. Bemærk: gebyr ved overførsel og rebase -tokens er inkompatibelt med Ariswap V3."
 
 #: src/pages/Vote/Landing.tsx
 #: src/pages/Vote/VotePage.tsx
@@ -1925,8 +1925,8 @@ msgid "Update list"
 msgstr "Opdater liste"
 
 #: src/components/Settings/index.tsx
-msgid "Use the Uniswap Labs API to get faster quotes."
-msgstr "Brug Uniswap Labs API til at få hurtigere tilbud."
+msgid "Use the Ariswap Labs API to get faster quotes."
+msgstr "Brug Ariswap Labs API til at få hurtigere tilbud."
 
 #: src/components/claim/ClaimModal.tsx
 msgid "User"
@@ -2055,12 +2055,12 @@ msgid "When you claim without withdrawing your liquidity remains in the mining p
 msgstr "Når du gør krav uden at trække dig tilbage, forbliver din likviditet i miningpuljen."
 
 #: src/pages/Earn/Manage.tsx
-msgid "When you withdraw, the contract will automagically claim UNI on your behalf!"
-msgstr "Når du hæver, vil kontrakten automatisk gøre krav på UNI på dine vegne!"
+msgid "When you withdraw, the contract will automagically claim ARI on your behalf!"
+msgstr "Når du hæver, vil kontrakten automatisk gøre krav på ARI på dine vegne!"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "When you withdraw, your UNI is claimed and your liquidity is removed from the mining pool."
-msgstr "Når du hæver, gøres der krav på din UNI, og din likviditet fjernes fra miningpuljen."
+msgid "When you withdraw, your ARI is claimed and your liquidity is removed from the mining pool."
+msgstr "Når du hæver, gøres der krav på din ARI, og din likviditet fjernes fra miningpuljen."
 
 #: src/components/earn/UnstakingModal.tsx
 #: src/pages/Earn/Manage.tsx
@@ -2076,12 +2076,12 @@ msgid "Withdraw deposited liquidity"
 msgstr "Udbetal indskudt likviditet"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrawing {0} UNI-V2"
-msgstr "Udbetal {0} UNI-V2"
+msgid "Withdrawing {0} ARI-V2"
+msgstr "Udbetal {0} ARI-V2"
 
 #: src/components/earn/UnstakingModal.tsx
-msgid "Withdrew UNI-V2!"
-msgstr "Hæv UNI-V2!"
+msgid "Withdrew ARI-V2!"
+msgstr "Hæv ARI-V2!"
 
 #: src/pages/Swap/index.tsx
 msgid "Wrap"
@@ -2105,8 +2105,8 @@ msgid "You are creating a pool"
 msgstr "Du opretter en pulje"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You are the first liquidity provider for this Uniswap V3 pool. Your liquidity will migrate at the current {0} price."
-msgstr "Du er den første likviditetsudbyder til denne Uniswap V3-pulje. Din likviditet vil migrere til den aktuelle {0}-pris."
+msgid "You are the first liquidity provider for this Ariswap V3 pool. Your liquidity will migrate at the current {0} price."
+msgstr "Du er den første likviditetsudbyder til denne Ariswap V3-pulje. Din likviditet vil migrere til den aktuelle {0}-pris."
 
 #: src/pages/AddLiquidityV2/index.tsx
 msgid "You are the first liquidity provider."
@@ -2145,16 +2145,16 @@ msgid "You must connect an account."
 msgstr "Du skal forbinde en konto."
 
 #: src/pages/Swap/index.tsx
-msgid "You must give the Uniswap smart contracts permission to use your {0}. You only have to do this once per token."
-msgstr "Du skal give Uniswap smart contracts tilladelse til at bruge din {0}. Du behøver kun at gøre dette én gang pr. token."
+msgid "You must give the Ariswap smart contracts permission to use your {0}. You only have to do this once per token."
+msgstr "Du skal give Ariswap smart contracts tilladelse til at bruge din {0}. Du behøver kun at gøre dette én gang pr. token."
 
 #: src/pages/CreateProposal/index.tsx
 msgid "You must have {formattedProposalThreshold} votes to submit a proposal"
 msgstr "Du skal have {formattedProposalThreshold} stemmer for at indsende et forslag"
 
 #: src/pages/MigrateV2/MigrateV2Pair.tsx
-msgid "You should only deposit liquidity into Uniswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
-msgstr "Du bør kun indbetale likviditet til Uniswap V3 til en pris, du mener er korrekt. <0/>Hvis prisen synes forkert, kan du enten lave et bytte for at flytte prisen eller vente på, at en anden gør det."
+msgid "You should only deposit liquidity into Ariswap V3 at a price you believe is correct. <0/>If the price seems incorrect, you can either make a swap to move the price or wait for someone else to do so."
+msgstr "Du bør kun indbetale likviditet til Ariswap V3 til en pris, du mener er korrekt. <0/>Hvis prisen synes forkert, kan du enten lave et bytte for at flytte prisen eller vente på, at en anden gør det."
 
 #: src/pages/RemoveLiquidity/V3.tsx
 msgid "You will also collect fees earned from this position."
@@ -2249,8 +2249,8 @@ msgid "Your transactions will appear here..."
 msgstr "Dine transaktioner vises her..."
 
 #: src/pages/Earn/Manage.tsx
-msgid "Your unclaimed UNI"
-msgstr "Din ikke-krævede UNI"
+msgid "Your unclaimed ARI"
+msgstr "Din ikke-krævede ARI"
 
 #: src/components/swap/AdvancedSwapDetails.tsx
 msgid "after slippage"
@@ -2343,24 +2343,24 @@ msgstr "{0} Afventer"
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
 #: src/components/claim/ClaimModal.tsx
-msgid "{0} UNI"
-msgstr "{0} UNI"
+msgid "{0} ARI"
+msgstr "{0} ARI"
 
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/PoolCard.tsx
 #: src/components/earn/StakingModal.tsx
 #: src/pages/Earn/Manage.tsx
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI / week"
-msgstr "{0} UNI / uge"
+msgid "{0} ARI / week"
+msgstr "{0} ARI / uge"
 
 #: src/components/earn/StakingModal.tsx
-msgid "{0} UNI-V2"
-msgstr "{0} UNI-V2"
+msgid "{0} ARI-V2"
+msgstr "{0} ARI-V2"
 
 #: src/pages/Earn/Manage.tsx
-msgid "{0} UNI-V2 LP tokens available"
-msgstr "{0} UNI-V2 LP-tokens tilgængelige"
+msgid "{0} ARI-V2 LP tokens available"
+msgstr "{0} ARI-V2 LP-tokens tilgængelige"
 
 #: src/components/vote/VoteModal.tsx
 msgid "{0} Votes"
@@ -2432,12 +2432,12 @@ msgid "{0}/{1} LP Tokens"
 msgstr "{0}/{1} LP-tokens"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "{SOCKS_AMOUNT} UNI"
-msgstr "{SOCKS_AMOUNT} UNI"
+msgid "{SOCKS_AMOUNT} ARI"
+msgstr "{SOCKS_AMOUNT} ARI"
 
 #: src/components/claim/ClaimModal.tsx
-msgid "{USER_AMOUNT} UNI"
-msgstr "{USER_AMOUNT} UNI"
+msgid "{USER_AMOUNT} ARI"
+msgstr "{USER_AMOUNT} ARI"
 
 #: src/components/SearchModal/ManageLists.tsx
 msgid "{activeTokensOnThisChain} tokens"

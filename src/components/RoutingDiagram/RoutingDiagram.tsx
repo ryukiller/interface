@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency } from '@uniswap/sdk-core'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { Currency } from '@ariswap/sdk-core'
+import { FeeAmount } from '@ariswap/v3-sdk'
 import Badge from 'components/Badge'
 import CurrencyLogo from 'components/CurrencyLogo'
 import DoubleCurrencyLogo from 'components/DoubleLogo'
@@ -129,7 +129,7 @@ function Pool({ currency0, currency1, feeAmount }: { currency0: Currency; curren
   const tokenInfo0 = useTokenInfoFromActiveList(currency0)
   const tokenInfo1 = useTokenInfoFromActiveList(currency1)
 
-  // TODO - link pool icon to info.uniswap.org via query params
+  // TODO - link pool icon to info.Ariswap.org via query params
   return (
     <MouseoverTooltip
       text={<Trans>{tokenInfo0?.symbol + '/' + tokenInfo1?.symbol + ' ' + feeAmount / 10000}% pool</Trans>}

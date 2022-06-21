@@ -1,6 +1,6 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Fraction, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, Fraction, Token } from '@ariswap/sdk-core'
 import ExecuteModal from 'components/vote/ExecuteModal'
 import QueueModal from 'components/vote/QueueModal'
 import { useActiveLocale } from 'hooks/useActiveLocale'
@@ -29,7 +29,7 @@ import {
   DEFAULT_AVERAGE_BLOCK_TIME_IN_SECS,
 } from '../../constants/governance'
 import { ZERO_ADDRESS } from '../../constants/misc'
-import { UNI } from '../../constants/tokens'
+import { ARI } from '../../constants/tokens'
 import {
   useModalOpen,
   useToggleDelegateModal,
@@ -236,7 +236,7 @@ export default function VotePage({
 
   const uniBalance: CurrencyAmount<Token> | undefined = useTokenBalance(
     account ?? undefined,
-    chainId ? UNI[chainId] : undefined
+    chainId ? ARI[chainId] : undefined
   )
   const userDelegatee: string | undefined = useUserDelegatee()
 
@@ -301,7 +301,7 @@ export default function VotePage({
               <GreyCard>
                 <ThemedText.Black>
                   <Trans>
-                    Only UNI votes that were self delegated or delegated to another address before block{' '}
+                    Only ARI votes that were self delegated or delegated to another address before block{' '}
                     {proposalData.startBlock} are eligible for voting.{' '}
                   </Trans>
                   {showLinkForUnlock && (

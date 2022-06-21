@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Percent } from '@uniswap/sdk-core'
-import { Position } from '@uniswap/v3-sdk'
+import { Currency, CurrencyAmount, Percent } from '@ariswap/sdk-core'
+import { Position } from '@ariswap/v3-sdk'
 import { useToken } from 'hooks/Tokens'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { usePool } from 'hooks/usePools'
@@ -42,11 +42,11 @@ export function useDerivedV3BurnInfo(
     () =>
       pool && position?.liquidity && typeof position?.tickLower === 'number' && typeof position?.tickUpper === 'number'
         ? new Position({
-            pool,
-            liquidity: position.liquidity.toString(),
-            tickLower: position.tickLower,
-            tickUpper: position.tickUpper,
-          })
+          pool,
+          liquidity: position.liquidity.toString(),
+          tickLower: position.tickLower,
+          tickUpper: position.tickUpper,
+        })
         : undefined,
     [pool, position]
   )

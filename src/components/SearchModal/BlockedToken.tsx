@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@ariswap/sdk-core'
 import { ButtonPrimary } from 'components/Button'
 import { AlertCircle, ArrowLeft } from 'react-feather'
 import styled from 'styled-components/macro'
@@ -59,7 +59,7 @@ const BlockedToken = ({ onBack, onDismiss, blockedTokens }: BlockedTokenProps) =
     <Icon />
     <Content>
       <Copy>
-        <Trans>This token is not supported in the Uniswap Labs app</Trans>
+        <Trans>This token is not supported in the Ariswap Labs app</Trans>
       </Copy>
       <TokenImportCard token={blockedTokens[0]} />
       <Button disabled>

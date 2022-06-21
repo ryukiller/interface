@@ -2,7 +2,7 @@ import { BigNumber } from '@ethersproject/bignumber'
 import { Contract } from '@ethersproject/contracts'
 import { TransactionResponse } from '@ethersproject/providers'
 import { Trans } from '@lingui/macro'
-import { Currency, Percent } from '@uniswap/sdk-core'
+import { Currency, Percent } from '@ariswap/sdk-core'
 import { sendEvent } from 'components/analytics'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { useV2LiquidityTokenPermit } from 'hooks/useV2LiquidityTokenPermit'
@@ -80,8 +80,8 @@ export default function RemoveLiquidity({
     [Field.LIQUIDITY_PERCENT]: parsedAmounts[Field.LIQUIDITY_PERCENT].equalTo('0')
       ? '0'
       : parsedAmounts[Field.LIQUIDITY_PERCENT].lessThan(new Percent('1', '100'))
-      ? '<1'
-      : parsedAmounts[Field.LIQUIDITY_PERCENT].toFixed(0),
+        ? '<1'
+        : parsedAmounts[Field.LIQUIDITY_PERCENT].toFixed(0),
     [Field.LIQUIDITY]:
       independentField === Field.LIQUIDITY ? typedValue : parsedAmounts[Field.LIQUIDITY]?.toSignificant(6) ?? '',
     [Field.CURRENCY_A]:
@@ -334,7 +334,7 @@ export default function RemoveLiquidity({
         <RowBetween>
           <Text color={theme.text2} fontWeight={500} fontSize={16}>
             <Trans>
-              UNI {currencyA?.symbol}/{currencyB?.symbol} Burned
+              ARI {currencyA?.symbol}/{currencyB?.symbol} Burned
             </Trans>
           </Text>
           <RowFixed>
@@ -389,9 +389,9 @@ export default function RemoveLiquidity({
 
   const oneCurrencyIsWETH = Boolean(
     chainId &&
-      WRAPPED_NATIVE_CURRENCY[chainId] &&
-      ((currencyA && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyA)) ||
-        (currencyB && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyB)))
+    WRAPPED_NATIVE_CURRENCY[chainId] &&
+    ((currencyA && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyA)) ||
+      (currencyB && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyB)))
   )
 
   const handleSelectCurrencyA = useCallback(
@@ -534,25 +534,21 @@ export default function RemoveLiquidity({
                       <RowBetween style={{ justifyContent: 'flex-end' }}>
                         {oneCurrencyIsETH ? (
                           <StyledInternalLink
-                            to={`/remove/v2/${
-                              currencyA?.isNative && chainId && WRAPPED_NATIVE_CURRENCY[chainId]
-                                ? WRAPPED_NATIVE_CURRENCY[chainId]?.address
-                                : currencyIdA
-                            }/${
-                              currencyB?.isNative && chainId && WRAPPED_NATIVE_CURRENCY[chainId]
+                            to={`/remove/v2/${currencyA?.isNative && chainId && WRAPPED_NATIVE_CURRENCY[chainId]
+                              ? WRAPPED_NATIVE_CURRENCY[chainId]?.address
+                              : currencyIdA
+                              }/${currencyB?.isNative && chainId && WRAPPED_NATIVE_CURRENCY[chainId]
                                 ? WRAPPED_NATIVE_CURRENCY[chainId]?.address
                                 : currencyIdB
-                            }`}
+                              }`}
                           >
                             Receive WETH
                           </StyledInternalLink>
                         ) : oneCurrencyIsWETH ? (
                           <StyledInternalLink
-                            to={`/remove/v2/${
-                              currencyA && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyA) ? 'ETH' : currencyIdA
-                            }/${
-                              currencyB && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyB) ? 'ETH' : currencyIdB
-                            }`}
+                            to={`/remove/v2/${currencyA && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyA) ? 'ETH' : currencyIdA
+                              }/${currencyB && WRAPPED_NATIVE_CURRENCY[chainId]?.equals(currencyB) ? 'ETH' : currencyIdB
+                              }`}
                           >
                             Receive ETH
                           </StyledInternalLink>

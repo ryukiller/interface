@@ -1,6 +1,6 @@
 import { skipToken } from '@reduxjs/toolkit/query/react'
-import { Currency, Token } from '@uniswap/sdk-core'
-import { FeeAmount } from '@uniswap/v3-sdk'
+import { Currency, Token } from '@ariswap/sdk-core'
+import { FeeAmount } from '@ariswap/v3-sdk'
 import { sendEvent } from 'components/analytics'
 import useBlockNumber from 'lib/hooks/useBlockNumber'
 import ms from 'ms.macro'

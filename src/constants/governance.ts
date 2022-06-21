@@ -3,13 +3,13 @@ import {
   GOVERNANCE_ALPHA_V1_ADDRESSES,
   GOVERNANCE_BRAVO_ADDRESSES,
   TIMELOCK_ADDRESS,
-  UNI_ADDRESS,
+  ARI_ADDRESS,
 } from './addresses'
 import { SupportedChainId } from './chains'
 
 export const COMMON_CONTRACT_NAMES: Record<number, { [address: string]: string }> = {
   [SupportedChainId.MAINNET]: {
-    [UNI_ADDRESS[SupportedChainId.MAINNET]]: 'UNI',
+    [ARI_ADDRESS[SupportedChainId.MAINNET]]: 'ARI',
     [TIMELOCK_ADDRESS[SupportedChainId.MAINNET]]: 'Timelock',
     [GOVERNANCE_ALPHA_V0_ADDRESSES[SupportedChainId.MAINNET]]: 'Governance (V0)',
     [GOVERNANCE_ALPHA_V1_ADDRESSES[SupportedChainId.MAINNET]]: 'Governance (V1)',

@@ -1,6 +1,6 @@
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Percent, Token } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
+import { CurrencyAmount, Percent, Token } from '@ariswap/sdk-core'
+import { Pair } from '@ariswap/v2-sdk'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import { transparentize } from 'polished'
@@ -26,7 +26,7 @@ import { AutoRow, RowBetween, RowFixed } from '../Row'
 import { Dots } from '../swap/styleds'
 import { FixedHeightRow } from '.'
 
-const StyledPositionCard = styled(LightCard)<{ bgColor: any }>`
+const StyledPositionCard = styled(LightCard) <{ bgColor: any }>`
   border: none;
   background: ${({ theme, bgColor }) =>
     `radial-gradient(91.85% 100% at 1.84% 0%, ${transparentize(0.8, bgColor)} 0%, ${theme.bg3} 100%) `};
@@ -57,21 +57,21 @@ export default function V2PositionCard({ pair, border, stakedBalance }: Position
 
   const poolTokenPercentage =
     !!userPoolBalance &&
-    !!totalPoolTokens &&
-    JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
+      !!totalPoolTokens &&
+      JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
       ? new Percent(userPoolBalance.quotient, totalPoolTokens.quotient)
       : undefined
 
   const [token0Deposited, token1Deposited] =
     !!pair &&
-    !!totalPoolTokens &&
-    !!userPoolBalance &&
-    // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
-    JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
+      !!totalPoolTokens &&
+      !!userPoolBalance &&
+      // this condition is a short-circuit in the case where useTokenBalance updates sooner than useTotalSupply
+      JSBI.greaterThanOrEqual(totalPoolTokens.quotient, userPoolBalance.quotient)
       ? [
-          pair.getLiquidityValue(pair.token0, totalPoolTokens, userPoolBalance, false),
-          pair.getLiquidityValue(pair.token1, totalPoolTokens, userPoolBalance, false),
-        ]
+        pair.getLiquidityValue(pair.token0, totalPoolTokens, userPoolBalance, false),
+        pair.getLiquidityValue(pair.token1, totalPoolTokens, userPoolBalance, false),
+      ]
       : [undefined, undefined]
 
   const backgroundColor = useColor(pair?.token0)

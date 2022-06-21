@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Token } from '@ariswap/sdk-core'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import JSBI from 'jsbi'
 import { useCallback, useEffect, useState } from 'react'
@@ -59,9 +59,9 @@ export default function PoolFinder() {
     pairState === PairState.NOT_EXISTS ||
     Boolean(
       pairState === PairState.EXISTS &&
-        pair &&
-        JSBI.equal(pair.reserve0.quotient, JSBI.BigInt(0)) &&
-        JSBI.equal(pair.reserve1.quotient, JSBI.BigInt(0))
+      pair &&
+      JSBI.equal(pair.reserve0.quotient, JSBI.BigInt(0)) &&
+      JSBI.equal(pair.reserve1.quotient, JSBI.BigInt(0))
     )
 
   const position: CurrencyAmount<Token> | undefined = useTokenBalance(account ?? undefined, pair?.liquidityToken)

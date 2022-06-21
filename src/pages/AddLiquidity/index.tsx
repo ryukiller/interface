@@ -1,8 +1,8 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Percent } from '@uniswap/sdk-core'
-import { FeeAmount, NonfungiblePositionManager } from '@uniswap/v3-sdk'
+import { Currency, CurrencyAmount, Percent } from '@ariswap/sdk-core'
+import { FeeAmount, NonfungiblePositionManager } from '@ariswap/v3-sdk'
 import { sendEvent } from 'components/analytics'
 import UnsupportedCurrencyFooter from 'components/swap/UnsupportedCurrencyFooter'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
@@ -236,18 +236,18 @@ export default function AddLiquidity({
       const { calldata, value } =
         hasExistingPosition && tokenId
           ? NonfungiblePositionManager.addCallParameters(position, {
-              tokenId,
-              slippageTolerance: allowedSlippage,
-              deadline: deadline.toString(),
-              useNative,
-            })
+            tokenId,
+            slippageTolerance: allowedSlippage,
+            deadline: deadline.toString(),
+            useNative,
+          })
           : NonfungiblePositionManager.addCallParameters(position, {
-              slippageTolerance: allowedSlippage,
-              recipient: account,
-              deadline: deadline.toString(),
-              useNative,
-              createPool: noLiquidity,
-            })
+            slippageTolerance: allowedSlippage,
+            recipient: account,
+            deadline: deadline.toString(),
+            useNative,
+            createPool: noLiquidity,
+          })
 
       let txn: { to: string; data: string; value: string } = {
         to: NONFUNGIBLE_POSITION_MANAGER_ADDRESSES[chainId],
@@ -419,11 +419,9 @@ export default function AddLiquidity({
   const showApprovalB =
     !argentWalletContract && approvalB !== ApprovalState.APPROVED && !!parsedAmounts[Field.CURRENCY_B]
 
-  const pendingText = `Supplying ${!depositADisabled ? parsedAmounts[Field.CURRENCY_A]?.toSignificant(6) : ''} ${
-    !depositADisabled ? currencies[Field.CURRENCY_A]?.symbol : ''
-  } ${!outOfRange ? 'and' : ''} ${!depositBDisabled ? parsedAmounts[Field.CURRENCY_B]?.toSignificant(6) : ''} ${
-    !depositBDisabled ? currencies[Field.CURRENCY_B]?.symbol : ''
-  }`
+  const pendingText = `Supplying ${!depositADisabled ? parsedAmounts[Field.CURRENCY_A]?.toSignificant(6) : ''} ${!depositADisabled ? currencies[Field.CURRENCY_A]?.symbol : ''
+    } ${!outOfRange ? 'and' : ''} ${!depositBDisabled ? parsedAmounts[Field.CURRENCY_B]?.toSignificant(6) : ''} ${!depositBDisabled ? currencies[Field.CURRENCY_B]?.symbol : ''
+    }`
 
   const Buttons = () =>
     addIsUnsupported ? (
@@ -837,7 +835,7 @@ export default function AddLiquidity({
                                       <ExternalLink
                                         style={{ color: theme.yellow3, textDecoration: 'underline' }}
                                         href={
-                                          'https://help.uniswap.org/en/articles/5434296-can-i-provide-liquidity-over-the-full-range-in-v3'
+                                          'https://help.Ariswap.org/en/articles/5434296-can-i-provide-liquidity-over-the-full-range-in-v3'
                                         }
                                       >
                                         here

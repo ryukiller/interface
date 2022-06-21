@@ -1,4 +1,4 @@
-import { getVersionUpgrade, minVersionBump, VersionUpgrade } from '@uniswap/token-lists'
+import { getVersionUpgrade, minVersionBump, VersionUpgrade } from '@ariswap/token-lists'
 import { SupportedChainId } from 'constants/chains'
 import { ARBITRUM_LIST, OPTIMISM_LIST, UNSUPPORTED_LIST_URLS } from 'constants/lists'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'

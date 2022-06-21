@@ -1,6 +1,6 @@
 import { TransactionResponse } from '@ethersproject/providers'
 import { Trans } from '@lingui/macro'
-import StakingRewardsJson from '@uniswap/liquidity-staker/build/StakingRewards.json'
+import StakingRewardsJson from '@ariswap/liquidity-staker/build/StakingRewards.json'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import { ReactNode, useState } from 'react'
 import styled from 'styled-components/macro'
@@ -104,12 +104,12 @@ export default function UnstakingModal({ isOpen, onDismiss, stakingInfo }: Staki
                 {<FormattedCurrencyAmount currencyAmount={stakingInfo?.earnedAmount} />}
               </ThemedText.Body>
               <ThemedText.Body>
-                <Trans>Unclaimed UNI</Trans>
+                <Trans>Unclaimed ARI</Trans>
               </ThemedText.Body>
             </AutoColumn>
           )}
           <ThemedText.SubHeader style={{ textAlign: 'center' }}>
-            <Trans>When you withdraw, your UNI is claimed and your liquidity is removed from the mining pool.</Trans>
+            <Trans>When you withdraw, your ARI is claimed and your liquidity is removed from the mining pool.</Trans>
           </ThemedText.SubHeader>
           <ButtonError disabled={!!error} error={!!error && !!stakingInfo?.stakedAmount} onClick={onWithdraw}>
             {error ?? <Trans>Withdraw & Claim</Trans>}
@@ -120,10 +120,10 @@ export default function UnstakingModal({ isOpen, onDismiss, stakingInfo }: Staki
         <LoadingView onDismiss={wrappedOnDismiss}>
           <AutoColumn gap="12px" justify={'center'}>
             <ThemedText.Body fontSize={20}>
-              <Trans>Withdrawing {stakingInfo?.stakedAmount?.toSignificant(4)} UNI-V2</Trans>
+              <Trans>Withdrawing {stakingInfo?.stakedAmount?.toSignificant(4)} ARI-V2</Trans>
             </ThemedText.Body>
             <ThemedText.Body fontSize={20}>
-              <Trans>Claiming {stakingInfo?.earnedAmount?.toSignificant(4)} UNI</Trans>
+              <Trans>Claiming {stakingInfo?.earnedAmount?.toSignificant(4)} ARI</Trans>
             </ThemedText.Body>
           </AutoColumn>
         </LoadingView>
@@ -135,10 +135,10 @@ export default function UnstakingModal({ isOpen, onDismiss, stakingInfo }: Staki
               <Trans>Transaction Submitted</Trans>
             </ThemedText.LargeHeader>
             <ThemedText.Body fontSize={20}>
-              <Trans>Withdrew UNI-V2!</Trans>
+              <Trans>Withdrew ARI-V2!</Trans>
             </ThemedText.Body>
             <ThemedText.Body fontSize={20}>
-              <Trans>Claimed UNI!</Trans>
+              <Trans>Claimed ARI!</Trans>
             </ThemedText.Body>
           </AutoColumn>
         </SubmittedView>

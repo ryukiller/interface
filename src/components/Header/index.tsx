@@ -134,7 +134,7 @@ const AccountElement = styled.div<{ active: boolean }>`
   }
 `
 
-const UNIAmount = styled(AccountElement)`
+const ARIAmount = styled(AccountElement)`
   color: white;
   padding: 4px 8px;
   height: 36px;
@@ -143,7 +143,7 @@ const UNIAmount = styled(AccountElement)`
   background: radial-gradient(174.47% 188.91% at 1.84% 0%, #ff007a 0%, #2172e5 100%), #edeef2;
 `
 
-const UNIWrapper = styled.span`
+const ARIWrapper = styled.span`
   width: fit-content;
   position: relative;
   cursor: pointer;
@@ -220,7 +220,7 @@ const StyledNavLink = styled(NavLink).attrs({
 
 const StyledExternalLink = styled(ExternalLink).attrs({
   activeClassName,
-})<{ isActive?: boolean }>`
+}) <{ isActive?: boolean }>`
   ${({ theme }) => theme.flexRowNoWrap}
   align-items: left;
   border-radius: 3rem;
@@ -313,20 +313,20 @@ export default function Header() {
         </HeaderElement>
         <HeaderElement>
           {availableClaim && !showClaimPopup && (
-            <UNIWrapper onClick={toggleClaimModal}>
-              <UNIAmount active={!!account && !availableClaim} style={{ pointerEvents: 'auto' }}>
+            <ARIWrapper onClick={toggleClaimModal}>
+              <ARIAmount active={!!account && !availableClaim} style={{ pointerEvents: 'auto' }}>
                 <ThemedText.White padding="0 2px">
                   {claimTxn && !claimTxn?.receipt ? (
                     <Dots>
-                      <Trans>Claiming UNI</Trans>
+                      <Trans>Claiming ARI</Trans>
                     </Dots>
                   ) : (
-                    <Trans>Claim UNI</Trans>
+                    <Trans>Claim ARI</Trans>
                   )}
                 </ThemedText.White>
-              </UNIAmount>
+              </ARIAmount>
               <CardNoise />
-            </UNIWrapper>
+            </ARIWrapper>
           )}
           <AccountElement active={!!account}>
             {account && userEthBalance ? (

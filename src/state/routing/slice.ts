@@ -1,7 +1,7 @@
 import { BaseProvider, JsonRpcProvider } from '@ethersproject/providers'
 import { createApi, fetchBaseQuery, FetchBaseQueryError } from '@reduxjs/toolkit/query/react'
-import { Protocol } from '@uniswap/router-sdk'
-import { ChainId } from '@uniswap/smart-order-router'
+import { Protocol } from '@ariswap/router-sdk'
+import { ChainId } from '@ariswap/smart-order-router'
 import { INFURA_NETWORK_URLS } from 'constants/infura'
 import { AUTO_ROUTER_SUPPORTED_CHAINS, getClientSideQuote } from 'lib/hooks/routing/clientSideSmartOrderRouter'
 import ms from 'ms.macro'
@@ -35,7 +35,7 @@ const DEFAULT_QUERY_PARAMS = {
 export const routingApi = createApi({
   reducerPath: 'routingApi',
   baseQuery: fetchBaseQuery({
-    baseUrl: 'https://api.uniswap.org/v1/',
+    baseUrl: 'https://api.Ariswap.org/v1/',
   }),
   endpoints: (build) => ({
     getQuote: build.query<

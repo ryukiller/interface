@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Fraction, Percent } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Fraction, Percent } from '@ariswap/sdk-core'
 import { Text } from 'rebass'
 
 import { ButtonPrimary } from '../../components/Button'
@@ -48,16 +48,14 @@ export function ConfirmAddModalBottom({
           <Trans>Rates</Trans>
         </ThemedText.Body>
         <ThemedText.Body>
-          {`1 ${currencies[Field.CURRENCY_A]?.symbol} = ${price?.toSignificant(4)} ${
-            currencies[Field.CURRENCY_B]?.symbol
-          }`}
+          {`1 ${currencies[Field.CURRENCY_A]?.symbol} = ${price?.toSignificant(4)} ${currencies[Field.CURRENCY_B]?.symbol
+            }`}
         </ThemedText.Body>
       </RowBetween>
       <RowBetween style={{ justifyContent: 'flex-end' }}>
         <ThemedText.Body>
-          {`1 ${currencies[Field.CURRENCY_B]?.symbol} = ${price?.invert().toSignificant(4)} ${
-            currencies[Field.CURRENCY_A]?.symbol
-          }`}
+          {`1 ${currencies[Field.CURRENCY_B]?.symbol} = ${price?.invert().toSignificant(4)} ${currencies[Field.CURRENCY_A]?.symbol
+            }`}
         </ThemedText.Body>
       </RowBetween>
       <RowBetween>

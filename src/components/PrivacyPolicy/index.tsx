@@ -49,7 +49,7 @@ const StyledLinkOut = styled(ArrowDown)`
 const EXTERNAL_APIS = [
   {
     name: 'Auto Router',
-    description: <Trans>The app fetches the optimal trade route from a Uniswap Labs server.</Trans>,
+    description: <Trans>The app fetches the optimal trade route from a Ariswap Labs server.</Trans>,
   },
   {
     name: 'Infura',
@@ -63,7 +63,7 @@ const EXTERNAL_APIS = [
           The app securely collects your wallet address and shares it with TRM Labs Inc. for risk and compliance
           reasons.
         </Trans>{' '}
-        <ExternalLink href="https://help.uniswap.org/en/articles/5675203-terms-of-service-faq">
+        <ExternalLink href="https://help.Ariswap.org/en/articles/5675203-terms-of-service-faq">
           <Trans>Learn more</Trans>
         </ExternalLink>
       </>
@@ -124,12 +124,12 @@ export function PrivacyPolicy() {
       <AutoColumn gap="16px">
         <AutoColumn gap="8px" style={{ width: '100%' }}>
           <StyledExternalCard>
-            <ExternalLink href={'https://uniswap.org/terms-of-service'}>
+            <ExternalLink href={'https://Ariswap.org/terms-of-service'}>
               <RowBetween>
                 <AutoRow gap="4px">
                   <Info size={20} />
                   <ThemedText.Main fontSize={14} color={'primaryText1'}>
-                    <Trans>Uniswap Labs&apos; Terms of Service</Trans>
+                    <Trans>Ariswap Labs&apos; Terms of Service</Trans>
                   </ThemedText.Main>
                 </AutoRow>
                 <StyledLinkOut size={20} />
@@ -137,7 +137,7 @@ export function PrivacyPolicy() {
             </ExternalLink>
           </StyledExternalCard>
           <StyledExternalCard>
-            <ExternalLink href={'https://uniswap.org/disclaimer/'}>
+            <ExternalLink href={'https://Ariswap.org/disclaimer/'}>
               <RowBetween>
                 <AutoRow gap="4px">
                   <Info size={20} />
@@ -169,7 +169,7 @@ export function PrivacyPolicy() {
           ))}
           <ThemedText.Body fontSize={12}>
             <Row justify="center" marginBottom="1rem">
-              <ExternalLink href="https://help.uniswap.org/en/articles/5675203-terms-of-service-faq">
+              <ExternalLink href="https://help.Ariswap.org/en/articles/5675203-terms-of-service-faq">
                 <Trans>Learn more</Trans>
               </ExternalLink>
             </Row>

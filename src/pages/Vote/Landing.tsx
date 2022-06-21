@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
+import { CurrencyAmount, Token } from '@ariswap/sdk-core'
 import { ButtonPrimary } from 'components/Button'
 import { AutoColumn } from 'components/Column'
 import { CardBGImage, CardNoise, CardSection, DataCard } from 'components/earn/styled'
@@ -27,7 +27,7 @@ import { shortenAddress } from 'utils'
 import { ExplorerDataType, getExplorerLink } from 'utils/getExplorerLink'
 
 import { ZERO_ADDRESS } from '../../constants/misc'
-import { UNI } from '../../constants/tokens'
+import { ARI } from '../../constants/tokens'
 import { ProposalStatus } from './styled'
 
 const PageWrapper = styled(AutoColumn)``
@@ -122,7 +122,7 @@ export default function Landing() {
   const { loading: loadingAvailableVotes, votes: availableVotes } = useUserVotes()
   const uniBalance: CurrencyAmount<Token> | undefined = useTokenBalance(
     account ?? undefined,
-    chainId ? UNI[chainId] : undefined
+    chainId ? ARI[chainId] : undefined
   )
   const userDelegatee: string | undefined = useUserDelegatee()
 
@@ -146,24 +146,24 @@ export default function Landing() {
               <AutoColumn gap="md">
                 <RowBetween>
                   <ThemedText.White fontWeight={600}>
-                    <Trans>Uniswap Governance</Trans>
+                    <Trans>Ariswap Governance</Trans>
                   </ThemedText.White>
                 </RowBetween>
                 <RowBetween>
                   <ThemedText.White fontSize={14}>
                     <Trans>
-                      UNI tokens represent voting shares in Uniswap governance. You can vote on each proposal yourself
+                      ARI tokens represent voting shares in Ariswap governance. You can vote on each proposal yourself
                       or delegate your votes to a third party.
                     </Trans>
                   </ThemedText.White>
                 </RowBetween>
                 <ExternalLink
                   style={{ color: 'white', textDecoration: 'underline' }}
-                  href="https://uniswap.org/blog/uni"
+                  href="https://Ariswap.org/blog/uni"
                   target="_blank"
                 >
                   <ThemedText.White fontSize={14}>
-                    <Trans>Read more about Uniswap governance</Trans>
+                    <Trans>Read more about Ariswap governance</Trans>
                   </ThemedText.White>
                 </ExternalLink>
               </AutoColumn>
@@ -273,7 +273,7 @@ export default function Landing() {
         </TopSection>
 
         <ThemedText.SubHeader color="text3">
-          <Trans>A minimum threshold of 0.25% of the total UNI supply is required to submit proposals</Trans>
+          <Trans>A minimum threshold of 0.25% of the total ARI supply is required to submit proposals</Trans>
         </ThemedText.SubHeader>
       </PageWrapper>
       <SwitchLocaleLink />

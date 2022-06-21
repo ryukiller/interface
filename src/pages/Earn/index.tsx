@@ -64,23 +64,23 @@ export default function Earn() {
             <AutoColumn gap="md">
               <RowBetween>
                 <ThemedText.White fontWeight={600}>
-                  <Trans>Uniswap liquidity mining</Trans>
+                  <Trans>Ariswap liquidity mining</Trans>
                 </ThemedText.White>
               </RowBetween>
               <RowBetween>
                 <ThemedText.White fontSize={14}>
                   <Trans>
-                    Deposit your Liquidity Provider tokens to receive UNI, the Uniswap protocol governance token.
+                    Deposit your Liquidity Provider tokens to receive ARI, the Ariswap protocol governance token.
                   </Trans>
                 </ThemedText.White>
               </RowBetween>{' '}
               <ExternalLink
                 style={{ color: 'white', textDecoration: 'underline' }}
-                href="https://uniswap.org/blog/uni/"
+                href="https://Ariswap.org/blog/uni/"
                 target="_blank"
               >
                 <ThemedText.White fontSize={14}>
-                  <Trans>Read more about UNI</Trans>
+                  <Trans>Read more about ARI</Trans>
                 </ThemedText.White>
               </ExternalLink>
             </AutoColumn>

@@ -1,5 +1,5 @@
 import { nanoid } from '@reduxjs/toolkit'
-import { TokenList } from '@uniswap/token-lists'
+import { TokenList } from '@ariswap/token-lists'
 import { MAINNET_PROVIDER } from 'constants/infura'
 import getTokenList from 'lib/hooks/useTokenList/fetchTokenList'
 import resolveENSContentHash from 'lib/utils/resolveENSContentHash'

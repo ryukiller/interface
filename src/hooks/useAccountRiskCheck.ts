@@ -9,7 +9,7 @@ export default function useAccountRiskCheck(account: string | null | undefined) 
   useEffect(() => {
     if (account) {
       const headers = new Headers({ 'Content-Type': 'application/json' })
-      fetch('https://screening-worker.uniswap.workers.dev', {
+      fetch('https://screening-worker.Ariswap.workers.dev', {
         method: 'POST',
         headers,
         body: JSON.stringify({ address: account }),

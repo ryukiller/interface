@@ -1,4 +1,4 @@
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@ariswap/sdk-core'
 import { SupportedChainId } from 'constants/chains'
 import uriToHttp from 'lib/utils/uriToHttp'
 import Vibrant from 'node-vibrant/lib/bundle.js'
@@ -8,7 +8,7 @@ import { WrappedTokenInfo } from 'state/lists/wrappedTokenInfo'
 import { hex } from 'wcag-contrast'
 
 function URIForEthToken(address: string) {
-  return `https://raw.githubusercontent.com/uniswap/assets/master/blockchains/ethereum/assets/${address}/logo.png`
+  return `https://raw.githubusercontent.com/Ariswap/assets/master/blockchains/ethereum/assets/${address}/logo.png`
 }
 
 async function getColorFromToken(token: Token): Promise<string | null> {

@@ -1,6 +1,6 @@
 import { skipToken } from '@reduxjs/toolkit/query/react'
-import { Currency, CurrencyAmount, TradeType } from '@uniswap/sdk-core'
-import { IMetric, MetricLoggerUnit, setGlobalMetric } from '@uniswap/smart-order-router'
+import { Currency, CurrencyAmount, TradeType } from '@ariswap/sdk-core'
+import { IMetric, MetricLoggerUnit, setGlobalMetric } from '@ariswap/smart-order-router'
 import { sendTiming } from 'components/analytics'
 import { useStablecoinAmountFromFiatValue } from 'hooks/useUSDCPrice'
 import { useRoutingAPIArguments } from 'lib/hooks/routing/useRoutingAPIArguments'

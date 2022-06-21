@@ -1,8 +1,8 @@
 import { Interface } from '@ethersproject/abi'
 import { Trans } from '@lingui/macro'
-import { abi as STAKING_REWARDS_ABI } from '@uniswap/liquidity-staker/build/StakingRewards.json'
-import { CurrencyAmount, Token } from '@uniswap/sdk-core'
-import { Pair } from '@uniswap/v2-sdk'
+import { abi as STAKING_REWARDS_ABI } from '@ariswap/liquidity-staker/build/StakingRewards.json'
+import { CurrencyAmount, Token } from '@ariswap/sdk-core'
+import { Pair } from '@ariswap/v2-sdk'
 import { SupportedChainId } from 'constants/chains'
 import useActiveWeb3React from 'hooks/useActiveWeb3React'
 import useCurrentBlockTimestamp from 'hooks/useCurrentBlockTimestamp'
@@ -11,7 +11,7 @@ import { NEVER_RELOAD, useMultipleContractSingleData } from 'lib/hooks/multicall
 import tryParseCurrencyAmount from 'lib/utils/tryParseCurrencyAmount'
 import { ReactNode, useMemo } from 'react'
 
-import { DAI, UNI, USDC_MAINNET, USDT, WBTC, WRAPPED_NATIVE_CURRENCY } from '../../constants/tokens'
+import { DAI, ARI, USDC_MAINNET, USDT, WBTC, WRAPPED_NATIVE_CURRENCY } from '../../constants/tokens'
 
 const STAKING_REWARDS_INTERFACE = new Interface(STAKING_REWARDS_ABI)
 
@@ -84,18 +84,18 @@ export function useStakingInfo(pairToFilterBy?: Pair | null): StakingInfo[] {
     () =>
       chainId
         ? STAKING_REWARDS_INFO[chainId]?.filter((stakingRewardInfo) =>
-            pairToFilterBy === undefined
-              ? true
-              : pairToFilterBy === null
+          pairToFilterBy === undefined
+            ? true
+            : pairToFilterBy === null
               ? false
               : pairToFilterBy.involvesToken(stakingRewardInfo.tokens[0]) &&
-                pairToFilterBy.involvesToken(stakingRewardInfo.tokens[1])
-          ) ?? []
+              pairToFilterBy.involvesToken(stakingRewardInfo.tokens[1])
+        ) ?? []
         : [],
     [chainId, pairToFilterBy]
   )
 
-  const uni = chainId ? UNI[chainId] : undefined
+  const uni = chainId ? ARI[chainId] : undefined
 
   const rewardsAddresses = useMemo(() => info.map(({ stakingRewardAddress }) => stakingRewardAddress), [info])
 
@@ -230,7 +230,7 @@ export function useStakingInfo(pairToFilterBy?: Pair | null): StakingInfo[] {
 
 export function useTotalUniEarned(): CurrencyAmount<Token> | undefined {
   const { chainId } = useActiveWeb3React()
-  const uni = chainId ? UNI[chainId] : undefined
+  const uni = chainId ? ARI[chainId] : undefined
   const stakingInfos = useStakingInfo()
 
   return useMemo(() => {

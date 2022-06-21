@@ -1,5 +1,5 @@
 import { Trans } from '@lingui/macro'
-import { Token } from '@uniswap/sdk-core'
+import { Token } from '@ariswap/sdk-core'
 import Badge, { BadgeVariant } from 'components/Badge'
 import { transparentize } from 'polished'
 import { Link } from 'react-router-dom'
@@ -17,7 +17,7 @@ import { AutoRow, RowFixed } from '../Row'
 import { Dots } from '../swap/styleds'
 import { FixedHeightRow } from '.'
 
-const StyledPositionCard = styled(LightCard)<{ bgColor: any }>`
+const StyledPositionCard = styled(LightCard) <{ bgColor: any }>`
   border: none;
   background: ${({ theme, bgColor }) =>
     `radial-gradient(91.85% 100% at 1.84% 0%, ${transparentize(0.8, bgColor)} 0%, ${theme.bg3} 100%) `};

@@ -1,7 +1,7 @@
 import { BigNumber } from '@ethersproject/bignumber'
 import { TransactionResponse } from '@ethersproject/providers'
 import { Trans } from '@lingui/macro'
-import { Currency, CurrencyAmount, Percent } from '@uniswap/sdk-core'
+import { Currency, CurrencyAmount, Percent } from '@ariswap/sdk-core'
 import { sendEvent } from 'components/analytics'
 import UnsupportedCurrencyFooter from 'components/swap/UnsupportedCurrencyFooter'
 import { SwitchLocaleLink } from 'components/SwitchLocaleLink'
@@ -64,8 +64,8 @@ export default function AddLiquidity({
 
   const oneCurrencyIsWETH = Boolean(
     chainId &&
-      wrappedNativeCurrency &&
-      ((currencyA && currencyA.equals(wrappedNativeCurrency)) || (currencyB && currencyB.equals(wrappedNativeCurrency)))
+    wrappedNativeCurrency &&
+    ((currencyA && currencyA.equals(wrappedNativeCurrency)) || (currencyB && currencyB.equals(wrappedNativeCurrency)))
   )
 
   const toggleWalletModal = useWalletModalToggle() // toggle wallet when disconnected
